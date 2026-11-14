@@ -1,0 +1,5 @@
+# For running build.py on your computer (app packages + map/data tools). The app never imports these.
+-r requirements.txt
+geopandas==1.2.0
+pyproj==3.8.0
+colorspacious==1.1.2

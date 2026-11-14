@@ -1,0 +1,1870 @@
+{
+ "nav_home": {
+  "en": "Home",
+  "sq": "Kreu"
+ },
+ "nav_calendar": {
+  "en": "Calendar",
+  "sq": "Kalendari"
+ },
+ "nav_map": {
+  "en": "Map",
+  "sq": "Harta"
+ },
+ "nav_compare": {
+  "en": "Compare",
+  "sq": "Krahaso"
+ },
+ "nav_regions": {
+  "en": "Regions",
+  "sq": "Qarqet"
+ },
+ "nav_story": {
+  "en": "Story",
+  "sq": "Historia"
+ },
+ "nav_more": {
+  "en": "More",
+  "sq": "Më shumë"
+ },
+ "nav_heritage": {
+  "en": "Heritage",
+  "sq": "Trashëgimia"
+ },
+ "nav_method": {
+  "en": "How it works",
+  "sq": "Si funksionon"
+ },
+ "nav_downloads": {
+  "en": "Downloads",
+  "sq": "Shkarkime"
+ },
+ "nav_kids": {
+  "en": "For Kids",
+  "sq": "Për fëmijë"
+ },
+ "nav_about": {
+  "en": "About",
+  "sq": "Rreth VATRA-s"
+ },
+ "for_kids": {
+  "en": "For Kids",
+  "sq": "Për fëmijë"
+ },
+ "theme_help": {
+  "en": "Light / dark",
+  "sq": "Ndriçim / errësirë"
+ },
+ "footer_data": {
+  "en": "Data: NASA FIRMS (MODIS, VIIRS) · EFFIS · geoBoundaries · OCHA",
+  "sq": "Të dhëna: NASA FIRMS (MODIS, VIIRS) · EFFIS · geoBoundaries · OCHA"
+ },
+ "credits": {
+  "en": "Credits, licences and AI note",
+  "sq": "Burimet, licencat dhe shënimi për AI"
+ },
+ "toast_new": {
+  "en": "New here? Ask Viola (bottom right) for a tour.",
+  "sq": "Je i ri këtu? Pyet Violën (poshtë djathtas) për një tur."
+ },
+ "ask_viola": {
+  "en": "Ask Viola, the automatic guide",
+  "sq": "Pyet Violën, udhërrëfyesin automatik"
+ },
+ "ask_viola_hint": {
+  "en": "Questions? Ask Viola, bottom right.",
+  "sq": "Pyetje? Pyet Violën, poshtë djathtas."
+ },
+ "area": {
+  "en": "Area",
+  "sq": "Zona"
+ },
+ "area_help": {
+  "en": "Country, county or municipality. Type to search.",
+  "sq": "Vendi, qarku ose bashkia. Shkruaj për të kërkuar."
+ },
+ "county": {
+  "en": "county",
+  "sq": "qark"
+ },
+ "municipalities": {
+  "en": "municipalities",
+  "sq": "bashki"
+ },
+ "municipality": {
+  "en": "Municipality",
+  "sq": "Bashkia"
+ },
+ "custom_area": {
+  "en": "Custom",
+  "sq": "Zonë tjetër"
+ },
+ "custom_area_title": {
+  "en": "Custom area: a circle around a point",
+  "sq": "Zonë e zgjedhur: rreth rreth një pike"
+ },
+ "lat": {
+  "en": "Latitude",
+  "sq": "Gjerësia"
+ },
+ "lon": {
+  "en": "Longitude",
+  "sq": "Gjatësia"
+ },
+ "radius_km": {
+  "en": "Radius (km)",
+  "sq": "Rrezja (km)"
+ },
+ "use_circle": {
+  "en": "Use this circle",
+  "sq": "Përdor këtë rreth"
+ },
+ "draw_on_map": {
+  "en": "Or draw a shape on the Map page",
+  "sq": "Ose vizato një formë në faqen Harta"
+ },
+ "area_circle": {
+  "en": "Circle {lat}, {lon} ({r} km)",
+  "sq": "Rreth {lat}, {lon} ({r} km)"
+ },
+ "area_drawn": {
+  "en": "Drawn area",
+  "sq": "Zonë e vizatuar"
+ },
+ "dates": {
+  "en": "Dates",
+  "sq": "Datat"
+ },
+ "quick": {
+  "en": "Quick dates",
+  "sq": "Data të shpejta"
+ },
+ "quick_30": {
+  "en": "Last 30 days",
+  "sq": "30 ditët e fundit"
+ },
+ "quick_year": {
+  "en": "This year",
+  "sq": "Këtë vit"
+ },
+ "quick_all": {
+  "en": "All years",
+  "sq": "Të gjitha vitet"
+ },
+ "mode": {
+  "en": "Satellites",
+  "sq": "Satelitët"
+ },
+ "mode_h": {
+  "en": "🛰 Harmonized",
+  "sq": "🛰 E harmonizuar"
+ },
+ "mode_m": {
+  "en": "Raw MODIS",
+  "sq": "MODIS bruto"
+ },
+ "mode_v": {
+  "en": "Raw VIIRS",
+  "sq": "VIIRS bruto"
+ },
+ "mode_help": {
+  "en": "Harmonized: one record where the satellite no longer matters (fire cell-days, MODIS scale). Raw: the hotspot counts as each sensor sees them. This switch changes the calendars (Home, Calendar, Regions), the dots on the Map and the two-year chart on Compare. Normals, trends and 'Albania now' always use the harmonized record.",
+  "sq": "E harmonizuar: një regjistër ku sateliti nuk ka më rëndësi (qeliza-ditë zjarri, në shkallën MODIS). Bruto: numri i pikave të nxehta siç i sheh secili sensor. Ky çelës ndryshon kalendarët (Kreu, Kalendari, Rajonet), pikat në Hartë dhe grafikun e dy viteve te Krahaso. Normalet, tendencat dhe 'Shqipëria tani' përdorin gjithmonë regjistrin e harmonizuar."
+ },
+ "options": {
+  "en": "Options",
+  "sq": "Opsione"
+ },
+ "opt_low": {
+  "en": "Include low-confidence detections",
+  "sq": "Përfshi zbulimet me besueshmëri të ulët"
+ },
+ "opt_low_help": {
+  "en": "Low-confidence detections are left out by default; many are false alarms.",
+  "sq": "Zbulimet me besueshmëri të ulët lihen jashtë si parazgjedhje; shumë prej tyre janë alarme të rreme."
+ },
+ "opt_low_short": {
+  "en": "incl. low confidence",
+  "sq": "me besueshmëri të ulët"
+ },
+ "daynight": {
+  "en": "Day / night",
+  "sq": "Ditë / natë"
+ },
+ "dn_both": {
+  "en": "Both",
+  "sq": "Të dyja"
+ },
+ "dn_day": {
+  "en": "Day",
+  "sq": "Ditë"
+ },
+ "dn_night": {
+  "en": "Night",
+  "sq": "Natë"
+ },
+ "reset": {
+  "en": "Reset",
+  "sq": "Rivendos"
+ },
+ "reset_help": {
+  "en": "Back to all of Albania, all years, harmonized",
+  "sq": "Kthehu te gjithë Shqipëria, të gjitha vitet, e harmonizuar"
+ },
+ "unit_celldays": {
+  "en": "fire cell-days",
+  "sq": "qeliza-ditë zjarri"
+ },
+ "unit_celldays_short": {
+  "en": "cell-days",
+  "sq": "qeliza-ditë"
+ },
+ "unit_hotspots": {
+  "en": "hotspots",
+  "sq": "pika të nxehta"
+ },
+ "status_below": {
+  "en": "Below normal",
+  "sq": "Nën normalen"
+ },
+ "status_normal": {
+  "en": "Normal",
+  "sq": "Normale"
+ },
+ "status_above": {
+  "en": "Above normal",
+  "sq": "Mbi normalen"
+ },
+ "status_extreme": {
+  "en": "Extreme",
+  "sq": "Ekstreme"
+ },
+ "normal_short": {
+  "en": "normal",
+  "sq": "normalja"
+ },
+ "hover_normal": {
+  "en": "Normal (median)",
+  "sq": "Normalja (mediana)"
+ },
+ "terra_estimated": {
+  "en": "≈ estimated from Terra only",
+  "sq": "≈ vlerësuar vetëm nga Terra"
+ },
+ "source": {
+  "en": "Source",
+  "sq": "Burimi"
+ },
+ "learn_more": {
+  "en": "Learn more →",
+  "sq": "Mëso më shumë →"
+ },
+ "go_there": {
+  "en": "Go there →",
+  "sq": "Shko atje →"
+ },
+ "days": {
+  "en": "days",
+  "sq": "ditë"
+ },
+ "year": {
+  "en": "Year",
+  "sq": "Viti"
+ },
+ "month": {
+  "en": "Month",
+  "sq": "Muaji"
+ },
+ "date": {
+  "en": "Date",
+  "sq": "Data"
+ },
+ "no_data": {
+  "en": "No data.",
+  "sq": "Nuk ka të dhëna."
+ },
+ "percentile": {
+  "en": "Percentile",
+  "sq": "Përqindëshi"
+ },
+ "per_year": {
+  "en": "per year",
+  "sq": "në vit"
+ },
+ "significant": {
+  "en": "significant",
+  "sq": "domethënëse"
+ },
+ "not_significant": {
+  "en": "not significant",
+  "sq": "jo domethënëse"
+ },
+ "language": {
+  "en": "Language",
+  "sq": "Gjuha"
+ },
+ "making_pdf": {
+  "en": "Making your file…",
+  "sq": "Po përgatitet skedari…"
+ },
+ "download_pdf": {
+  "en": "Download PDF",
+  "sq": "Shkarko PDF"
+ },
+ "download_png": {
+  "en": "Download PNG",
+  "sq": "Shkarko PNG"
+ },
+ "make_pdf": {
+  "en": "Make PDF",
+  "sq": "Krijo PDF"
+ },
+ "latest_unavailable": {
+  "en": "Latest days unavailable; data to {end}.",
+  "sq": "Ditët e fundit nuk janë të disponueshme; të dhënat deri më {end}."
+ },
+ "data_to": {
+  "en": "Data to {end}",
+  "sq": "Të dhëna deri më {end}"
+ },
+ "not_official": {
+  "en": "not an official warning service",
+  "sq": "nuk është shërbim zyrtar paralajmërimi"
+ },
+ "legend_less": {
+  "en": "Less fire",
+  "sq": "Më pak zjarr"
+ },
+ "legend_more": {
+  "en": "More fire",
+  "sq": "Më shumë zjarr"
+ },
+ "legend_darker": {
+  "en": "Darker = more fire",
+  "sq": "Më e errët = më shumë zjarr"
+ },
+ "legend_below": {
+  "en": "Blue = below normal",
+  "sq": "Blu = nën normalen"
+ },
+ "legend_above": {
+  "en": "Red = above normal",
+  "sq": "E kuqe = mbi normalen"
+ },
+ "mark_2012": {
+  "en": "VIIRS starts",
+  "sq": "Nis VIIRS"
+ },
+ "mark_2018": {
+  "en": "NOAA-20 joins",
+  "sq": "Shtohet NOAA-20"
+ },
+ "mark_2023": {
+  "en": "NOAA-21 joins",
+  "sq": "Shtohet NOAA-21"
+ },
+ "mark_snpp": {
+  "en": "S-NPP ends",
+  "sq": "Mbaron S-NPP"
+ },
+ "normal_range": {
+  "en": "Normal range (P10–P90)",
+  "sq": "Gama normale (P10–P90)"
+ },
+ "median_base": {
+  "en": "Median 2003–2025",
+  "sq": "Mediana 2003–2025"
+ },
+ "sens_slope": {
+  "en": "Sen's slope",
+  "sq": "Pjerrësia e Sen-it"
+ },
+ "modis_only": {
+  "en": "MODIS only",
+  "sq": "Vetëm MODIS"
+ },
+ "vatra_harmonized": {
+  "en": "VATRA harmonized",
+  "sq": "VATRA e harmonizuar"
+ },
+ "modis_off_label": {
+  "en": "MODIS off",
+  "sq": "MODIS fiket"
+ },
+ "uncertainty_band": {
+  "en": "Uncertainty (90 %)",
+  "sq": "Pasiguria (90 %)"
+ },
+ "real_modis": {
+  "en": "Real MODIS",
+  "sq": "MODIS i vërtetë"
+ },
+ "calibrated_viirs": {
+  "en": "VIIRS converted to the MODIS scale",
+  "sq": "VIIRS i kthyer në shkallën MODIS"
+ },
+ "raw_all": {
+  "en": "Raw hotspots (all satellites)",
+  "sq": "Pika të nxehta bruto (të gjithë satelitët)"
+ },
+ "viirs_starts": {
+  "en": "VIIRS starts",
+  "sq": "Nis VIIRS"
+ },
+ "effis_ha": {
+  "en": "EFFIS burnt area (ha)",
+  "sq": "Sipërfaqja e djegur EFFIS (ha)"
+ },
+ "home_title": {
+  "en": "26 years of fire in Albania, in one calendar",
+  "sq": "26 vjet zjarre në Shqipëri, në një kalendar"
+ },
+ "home_sub": {
+  "en": "VATRA joins two generations of NASA fire satellites, MODIS and VIIRS, into one record, so you can see when and where Albania burns, and how today compares with normal.",
+  "sq": "VATRA bashkon dy breza satelitësh zjarri të NASA-s, MODIS dhe VIIRS, në një regjistër të vetëm, që të shihni kur dhe ku digjet Shqipëria dhe si krahasohet sot me normalen."
+ },
+ "headline_finding": {
+  "en": "HEADLINE FINDING",
+  "sq": "GJETJA KRYESORE"
+ },
+ "see_full_calendar": {
+  "en": "See full calendar",
+  "sq": "Shiko kalendarin e plotë"
+ },
+ "hero_caption": {
+  "en": "{n} fire cells in the 12 months to {end} · NASA FIRMS",
+  "sq": "{n} qeliza zjarri në 12 muajt deri më {end} · NASA FIRMS"
+ },
+ "albania_now": {
+  "en": "Albania now",
+  "sq": "Shqipëria tani"
+ },
+ "last_30_days": {
+  "en": "last 30 days vs the same days in 2003–2025",
+  "sq": "30 ditët e fundit kundrejt të njëjtave ditë në 2003–2025"
+ },
+ "days7": {
+  "en": "7 days",
+  "sq": "7 ditë"
+ },
+ "days30": {
+  "en": "30 days",
+  "sq": "30 ditë"
+ },
+ "now_quiet": {
+  "en": "{month} is quieter than usual.",
+  "sq": "{month} është më i qetë se zakonisht."
+ },
+ "now_normal": {
+  "en": "{month} is close to normal.",
+  "sq": "{month} është afër normales."
+ },
+ "now_busy": {
+  "en": "{month} is busier than usual.",
+  "sq": "{month} ka më shumë zjarre se zakonisht."
+ },
+ "now_extreme": {
+  "en": "{month} is the busiest on record for these days.",
+  "sq": "{month} është më i ngarkuari i regjistruar për këto ditë."
+ },
+ "tile_total": {
+  "en": "Fire cell-days {y0}–{y1}",
+  "sq": "Qeliza-ditë zjarri {y0}–{y1}"
+ },
+ "tile_worst_year": {
+  "en": "Worst year",
+  "sq": "Viti më i keq"
+ },
+ "tile_worst_month": {
+  "en": "Most dangerous month",
+  "sq": "Muaji më i rrezikshëm"
+ },
+ "tile_trend": {
+  "en": "Trend 2003–2025",
+  "sq": "Tendenca 2003–2025"
+ },
+ "tile_cd": {
+  "en": "{v} cell-days",
+  "sq": "{v} qeliza-ditë"
+ },
+ "tile_median": {
+  "en": "median {v} cell-days",
+  "sq": "mediana {v} qeliza-ditë"
+ },
+ "explore_region": {
+  "en": "Explore your region",
+  "sq": "Eksploro qarkun tënd"
+ },
+ "open_region": {
+  "en": "Open",
+  "sq": "Hap"
+ },
+ "read_story": {
+  "en": "Read the story: 26 years of fire",
+  "sq": "Lexo historinë: 26 vjet zjarre"
+ },
+ "story_teaser": {
+  "en": "Short chapters with real numbers from NASA satellites",
+  "sq": "Kapituj të shkurtër me numra të vërtetë nga satelitët e NASA-s"
+ },
+ "open_story": {
+  "en": "Open the story",
+  "sq": "Hap historinë"
+ },
+ "kids_entry": {
+  "en": "For Kids: Sky Twins",
+  "sq": "Për fëmijë: Binjakët e Qiellit"
+ },
+ "kids_teaser": {
+  "en": "5 levels · become a Fire Detective",
+  "sq": "5 nivele · bëhu Detektiv i Zjarreve"
+ },
+ "play_now": {
+  "en": "Play Sky Twins",
+  "sq": "Luaj Binjakët e Qiellit"
+ },
+ "who_title": {
+  "en": "Who can use VATRA",
+  "sq": "Kush mund ta përdorë VATRA-n"
+ },
+ "who_civil": {
+  "en": "🚒 Civil protection and firefighters",
+  "sq": "🚒 Mbrojtja civile dhe zjarrfikësit"
+ },
+ "who_mun": {
+  "en": "🏛 Municipalities (61 bashki)",
+  "sq": "🏛 Bashkitë (61)"
+ },
+ "who_parks": {
+  "en": "🌲 Protected-area managers",
+  "sq": "🌲 Menaxherët e zonave të mbrojtura"
+ },
+ "who_farm": {
+  "en": "🌾 Farmers and agricultural services",
+  "sq": "🌾 Fermerët dhe shërbimet bujqësore"
+ },
+ "who_schools": {
+  "en": "🏫 Schools and teachers",
+  "sq": "🏫 Shkollat dhe mësuesit"
+ },
+ "who_research": {
+  "en": "🔬 Researchers",
+  "sq": "🔬 Studiuesit"
+ },
+ "who_note": {
+  "en": "Possible users. VATRA does not claim any partnership.",
+  "sq": "Përdorues të mundshëm. VATRA nuk pretendon asnjë partneritet."
+ },
+ "did_you_know": {
+  "en": "Did you know?",
+  "sq": "A e dini?"
+ },
+ "cal_title": {
+  "en": "Burning activity calendar",
+  "sq": "Kalendari i aktivitetit të zjarreve"
+ },
+ "cal_sub": {
+  "en": "Years down, months across. Hover for numbers; click a month for details.",
+  "sq": "Vitet poshtë, muajt përgjatë. Kalo miun për numrat; kliko një muaj për hollësi."
+ },
+ "view": {
+  "en": "View",
+  "sq": "Pamja"
+ },
+ "view_std": {
+  "en": "Standard",
+  "sq": "Standarde"
+ },
+ "view_emb": {
+  "en": "Embroidery 🧵",
+  "sq": "Qëndisje 🧵"
+ },
+ "values": {
+  "en": "Values",
+  "sq": "Vlerat"
+ },
+ "val_act": {
+  "en": "Fire activity",
+  "sq": "Aktiviteti i zjarreve"
+ },
+ "val_anom": {
+  "en": "vs normal",
+  "sq": "kundrejt normales"
+ },
+ "val_frp": {
+  "en": "Intensity (FRP)",
+  "sq": "Intensiteti (FRP)"
+ },
+ "raw_note": {
+  "en": "Raw counts: look at 2012, when VIIRS starts. Switch to Harmonized and the jump disappears.",
+  "sq": "Numërime bruto: shiko vitin 2012, kur nis VIIRS. Kalo te E harmonizuar dhe kërcimi zhduket."
+ },
+ "harm_note": {
+  "en": "Harmonized record: the satellite no longer matters. Switch to Raw VIIRS in the filter bar to see the false 2012 jump.",
+  "sq": "Regjistër i harmonizuar: sateliti nuk ka më rëndësi. Kalo te VIIRS bruto te filtrat për të parë kërcimin e rremë të 2012."
+ },
+ "anom_harm_only": {
+  "en": "'vs normal' always uses the harmonized record.",
+  "sq": "'kundrejt normales' përdor gjithmonë regjistrin e harmonizuar."
+ },
+ "cal_legend_note": {
+  "en": "≈ estimated from Terra only (Nov 2000 – Jun 2002) · blank = outside the dates or no data",
+  "sq": "≈ vlerësuar vetëm nga Terra (nën 2000 – qer 2002) · bosh = jashtë datave ose pa të dhëna"
+ },
+ "open_month_fallback": {
+  "en": "Open a month (if clicking does not work)",
+  "sq": "Hap një muaj (nëse klikimi nuk punon)"
+ },
+ "open_month": {
+  "en": "Open month",
+  "sq": "Hap muajin"
+ },
+ "dlg_normal": {
+  "en": "Normal for {m}",
+  "sq": "Normalja për {m}"
+ },
+ "raw_counts": {
+  "en": "Raw counts",
+  "sq": "Numërime bruto"
+ },
+ "top_municipalities": {
+  "en": "Top municipalities",
+  "sq": "Bashkitë kryesore"
+ },
+ "biggest_events": {
+  "en": "Biggest fire events",
+  "sq": "Ngjarjet më të mëdha të zjarrit"
+ },
+ "dl_month_csv": {
+  "en": "CSV of these hotspots",
+  "sq": "CSV e këtyre pikave të nxehta"
+ },
+ "open_on_map": {
+  "en": "Open on map",
+  "sq": "Hap në hartë"
+ },
+ "emb_title": {
+  "en": "Vatra · {area} · {y0}–{y1}",
+  "sq": "Vatra · {area} · {y0}–{y1}"
+ },
+ "emb_sub": {
+  "en": "Vatra: 26 years of Albanian fire, stitched · data NASA FIRMS",
+  "sq": "Vatra: 26 vjet zjarre shqiptare, të qëndisura · të dhëna NASA FIRMS"
+ },
+ "emb_legend": {
+  "en": "The same data as Albanian cross-stitch: no stitch = no fire; bigger, darker stitches = more fire (5 classes from quantiles). Hover a stitch for the number.",
+  "sq": "Të njëjtat të dhëna si qëndisje shqiptare me kryq: pa pikë = pa zjarr; pika më të mëdha e më të errëta = më shumë zjarr (5 klasa nga kuantilet). Kalo miun mbi një pikë për numrin."
+ },
+ "dl_svg": {
+  "en": "Download SVG",
+  "sq": "Shkarko SVG"
+ },
+ "make_poster": {
+  "en": "Make A3 poster (PDF)",
+  "sq": "Krijo posterin A3 (PDF)"
+ },
+ "dl_poster": {
+  "en": "Download poster",
+  "sq": "Shkarko posterin"
+ },
+ "profile_title": {
+  "en": "Month profile: the normal range and a chosen year",
+  "sq": "Profili mujor: gama normale dhe një vit i zgjedhur"
+ },
+ "profile_note": {
+  "en": "Gold band = normal range (P10–P90, 2003–2025); gold line = median; red = chosen year; blue dashed = this year.",
+  "sq": "Brezi i artë = gama normale (P10–P90, 2003–2025); vija e artë = mediana; e kuqe = viti i zgjedhur; blu me vija = ky vit."
+ },
+ "map_title": {
+  "en": "Fire map",
+  "sq": "Harta e zjarreve"
+ },
+ "map_sub": {
+  "en": "Each dot is a satellite fire detection: brighter = more recent, bigger = more intense. Draw a box or polygon to set your own area.",
+  "sq": "Çdo pikë është një zbulim zjarri nga sateliti: më e çelët = më e re, më e madhe = më intensive. Vizato një kuadrat ose shumëkëndësh për zonën tënde."
+ },
+ "layers": {
+  "en": "Layers",
+  "sq": "Shtresat"
+ },
+ "layer_fires": {
+  "en": "🔥 Fires",
+  "sq": "🔥 Zjarret"
+ },
+ "layer_counties": {
+  "en": "County borders",
+  "sq": "Kufijtë e qarqeve"
+ },
+ "layer_municipalities": {
+  "en": "Municipalities",
+  "sq": "Bashkitë"
+ },
+ "layer_effis": {
+  "en": "EFFIS burnt areas",
+  "sq": "Sipërfaqet e djegura EFFIS"
+ },
+ "layer_heritage": {
+  "en": "🏛 Heritage",
+  "sq": "🏛 Trashëgimia"
+ },
+ "layer_parks": {
+  "en": "🌲 National parks",
+  "sq": "🌲 Parqet kombëtare"
+ },
+ "layer_fires_grid": {
+  "en": "🔥 Fires (grid)",
+  "sq": "🔥 Zjarret (rrjetë)"
+ },
+ "month_slider": {
+  "en": "Month (to watch the seasons change)",
+  "sq": "Muaji (për të parë stinët)"
+ },
+ "all_dates": {
+  "en": "All",
+  "sq": "Të gjitha"
+ },
+ "map_count": {
+  "en": "{n} detections shown",
+  "sq": "{n} zbulime në hartë"
+ },
+ "map_capped": {
+  "en": "too many to draw one by one (over {cap}): shown as a grid; zoom in with the filters to see single fires",
+  "sq": "shumë për t'u vizatuar një nga një (mbi {cap}): shfaqen si rrjetë; ngushto filtrat për zjarre të veçanta"
+ },
+ "map_legend": {
+  "en": "colour = how recent · size = intensity (FRP) · click a dot for details",
+  "sq": "ngjyra = sa e re · madhësia = intensiteti (FRP) · kliko një pikë për hollësi"
+ },
+ "use_drawn_area": {
+  "en": "Use drawn area",
+  "sq": "Përdor zonën e vizatuar"
+ },
+ "draw_hint": {
+  "en": "Tip: draw a box or polygon with the tools on the left of the map.",
+  "sq": "Këshillë: vizato me veglat në të majtë të hartës."
+ },
+ "map_api_note": {
+  "en": "The newest detections come from the NASA FIRMS API (near real time).",
+  "sq": "Zbulimet më të reja vijnë nga API-ja e NASA FIRMS (pothuajse në kohë reale)."
+ },
+ "fire_detection": {
+  "en": "Fire detection",
+  "sq": "Zbulim zjarri"
+ },
+ "satellite": {
+  "en": "Satellite",
+  "sq": "Sateliti"
+ },
+ "confidence": {
+  "en": "confidence",
+  "sq": "besueshmëria"
+ },
+ "conf_low": {
+  "en": "low",
+  "sq": "e ulët"
+ },
+ "conf_nominal": {
+  "en": "nominal",
+  "sq": "normale"
+ },
+ "conf_high": {
+  "en": "high",
+  "sq": "e lartë"
+ },
+ "intensity": {
+  "en": "Intensity",
+  "sq": "Intensiteti"
+ },
+ "nearest_site": {
+  "en": "Nearest heritage site",
+  "sq": "Siti më i afërt i trashëgimisë"
+ },
+ "fires_within_5km": {
+  "en": "fire cell-days within 5 km since 2000",
+  "sq": "qeliza-ditë zjarri brenda 5 km që nga viti 2000"
+ },
+ "compare_title": {
+  "en": "Compare",
+  "sq": "Krahaso"
+ },
+ "compare_sub": {
+  "en": "{area}: now vs normal, year vs year, the long trend.",
+  "sq": "{area}: tani kundrejt normales, vit me vit, tendenca afatgjatë."
+ },
+ "this_month_vs_normal": {
+  "en": "This month vs normal",
+  "sq": "Ky muaj kundrejt normales"
+ },
+ "month_so_far": {
+  "en": "{m} {y} so far (days 1–{d}): {v} fire cell-days. The same days in a normal year: {med}. That is percentile {p} of 2003–2025: {status}.",
+  "sq": "{m} {y} deri tani (ditët 1–{d}): {v} qeliza-ditë zjarri. Të njëjtat ditë në një vit normal: {med}. Kjo është përqindëshi {p} i 2003–2025: {status}."
+ },
+ "early_warning_note": {
+  "en": "Early-warning view, not an official warning service.",
+  "sq": "Pamje paralajmërimi të hershëm, jo shërbim zyrtar paralajmërimi."
+ },
+ "compare_two_years": {
+  "en": "Compare two years",
+  "sq": "Krahaso dy vite"
+ },
+ "two_years_line": {
+  "en": "{ya}: {a} · {yb}: {b} · change {diff} · biggest difference in {m}.",
+  "sq": "{ya}: {a} · {yb}: {b} · ndryshimi {diff} · ndryshimi më i madh në {m}."
+ },
+ "trend_title": {
+  "en": "Is fire activity rising or falling?",
+  "sq": "A po rritet apo po bie aktiviteti i zjarreve?"
+ },
+ "trend_caveat": {
+  "en": "A few very bad summers dominate the record, so 23 years is short to call a direction.",
+  "sq": "Disa verë shumë të këqija dominojnë regjistrin, prandaj 23 vjet janë pak për të thënë një drejtim."
+ },
+ "modis_off_title": {
+  "en": "What if MODIS turns off?",
+  "sq": "Po sikur MODIS të fiket?"
+ },
+ "modis_off_sub": {
+  "en": "Move the slider to switch MODIS off. The harmonized line carries on with VIIRS.",
+  "sq": "Lëviz rrëshqitësin për ta fikur MODIS-in. Vija e harmonizuar vazhdon me VIIRS."
+ },
+ "modis_off_year": {
+  "en": "MODIS stops after",
+  "sq": "MODIS ndalon pas"
+ },
+ "modis_retiring": {
+  "en": "MODIS is retiring. VATRA keeps the 26-year record alive.",
+  "sq": "MODIS po del në pension. VATRA e mban gjallë regjistrin 26-vjeçar."
+ },
+ "sensor_doesnt_matter": {
+  "en": "The sensor doesn't matter: real MODIS vs VIIRS converted to the MODIS scale",
+  "sq": "Sensori nuk ka rëndësi: MODIS i vërtetë kundrejt VIIRS të kthyer në shkallën MODIS"
+ },
+ "sensor_note": {
+  "en": "Gold band = calibration uncertainty. Test years 2020–2025 (not used for fitting), national monthly: Pearson r {r}, Spearman ρ {rho}, bias {bias}, MAE {mae} cell-days.",
+  "sq": "Brezi i artë = pasiguria e kalibrimit. Vitet e testit 2020–2025 (pa u përdorur për përshtatje), mujore kombëtare: Pearson r {r}, Spearman ρ {rho}, anshmëria {bias}, MAE {mae} qeliza-ditë."
+ },
+ "regions_title": {
+  "en": "Albania's regions",
+  "sq": "Qarqet e Shqipërisë"
+ },
+ "regions_sub": {
+  "en": "12 counties and 61 municipalities: history, nature and their own fire calendar.",
+  "sq": "12 qarqe dhe 61 bashki: histori, natyrë dhe kalendari i tyre i zjarreve."
+ },
+ "pick_county": {
+  "en": "County",
+  "sq": "Qarku"
+ },
+ "pick_municipality": {
+  "en": "Municipality",
+  "sq": "Bashkia"
+ },
+ "whole_county": {
+  "en": "All of {c} county",
+  "sq": "I gjithë qarku {c}"
+ },
+ "municipality_in": {
+  "en": "Municipality in {c} county",
+  "sq": "Bashki në qarkun {c}"
+ },
+ "ancient_roots": {
+  "en": "Ancient roots",
+  "sq": "Rrënjët e lashta"
+ },
+ "nature": {
+  "en": "Nature",
+  "sq": "Natyra"
+ },
+ "fire_profile": {
+  "en": "Fire profile",
+  "sq": "Profili i zjarreve"
+ },
+ "season": {
+  "en": "Season",
+  "sq": "Sezoni"
+ },
+ "peak": {
+  "en": "Peak",
+  "sq": "Kulmi"
+ },
+ "second_peak": {
+  "en": "Second peak",
+  "sq": "Kulmi i dytë"
+ },
+ "worst_years": {
+  "en": "Worst years",
+  "sq": "Vitet më të këqija"
+ },
+ "biggest_events_in": {
+  "en": "Biggest fire events in {area}",
+  "sq": "Ngjarjet më të mëdha të zjarrit në {area}"
+ },
+ "events_note": {
+  "en": "From the Fire Events Catalogue. Size = number of fire cell-days, not burnt area.",
+  "sq": "Nga Katalogu i Ngjarjeve të Zjarrit. Madhësia = numri i qelizave-ditë, jo sipërfaqja e djegur."
+ },
+ "no_events": {
+  "en": "No fire events of 3 or more cell-days here.",
+  "sq": "Nuk ka ngjarje zjarri me 3 ose më shumë qeliza-ditë këtu."
+ },
+ "near": {
+  "en": "near",
+  "sq": "pranë"
+ },
+ "county_report": {
+  "en": "County report (PDF)",
+  "sq": "Raporti i qarkut (PDF)"
+ },
+ "municipality_report": {
+  "en": "Municipality report (PDF)",
+  "sq": "Raporti i bashkisë (PDF)"
+ },
+ "season_card": {
+  "en": "Fire-season card",
+  "sq": "Karta e sezonit të zjarreve"
+ },
+ "story_title": {
+  "en": "26 years of fire in Albania",
+  "sq": "26 vjet zjarre në Shqipëri"
+ },
+ "story_by": {
+  "en": "Short chapters · real numbers from NASA satellites, written from the data",
+  "sq": "Kapituj të shkurtër · numra të vërtetë nga satelitët e NASA-s, të shkruar nga të dhënat"
+ },
+ "ch1_t": {
+  "en": "The hearth",
+  "sq": "Vatra"
+ },
+ "ch1": {
+  "en": "In Albanian, vatra is the hearth: the fire at the centre of the home, something to care for. Fire warms and feeds us, but in a dry summer it can escape into the forests. VATRA watches over that fire.",
+  "sq": "Në shqip, vatra është zjarri në qendër të shtëpisë, diçka për t'u ruajtur. Zjarri na ngroh e na ushqen, por në një verë të thatë mund të ikë në pyje. VATRA ruan atë zjarr."
+ },
+ "ch2_t": {
+  "en": "Eyes in the sky",
+  "sq": "Sytë në qiell"
+ },
+ "ch2": {
+  "en": "Since 2000, NASA satellites have looked down on Albania every day. Mo (MODIS, on Terra and Aqua) sees in 1 km squares. Since 2012, Vee (VIIRS) sees in 375 m squares: sharper, so she finds many more small hotspots.",
+  "sq": "Që nga viti 2000, satelitët e NASA-s e shohin Shqipërinë çdo ditë. Mo (MODIS, në Terra dhe Aqua) sheh me katrorë 1 km. Që nga 2012, Vee (VIIRS) sheh me katrorë 375 m: më qartë, prandaj gjen shumë më tepër pika të vogla zjarri."
+ },
+ "ch3_t": {
+  "en": "The false jump of 2012",
+  "sq": "Kërcimi i rremë i 2012"
+ },
+ "ch3": {
+  "en": "When VIIRS arrived, raw hotspot counts jumped: 2012–2016 had {raw} more hotspots per year than 2007–2011 (in 2012 alone VIIRS counted {v12} hotspots; MODIS counted {m11} in 2011). Albania did not suddenly burn that much more: a sharper camera counts the same fire as more dots.",
+  "sq": "Kur erdhi VIIRS, numri bruto i pikave të nxehta u hodh: 2012–2016 pati {raw} më shumë pika në vit se 2007–2011 (vetëm në 2012 VIIRS numëroi {v12}; MODIS numëroi {m11} në 2011). Shqipëria nuk u dogj papritur aq shumë më tepër: një kamerë më e mprehtë e numëron të njëjtin zjarr si më shumë pika."
+ },
+ "ch4_t": {
+  "en": "One record",
+  "sq": "Një regjistër i vetëm"
+ },
+ "ch4": {
+  "en": "VATRA counts each ~1 km square once per day per satellite and converts VIIRS to the MODIS scale. The jump disappears: in the harmonized record the change after 2012 is {harm}. Tested on years it never saw, it matches MODIS with r = {r}.",
+  "sq": "VATRA e numëron çdo katror ~1 km një herë në ditë për satelit dhe e kthen VIIRS në shkallën MODIS. Kërcimi zhduket: në regjistrin e harmonizuar ndryshimi pas 2012 është {harm}. E testuar në vite që nuk i pa kurrë, përputhet me MODIS me r = {r}."
+ },
+ "ch5_t": {
+  "en": "The two seasons",
+  "sq": "Dy sezonet"
+ },
+ "ch5": {
+  "en": "Albania has a small spring peak in {p2}, often farm and grass burning, and the big summer wildfire season that peaks in {p1}.",
+  "sq": "Shqipëria ka një kulm të vogël pranveror në {p2}, shpesh djegie bujqësore dhe barishtesh, dhe sezonin e madh veror të zjarreve që arrin kulmin në {p1}."
+ },
+ "ch6_t": {
+  "en": "The hard summers",
+  "sq": "Verët e vështira"
+ },
+ "ch6": {
+  "en": "Three years stand out in 2003–2025: {y1}, {y2} and {y3}. {s1}",
+  "sq": "Tre vite dallohen në 2003–2025: {y1}, {y2} dhe {y3}. {s1}"
+ },
+ "ch7_t": {
+  "en": "Where it burns",
+  "sq": "Ku digjet"
+ },
+ "ch7": {
+  "en": "The counties with the most fire activity are {c1}, {c2} and {c3}: together {share}% of the record. The most affected municipalities are {m1} and {m2}.",
+  "sq": "Qarqet me më shumë aktivitet zjarri janë {c1}, {c2} dhe {c3}: së bashku {share}% e regjistrit. Bashkitë më të prekura janë {m1} dhe {m2}."
+ },
+ "ch8_t": {
+  "en": "MODIS retires, the record lives on",
+  "sq": "MODIS del në pension, regjistri jeton"
+ },
+ "ch8": {
+  "en": "MODIS has flown since 2000 and is near the end of its life. Because VATRA is harmonized, the 26-year calendar continues with VIIRS without a break.",
+  "sq": "MODIS fluturon që nga viti 2000 dhe është drejt fundit të jetës. Meqë VATRA është e harmonizuar, kalendari 26-vjeçar vazhdon me VIIRS pa ndërprerje."
+ },
+ "ch9_t": {
+  "en": "What you can do",
+  "sq": "Çfarë mund të bësh"
+ },
+ "ch9": {
+  "en": "Managers can check any area and month before the season. Everyone can follow simple rules. Kids can become Fire Detectives.",
+  "sq": "Menaxherët mund të kontrollojnë çdo zonë dhe muaj para sezonit. Të gjithë mund të ndjekin rregulla të thjeshta. Fëmijët mund të bëhen Detektivë të Zjarreve."
+ },
+ "open_calendar": {
+  "en": "Open the calendar",
+  "sq": "Hap kalendarin"
+ },
+ "safety_1": {
+  "en": "Never light fires outdoors in dry summer weather.",
+  "sq": "Mos ndiz kurrë zjarr jashtë në motin e thatë të verës."
+ },
+ "safety_2": {
+  "en": "If you see smoke, tell an adult or call the emergency number right away.",
+  "sq": "Nëse sheh tym, tregoji menjëherë një të rrituri ose telefono numrin e emergjencës."
+ },
+ "heritage_title": {
+  "en": "Albania corner",
+  "sq": "Këndi i Shqipërisë"
+ },
+ "heritage_sub": {
+  "en": "The land behind the data: history, heritage and nature. Every fact has a source; anything that could not be checked is left out.",
+  "sq": "Toka pas të dhënave: histori, trashëgimi dhe natyrë. Çdo fakt ka burim; çfarë nuk u verifikua është lënë jashtë."
+ },
+ "timeline": {
+  "en": "Timeline",
+  "sq": "Kronologjia"
+ },
+ "unesco_title": {
+  "en": "UNESCO in Albania",
+  "sq": "UNESCO në Shqipëri"
+ },
+ "unesco_note": {
+  "en": "World Heritage and Intangible Cultural Heritage listings.",
+  "sq": "Trashëgimia Botërore dhe Trashëgimia Kulturore Jomateriale."
+ },
+ "motifs_title": {
+  "en": "The motifs in this app",
+  "sq": "Motivet në këtë aplikacion"
+ },
+ "motif_zigzag": {
+  "en": "Zigzag \"teeth\"",
+  "sq": "Zigzagu \"dhëmbë\""
+ },
+ "motif_zigzag_d": {
+  "en": "Under the header and between sections, as on embroidered borders.",
+  "sq": "Nën kokë dhe mes seksioneve, si në kufijtë e qëndisur."
+ },
+ "motif_diamond": {
+  "en": "Diamond chain",
+  "sq": "Zinxhiri me rombe"
+ },
+ "motif_diamond_d": {
+  "en": "The rhombus of Albanian embroidery: card borders, certificate.",
+  "sq": "Rombi i qëndisjes shqiptare: kufijtë e kartave, certifikata."
+ },
+ "motif_rosette": {
+  "en": "Sun rosette",
+  "sq": "Rozeta diellore"
+ },
+ "motif_rosette_d": {
+  "en": "A sun-like rosette inspired by ancient jewellery: logo and map markers.",
+  "sq": "Një rozetë si dielli e frymëzuar nga stolitë e lashta: logoja dhe shenjat në hartë."
+ },
+ "motif_stitch": {
+  "en": "Cross-stitch",
+  "sq": "Qëndisja me kryq"
+ },
+ "motif_stitch_d": {
+  "en": "The stitch of Albanian folk costume: the embroidery calendar.",
+  "sq": "Pika e veshjes popullore shqiptare: kalendari i qëndisur."
+ },
+ "motifs_note": {
+  "en": "The motifs are drawn in a simple, general folk style for this app; they do not copy a specific object.",
+  "sq": "Motivet janë vizatuar në një stil të thjeshtë popullor për këtë aplikacion; nuk kopjojnë një objekt të caktuar."
+ },
+ "myths_title": {
+  "en": "Myths and traditions of nature",
+  "sq": "Mite dhe tradita të natyrës"
+ },
+ "heritage_fire_title": {
+  "en": "Heritage near fire-prone areas",
+  "sq": "Trashëgimia pranë zonave me rrezik zjarri"
+ },
+ "in_years": {
+  "en": "in {n} different years",
+  "sq": "në {n} vite të ndryshme"
+ },
+ "parks_title": {
+  "en": "National parks and fire",
+  "sq": "Parqet kombëtare dhe zjarri"
+ },
+ "big_years_title": {
+  "en": "Big fire years (from the data)",
+  "sq": "Vitet e mëdha të zjarreve (nga të dhënat)"
+ },
+ "facts_rule": {
+  "en": "Fact rule: each fact links to its source. Fire numbers come from VATRA's harmonized NASA FIRMS record.",
+  "sq": "Rregulli i fakteve: çdo fakt lidhet me burimin e tij. Numrat e zjarreve vijnë nga regjistri i harmonizuar i VATRA-s nga NASA FIRMS."
+ },
+ "method_title": {
+  "en": "How it works",
+  "sq": "Si funksionon"
+ },
+ "method_sub": {
+  "en": "Four steps turn two different satellite records into one calendar where the sensor no longer matters.",
+  "sq": "Katër hapa i kthejnë dy regjistra të ndryshëm satelitorë në një kalendar ku sensori nuk ka më rëndësi."
+ },
+ "step1_t": {
+  "en": "Load",
+  "sq": "Ngarko"
+ },
+ "step1": {
+  "en": "All MODIS and VIIRS hotspots 2000–2026 (archive + near real time), without duplicates, factories, sea points and points outside Albania.",
+  "sq": "Të gjitha pikat e nxehta MODIS dhe VIIRS 2000–2026 (arkiv + pothuajse në kohë reale), pa dyfishime, fabrika, pika në det dhe jashtë Shqipërisë."
+ },
+ "step2_t": {
+  "en": "Cell-days",
+  "sq": "Qeliza-ditë"
+ },
+ "step2": {
+  "en": "Each ~1 km square counts once per day per satellite, so VIIRS cannot count one fire as many small dots.",
+  "sq": "Çdo katror ~1 km numërohet një herë në ditë për satelit, që VIIRS të mos e numërojë një zjarr si shumë pika të vogla."
+ },
+ "step3_t": {
+  "en": "Harmonize",
+  "sq": "Harmonizo"
+ },
+ "step3": {
+  "en": "VIIRS is converted to the MODIS scale with a fit on the years both fly, per satellite and season; the satellites are averaged, not added.",
+  "sq": "VIIRS kthehet në shkallën MODIS me një përshtatje në vitet kur fluturojnë të dy, për satelit dhe sezon; satelitët mesatarizohen, nuk mblidhen."
+ },
+ "step4_t": {
+  "en": "Validate",
+  "sq": "Verifiko"
+ },
+ "step4": {
+  "en": "Fit on 2012–2019, tested on 2020–2025; checked against EFFIS burnt areas.",
+  "sq": "Përshtatur në 2012–2019, testuar në 2020–2025; kontrolluar me sipërfaqet e djegura EFFIS."
+ },
+ "before_after": {
+  "en": "Before and after: the 2012 jump",
+  "sq": "Para dhe pas: kërcimi i 2012"
+ },
+ "validation_title": {
+  "en": "Validation (monthly fire cell-days)",
+  "sq": "Verifikimi (qeliza-ditë zjarri mujore)"
+ },
+ "measure": {
+  "en": "Measure",
+  "sq": "Masa"
+ },
+ "train": {
+  "en": "Fit",
+  "sq": "Përshtatja"
+ },
+ "test": {
+  "en": "Test",
+  "sq": "Testi"
+ },
+ "counties_median": {
+  "en": "12 counties, test (median)",
+  "sq": "12 qarqe, testi (mediana)"
+ },
+ "bias": {
+  "en": "Bias",
+  "sq": "Anshmëria"
+ },
+ "validation_note": {
+  "en": "Test = {n} months never used for fitting (S-NPP + NOAA-20). NOAA-21 (fit 2023–2024, test 2025): Pearson r {n21}. Counties have small monthly counts, so their percentages move a lot.",
+  "sq": "Testi = {n} muaj që nuk u përdorën për përshtatje (S-NPP + NOAA-20). NOAA-21 (përshtatur 2023–2024, testuar 2025): Pearson r {n21}. Qarqet kanë numra të vegjël mujorë, prandaj përqindjet e tyre lëvizin shumë."
+ },
+ "validation_chart_cap": {
+  "en": "Left: predicted vs real per month. Right: raw counts jump in 2012, the harmonized record does not.",
+  "sq": "Majtas: e parashikuar kundrejt reales për muaj. Djathtas: numrat bruto hidhen në 2012, regjistri i harmonizuar jo."
+ },
+ "effis_title": {
+  "en": "EFFIS check: hotspots vs mapped burnt areas",
+  "sq": "Kontrolli EFFIS: pikat e nxehta kundrejt sipërfaqeve të djegura"
+ },
+ "effis_line": {
+  "en": "Yearly correlation with EFFIS burnt area: Pearson r {r}, Spearman ρ {rho}. {share}% of fire cell-days fall inside an EFFIS perimeter (±5 days); {fs}% in the fire season; {ev}% of the 50 biggest events match an EFFIS fire.",
+  "sq": "Korrelacioni vjetor me sipërfaqen e djegur EFFIS: Pearson r {r}, Spearman ρ {rho}. {share}% e qelizave-ditë bien brenda një perimetri EFFIS (±5 ditë); {fs}% në sezonin e zjarreve; {ev}% e 50 ngjarjeve më të mëdha përputhen me një zjarr EFFIS."
+ },
+ "effis_caveat": {
+  "en": "EFFIS maps mainly fires of about 30 ha or more, and part of its perimeters come from MODIS, so it is not fully independent ({ind}% of perimeters are from other sources).",
+  "sq": "EFFIS hartografon kryesisht zjarre rreth 30 ha e më shumë, dhe një pjesë e perimetrave vjen nga MODIS, prandaj nuk është plotësisht i pavarur ({ind}% e perimetrave vijnë nga burime të tjera)."
+ },
+ "calibration_title": {
+  "en": "Calibration: log(MODIS + 1) = a + b · log(VIIRS + 1)",
+  "sq": "Kalibrimi: log(MODIS + 1) = a + b · log(VIIRS + 1)"
+ },
+ "season_fire": {
+  "en": "fire season (May–Oct)",
+  "sq": "sezoni i zjarreve (maj–tet)"
+ },
+ "season_off": {
+  "en": "off-season (Nov–Apr)",
+  "sq": "jashtë sezonit (nën–pri)"
+ },
+ "calibration_note": {
+  "en": "Fitted on monthly national cell-days, all overlap years. Terra-only months (Nov 2000 – Jun 2002) are scaled by the Terra+Aqua / Terra ratio of 2003–2011: {fire} in the fire season, {off} off-season, and left out of normals and trends.",
+  "sq": "Përshtatur në qeliza-ditë kombëtare mujore, të gjitha vitet e përbashkëta. Muajt vetëm me Terra (nën 2000 – qer 2002) shkallëzohen me raportin Terra+Aqua / Terra të 2003–2011: {fire} në sezonin e zjarreve, {off} jashtë sezonit, dhe lihen jashtë normaleve dhe tendencës."
+ },
+ "limitations": {
+  "en": "Limitations",
+  "sq": "Kufizimet"
+ },
+ "lim1": {
+  "en": "Hotspots are satellite detections, not confirmed fires; clouds and thick smoke can hide fires.",
+  "sq": "Pikat e nxehta janë zbulime satelitore, jo zjarre të konfirmuara; retë dhe tymi i dendur mund t'i fshehin zjarret."
+ },
+ "lim2": {
+  "en": "Terra-only months (Nov 2000 – Jun 2002) are estimates.",
+  "sq": "Muajt vetëm me Terra (nën 2000 – qer 2002) janë vlerësime."
+ },
+ "lim3": {
+  "en": "Terra and Aqua orbits have drifted in recent years, which changes their overpass times and can lower MODIS counts.",
+  "sq": "Orbitat e Terra-s dhe Aqua-s kanë rrëshqitur vitet e fundit, gjë që ndryshon orët e kalimit dhe mund të ulë numrat e MODIS-it."
+ },
+ "lim4": {
+  "en": "County and municipality numbers are small, so single months can be noisy.",
+  "sq": "Numrat e qarqeve dhe bashkive janë të vegjël, prandaj muajt e veçantë mund të kenë zhurmë."
+ },
+ "lim5": {
+  "en": "EFFIS maps mainly fires of 30 ha or more and is partly MODIS-based.",
+  "sq": "EFFIS hartografon kryesisht zjarre 30 ha e më shumë dhe bazohet pjesërisht në MODIS."
+ },
+ "lim6": {
+  "en": "VATRA is a research and education tool, not an official warning service.",
+  "sq": "VATRA është mjet kërkimi dhe edukimi, jo shërbim zyrtar paralajmërimi."
+ },
+ "tech_report": {
+  "en": "Technical report",
+  "sq": "Raporti teknik"
+ },
+ "tech_report_soon": {
+  "en": "Technical report: coming with the release.",
+  "sq": "Raporti teknik: vjen me publikimin."
+ },
+ "dataset_doi": {
+  "en": "Dataset (DOI)",
+  "sq": "Të dhënat (DOI)"
+ },
+ "downloads_title": {
+  "en": "Downloads",
+  "sq": "Shkarkime"
+ },
+ "downloads_sub": {
+  "en": "Everything follows the filter bar: {area}.",
+  "sq": "Gjithçka ndjek filtrat: {area}."
+ },
+ "dl_data": {
+  "en": "Data",
+  "sq": "Të dhëna"
+ },
+ "dl_csv": {
+  "en": "CSV",
+  "sq": "CSV"
+ },
+ "dl_celldays": {
+  "en": "Harmonized fire cell-days in this search",
+  "sq": "Qeliza-ditë zjarri të harmonizuara në këtë kërkim"
+ },
+ "dl_celldays_d": {
+  "en": "{n} rows: date, cell, satellite, weight (MODIS-equivalent), intensity, county, municipality",
+  "sq": "{n} rreshta: data, qeliza, sateliti, pesha (ekuivalent MODIS), intensiteti, qarku, bashkia"
+ },
+ "dl_celldays_csv": {
+  "en": "Download hotspots CSV",
+  "sq": "Shkarko CSV-në e pikave"
+ },
+ "dl_raw": {
+  "en": "Raw detections (hotspots) in this search",
+  "sq": "Zbulimet bruto (pikat e nxehta) në këtë kërkim"
+ },
+ "dl_raw_d": {
+  "en": "{n} rows: every satellite detection after cleaning",
+  "sq": "{n} rreshta: çdo zbulim satelitor pas pastrimit"
+ },
+ "dl_monthly": {
+  "en": "Monthly table",
+  "sq": "Tabela mujore"
+ },
+ "dl_monthly_d": {
+  "en": "Per month: raw MODIS, raw VIIRS, harmonized, uncertainty, normal, status",
+  "sq": "Për muaj: MODIS bruto, VIIRS bruto, e harmonizuar, pasiguria, normalja, statusi"
+ },
+ "dl_events": {
+  "en": "Fire Events Catalogue",
+  "sq": "Katalogu i Ngjarjeve të Zjarrit"
+ },
+ "dl_events_d": {
+  "en": "{n} events: dates, place, size, intensity, nearest heritage site, EFFIS match",
+  "sq": "{n} ngjarje: datat, vendi, madhësia, intensiteti, siti më i afërt, përputhja me EFFIS"
+ },
+ "dl_full": {
+  "en": "Full harmonized dataset",
+  "sq": "Të dhënat e plota të harmonizuara"
+ },
+ "dl_full_d": {
+  "en": "All outputs with the data dictionary (outputs/README.md)",
+  "sq": "Të gjitha rezultatet me fjalorin e të dhënave (outputs/README.md)"
+ },
+ "open_doi": {
+  "en": "Open on Zenodo (DOI)",
+  "sq": "Hap në Zenodo (DOI)"
+ },
+ "open_github": {
+  "en": "Open on GitHub",
+  "sq": "Hap në GitHub"
+ },
+ "dl_reports": {
+  "en": "Reports",
+  "sq": "Raporte"
+ },
+ "dl_report_area": {
+  "en": "PDF report for {area}",
+  "sq": "Raport PDF për {area}"
+ },
+ "dl_report_d": {
+  "en": "Calendar, seasons, trend, unusual months, ranking, EFFIS, method, credits",
+  "sq": "Kalendari, sezonet, tendenca, muajt e pazakontë, renditja, EFFIS, metoda, burimet"
+ },
+ "dl_any_area": {
+  "en": "Report for any county or municipality",
+  "sq": "Raport për çdo qark ose bashki"
+ },
+ "dl_any_area_d": {
+  "en": "All years for the chosen area",
+  "sq": "Të gjitha vitet për zonën e zgjedhur"
+ },
+ "dl_art": {
+  "en": "Art",
+  "sq": "Art"
+ },
+ "dl_poster_t": {
+  "en": "Embroidery poster",
+  "sq": "Posteri i qëndisur"
+ },
+ "dl_poster_d": {
+  "en": "A3 PDF and SVG, from the Calendar's Embroidery view",
+  "sq": "PDF A3 dhe SVG, nga pamja Qëndisje e Kalendarit"
+ },
+ "open_embroidery": {
+  "en": "Open the embroidery calendar",
+  "sq": "Hap kalendarin e qëndisur"
+ },
+ "dl_card_d": {
+  "en": "PNG 1080 × 1350 for social media: your area's fire calendar",
+  "sq": "PNG 1080 × 1350 për rrjetet sociale: kalendari i zjarreve i zonës tënde"
+ },
+ "make_card": {
+  "en": "Make card",
+  "sq": "Krijo kartën"
+ },
+ "card_needs_area": {
+  "en": "Pick the country, a county or a municipality for a card.",
+  "sq": "Zgjidh vendin, një qark ose një bashki për kartën."
+ },
+ "dl_teachers": {
+  "en": "For teachers",
+  "sq": "Për mësuesit"
+ },
+ "dl_sheet": {
+  "en": "Kids' activity sheet",
+  "sq": "Fleta e aktivitetit për fëmijë"
+ },
+ "dl_sheet_d": {
+  "en": "A4 PDF: colour your own fire calendar + 3 safety tips",
+  "sq": "PDF A4: ngjyros kalendarin tënd të zjarreve + 3 këshilla sigurie"
+ },
+ "kids_play_only": {
+  "en": "Play it inside the app (no download)",
+  "sq": "Luhet brenda aplikacionit (pa shkarkim)"
+ },
+ "dl_note": {
+  "en": "CSV files are UTF-8 with BOM, so Excel shows ë and ç correctly. Columns are explained in outputs/README.md.",
+  "sq": "Skedarët CSV janë UTF-8 me BOM, që Excel të shfaqë saktë ë dhe ç. Kolonat shpjegohen te outputs/README.md."
+ },
+ "kids_hello": {
+  "en": "Help Mo and Vee find the fires! About 5 minutes, ages 8–12.",
+  "sq": "Ndihmo Mo-n dhe Vee-n të gjejnë zjarret! Rreth 5 minuta, mosha 8–12 vjeç."
+ },
+ "kids_privacy": {
+  "en": "The game runs in your browser. Nothing is collected; the name on the certificate never leaves your device.",
+  "sq": "Loja punon në shfletuesin tënd. Asgjë nuk mblidhet; emri në certifikatë nuk largohet nga pajisja jote."
+ },
+ "cert_backup_title": {
+  "en": "Finished the game? If the certificate did not download, make it here",
+  "sq": "E mbarove lojën? Nëse certifikata nuk u shkarkua, krijoje këtu"
+ },
+ "cert_name_label": {
+  "en": "Write your name",
+  "sq": "Shkruaj emrin tënd"
+ },
+ "cert_name_rule": {
+  "en": "Letters, spaces and hyphens only (max 30).",
+  "sq": "Vetëm shkronja, hapësira dhe viza (deri në 30)."
+ },
+ "about_title": {
+  "en": "About VATRA",
+  "sq": "Rreth VATRA-s"
+ },
+ "solo": {
+  "en": "solo",
+  "sq": "vetëm"
+ },
+ "why_title": {
+  "en": "Why I built VATRA",
+  "sq": "Pse e ndërtova VATRA-n"
+ },
+ "why_text": {
+  "en": "I grew up in Lushnjë, and every summer Albania burns. In 2025 alone the country fought 193 large fires and had to ask the EU for help three times, because its own resources were not enough. For years Albania has had no firefighting planes of its own, and many of its fire engines are old, so the biggest fires wait for planes from Greece, Italy and other neighbours. The fires of 2021 killed two people and destroyed thousands of hectares of forests, farms and orchards. Every forest we lose is a piece of our country that takes decades to grow back.",
+  "sq": "U rrita në Lushnjë, dhe çdo verë Shqipëria digjet. Vetëm në vitin 2025 vendi luftoi me 193 zjarre të mëdha dhe iu desh të kërkonte ndihmë nga BE-ja tri herë, sepse mjetet e veta nuk mjaftonin. Prej vitesh Shqipëria nuk ka pasur avionë zjarrfikës të sajat, dhe shumë nga autobotet e saj janë të vjetra, ndaj zjarret më të mëdha presin avionë nga Greqia, Italia dhe fqinjë të tjerë. Zjarret e vitit 2021 morën jetën e dy njerëzve dhe shkatërruan mijëra hektarë pyje, ara dhe pemëtore. Çdo pyll që humbasim është një copë e vendit tonë që do dekada për t'u rritur sërish."
+ },
+ "challenge_title": {
+  "en": "The challenge",
+  "sq": "Sfida"
+ },
+ "challenge_text": {
+  "en": "Build a web app that harmonizes MODIS and VIIRS active-fire records into a burning activity calendar for any area and dates.",
+  "sq": "Ndërto një aplikacion që harmonizon regjistrat e zjarreve aktive MODIS dhe VIIRS në një kalendar aktiviteti për çdo zonë dhe data."
+ },
+ "credits_title": {
+  "en": "Data, credits and licences",
+  "sq": "Të dhënat, burimet dhe licencat"
+ },
+ "credit_firms": {
+  "en": "<b>NASA FIRMS</b> active fire data (LANCE FIRMS, NASA ESDIS): MODIS Collection 6.1 on Terra and Aqua (NRT doi:10.5067/FIRMS/MODIS/MCD14DL.NRT.0061; archive MCD14ML doi:10.5067/FIRMS/MODIS/MCD14ML) and VIIRS 375 m on S-NPP (doi:10.5067/FIRMS/VIIRS/VNP14IMGT_NRT.002), NOAA-20 (doi:10.5067/FIRMS/VIIRS/VJ114IMGT_NRT.002) and NOAA-21 (doi:10.5067/VIIRS/VJ214IMG_NRT.002), with the FIRMS standard archive. Algorithms: Giglio, Schroeder &amp; Justice (2016), doi:10.1016/j.rse.2016.02.054; Schroeder et al. (2014), doi:10.1016/j.rse.2013.12.008. <a href='https://firms.modaps.eosdis.nasa.gov/' target='_blank'>firms.modaps.eosdis.nasa.gov</a>. NASA does not endorse VATRA.",
+  "sq": "<b>NASA FIRMS</b> të dhëna zjarresh aktive (LANCE FIRMS, NASA ESDIS): MODIS Collection 6.1 në Terra dhe Aqua (NRT doi:10.5067/FIRMS/MODIS/MCD14DL.NRT.0061; archive MCD14ML doi:10.5067/FIRMS/MODIS/MCD14ML) dhe VIIRS 375 m në S-NPP (doi:10.5067/FIRMS/VIIRS/VNP14IMGT_NRT.002), NOAA-20 (doi:10.5067/FIRMS/VIIRS/VJ114IMGT_NRT.002) dhe NOAA-21 (doi:10.5067/VIIRS/VJ214IMG_NRT.002), me arkivin standard FIRMS. Algoritmet: Giglio, Schroeder &amp; Justice (2016), doi:10.1016/j.rse.2016.02.054; Schroeder et al. (2014), doi:10.1016/j.rse.2013.12.008. <a href='https://firms.modaps.eosdis.nasa.gov/' target='_blank'>firms.modaps.eosdis.nasa.gov</a>. NASA nuk e mbështet zyrtarisht VATRA-n."
+ },
+ "credit_effis": {
+  "en": "<b>EFFIS</b> burnt areas, © European Union, 1995–2026, Copernicus Emergency Management Service; reuse allowed with acknowledgement. <a href='https://forest-fire.emergency.copernicus.eu/' target='_blank'>forest-fire.emergency.copernicus.eu</a>",
+  "sq": "<b>EFFIS</b> sipërfaqe të djegura, © Bashkimi Evropian, 1995–2026, Copernicus Emergency Management Service; ripërdorimi lejohet me përmendje. <a href='https://forest-fire.emergency.copernicus.eu/' target='_blank'>forest-fire.emergency.copernicus.eu</a>"
+ },
+ "credit_gb": {
+  "en": "<b>geoBoundaries</b> country border (CC BY 4.0), Runfola et al. 2020. <a href='https://www.geoboundaries.org' target='_blank'>geoboundaries.org</a>",
+  "sq": "<b>geoBoundaries</b> kufiri i vendit (CC BY 4.0), Runfola et al. 2020. <a href='https://www.geoboundaries.org' target='_blank'>geoboundaries.org</a>"
+ },
+ "credit_ocha": {
+  "en": "<b>OCHA COD-AB</b> Albania counties and 61 municipalities, 2019 (CC BY-IGO), via the Humanitarian Data Exchange. <a href='https://data.humdata.org/dataset/cod-ab-alb' target='_blank'>data.humdata.org</a>",
+  "sq": "<b>OCHA COD-AB</b> qarqet dhe 61 bashkitë e Shqipërisë, 2019 (CC BY-IGO), përmes Humanitarian Data Exchange. <a href='https://data.humdata.org/dataset/cod-ab-alb' target='_blank'>data.humdata.org</a>"
+ },
+ "credit_tiles": {
+  "en": "Basemaps: Esri Light Gray Canvas (light mode) and Esri World Imagery (dark mode), with © OpenStreetMap contributors.",
+  "sq": "Hartat bazë: Esri Light Gray Canvas (modaliteti i çelët) dhe Esri World Imagery (modaliteti i errët), me © OpenStreetMap contributors."
+ },
+ "credit_fonts": {
+  "en": "Fonts: Inter and Cinzel (SIL Open Font License).",
+  "sq": "Shkronjat: Inter dhe Cinzel (SIL Open Font License)."
+ },
+ "credit_tools": {
+  "en": "Built with Python, Streamlit, pandas, geopandas, plotly, folium, pymannkendall, fpdf2 and matplotlib.",
+  "sq": "Ndërtuar me Python, Streamlit, pandas, geopandas, plotly, folium, pymannkendall, fpdf2 dhe matplotlib."
+ },
+ "credit_license": {
+  "en": "Code: MIT licence. Derived data: CC BY 4.0. Source data keep their own terms.",
+  "sq": "Kodi: licenca MIT. Të dhënat e nxjerra: CC BY 4.0. Të dhënat burimore ruajnë kushtet e tyre."
+ },
+ "ai_title": {
+  "en": "AI use",
+  "sq": "Përdorimi i AI"
+ },
+ "ai_text": {
+  "en": "Claude (Anthropic) assisted with code, text and design. The guide photo of Viola is a real photo with traditional clothing added using ChatGPT (marked AI-edited). Game drawings and patterns were made with AI-assisted code. The 'Listen' button uses the browser's built-in computer voice. The guide gives prepared answers from the app's data; it is not a chatbot.",
+  "sq": "Claude (Anthropic) ndihmoi me kodin, tekstin dhe dizajnin. Fotoja e Violës është foto e vërtetë me veshje tradicionale të shtuar me ChatGPT (e shënuar si e përpunuar me AI). Vizatimet dhe motivet e lojës u bënë me kod të ndihmuar nga AI. Butoni 'Dëgjo' përdor zërin kompjuterik të shfletuesit. Udhërrëfyesi jep përgjigje të përgatitura nga të dhënat e aplikacionit; nuk është chatbot."
+ },
+ "disclaimer_title": {
+  "en": "Disclaimer",
+  "sq": "Mohim përgjegjësie"
+ },
+ "disclaimer": {
+  "en": "VATRA is a research and education tool, not an official warning service. In an emergency, call the official emergency number.",
+  "sq": "VATRA është mjet kërkimi dhe edukimi, jo shërbim zyrtar paralajmërimi. Në rast emergjence, telefononi numrin zyrtar të emergjencës."
+ },
+ "data_status": {
+  "en": "Data status",
+  "sq": "Gjendja e të dhënave"
+ },
+ "data_status_text": {
+  "en": "Files to {end}; outputs built on {built}. Newer days come from the FIRMS API when available.",
+  "sq": "Skedarët deri më {end}; rezultatet u ndërtuan më {built}. Ditët më të reja vijnë nga API-ja FIRMS kur është e disponueshme."
+ },
+ "video": {
+  "en": "Video",
+  "sq": "Video"
+ },
+ "ai_photo": {
+  "en": "AI-edited photo (traditional clothing added with AI)",
+  "sq": "Foto e përpunuar me AI (veshja tradicionale u shtua me AI)"
+ },
+ "g_hi": {
+  "en": "Hi, I'm Viola!",
+  "sq": "Përshëndetje, jam Viola!"
+ },
+ "g_hi_text": {
+  "en": "I built VATRA to watch over Albania's forests. I can help you with:",
+  "sq": "E ndërtova VATRA-n për të ruajtur pyjet e Shqipërisë. Mund t'ju ndihmoj me:"
+ },
+ "g_label": {
+  "en": "Ask Viola: automatic guide. Answers come from the app's data, not a live person.",
+  "sq": "Pyet Violën: udhërrëfyes automatik. Përgjigjet vijnë nga të dhënat e aplikacionit, jo nga një person."
+ },
+ "g_tab_fire": {
+  "en": "Fire questions",
+  "sq": "Pyetje për zjarret"
+ },
+ "g_tab_albania": {
+  "en": "Albania corner",
+  "sq": "Këndi i Shqipërisë"
+ },
+ "g_tab_tour": {
+  "en": "Tour",
+  "sq": "Turi"
+ },
+ "g_type": {
+  "en": "Type a question",
+  "sq": "Shkruaj një pyetje"
+ },
+ "g_type_ph": {
+  "en": "Type a question… e.g. dangerous month / muaji rrezik",
+  "sq": "Shkruaj një pyetje… p.sh. muaji më i rrezikshëm"
+ },
+ "g_error": {
+  "en": "Sorry, I could not compute that for this area.",
+  "sq": "Më vjen keq, nuk munda ta llogaris për këtë zonë."
+ },
+ "g_too_little": {
+  "en": "{area} has too little fire data for a reliable answer.",
+  "sq": "{area} ka shumë pak të dhëna zjarri për një përgjigje të besueshme."
+ },
+ "g_report": {
+  "en": "Your PDF report for {area} ({d0} – {d1}) can be made here.",
+  "sq": "Raporti yt PDF për {area} ({d0} – {d1}) mund të krijohet këtu."
+ },
+ "g_make_pdf": {
+  "en": "Make the PDF",
+  "sq": "Krijo PDF-në"
+ },
+ "g_months": {
+  "en": "In {area}, the most dangerous months are {m1}, {m2} and {m3}. The fire season runs from {start} to {end}, with the peak in {peak}.",
+  "sq": "Në {area}, muajt më të rrezikshëm janë {m1}, {m2} dhe {m3}. Sezoni i zjarreve shkon nga {start} deri në {end}, me kulmin në {peak}."
+ },
+ "g_share": {
+  "en": "This area has {share}% of Albania's fire activity.",
+  "sq": "Kjo zonë ka {share}% të aktivitetit të zjarreve në Shqipëri."
+ },
+ "g_now": {
+  "en": "In {area}, the last 7 days had {v7} fire cell-days (normal {m7}) and the last 30 days {v30} (normal {m30}): percentile {p}, {status}. Data to {end}.",
+  "sq": "Në {area}, 7 ditët e fundit patën {v7} qeliza-ditë zjarri (normalja {m7}) dhe 30 ditët e fundit {v30} (normalja {m30}): përqindëshi {p}, {status}. Të dhëna deri më {end}."
+ },
+ "g_two_years": {
+  "en": "In {area}, the worst year {ya} had {a} fire cell-days and {yb} had {b}: a change of {diff}. The biggest difference was in {m}.",
+  "sq": "Në {area}, viti më i keq {ya} pati {a} qeliza-ditë zjarri dhe {yb} pati {b}: një ndryshim prej {diff}. Ndryshimi më i madh ishte në {m}."
+ },
+ "g_trend_up": {
+  "en": "In {area}, fire activity is rising over {years}: {pct} per year (Mann–Kendall p = {p}).",
+  "sq": "Në {area}, aktiviteti i zjarreve po rritet gjatë {years}: {pct} në vit (Mann–Kendall p = {p})."
+ },
+ "g_trend_down": {
+  "en": "In {area}, fire activity is falling over {years}: {pct} per year (Mann–Kendall p = {p}).",
+  "sq": "Në {area}, aktiviteti i zjarreve po bie gjatë {years}: {pct} në vit (Mann–Kendall p = {p})."
+ },
+ "g_trend_none": {
+  "en": "In {area}, there is no clear trend over {years}: {pct} per year, not statistically significant (Mann–Kendall p = {p}).",
+  "sq": "Në {area}, nuk ka tendencë të qartë gjatë {years}: {pct} në vit, jo statistikisht domethënëse (Mann–Kendall p = {p})."
+ },
+ "g_sensors": {
+  "en": "MODIS flies on Terra (morning pass, about 10:30) and Aqua (about 13:30) since 2000 and sees 1 km pixels. VIIRS flies on S-NPP (since 2012), NOAA-20 (2018) and NOAA-21 (2023), passes about 13:30 and sees 375 m pixels, so it finds smaller fires. In VATRA's files S-NPP data end in late October 2026. MODIS is near the end of its life.",
+  "sq": "MODIS fluturon në Terra (kalim në mëngjes, rreth 10:30) dhe Aqua (rreth 13:30) që nga 2000 dhe sheh piksele 1 km. VIIRS fluturon në S-NPP (që nga 2012), NOAA-20 (2018) dhe NOAA-21 (2023), kalon rreth 13:30 dhe sheh piksele 375 m, prandaj gjen zjarre më të vegjël. Në skedarët e VATRA-s të dhënat S-NPP mbarojnë në fund të tetorit 2026. MODIS është drejt fundit të jetës."
+ },
+ "g_harmonization": {
+  "en": "Four steps: load all hotspots → count each ~1 km square once per day per satellite → convert VIIRS to the MODIS scale per satellite and season → test on years never used for fitting. Test result: Pearson r {r}, Spearman ρ {rho}, bias {bias}.",
+  "sq": "Katër hapa: ngarko të gjitha pikat → numëro çdo katror ~1 km një herë në ditë për satelit → ktheje VIIRS në shkallën MODIS për satelit dhe sezon → testo në vite të papërdorura për përshtatje. Rezultati i testit: Pearson r {r}, Spearman ρ {rho}, anshmëria {bias}."
+ },
+ "g_csv": {
+  "en": "Here is the CSV of the harmonized fire cell-days for {area} and your dates. More files are on the Downloads page.",
+  "sq": "Ja CSV-ja e qelizave-ditë të harmonizuara për {area} dhe datat e tua. Më shumë skedarë janë te faqja Shkarkime."
+ },
+ "g_where": {
+  "en": "In {area} and your dates, the most fire activity was in: {list}.",
+  "sq": "Në {area} dhe datat e tua, më shumë aktivitet zjarri pati në: {list}."
+ },
+ "g_heritage": {
+  "en": "Fire cell-days within 5 km, {y0}–{y1}: {list}.",
+  "sq": "Qeliza-ditë zjarri brenda 5 km, {y0}–{y1}: {list}."
+ },
+ "g_events": {
+  "en": "The biggest fire event in {area} for your dates: {start} – {end} in {mun}, {days} days and {cd} fire cell-days{near}. There are {n} events in total.",
+  "sq": "Ngjarja më e madhe e zjarrit në {area} për datat e tua: {start} – {end} në {mun}, {days} ditë dhe {cd} qeliza-ditë zjarri{near}. Gjithsej ka {n} ngjarje."
+ },
+ "g_near": {
+  "en": ", {km} km from {site}",
+  "sq": ", {km} km nga {site}"
+ },
+ "g_latest": {
+  "en": "In {area}, {n} fire cell-days were detected from {start} to {end}.",
+  "sq": "Në {area}, u zbuluan {n} qeliza-ditë zjarri nga {start} deri më {end}."
+ },
+ "g_latest_noapi": {
+  "en": "Latest days are unavailable right now. In the files (to {end}), {area} had {n} fire cell-days in the last 7 days.",
+  "sq": "Ditët e fundit nuk janë të disponueshme tani. Në skedarë (deri më {end}), {area} pati {n} qeliza-ditë zjarri në 7 ditët e fundit."
+ },
+ "g_daynight": {
+  "en": "In {area}, {d}% of detections are by day and {n}% at night.",
+  "sq": "Në {area}, {d}% e zbulimeve janë ditën dhe {n}% natën."
+ },
+ "g_confidence": {
+  "en": "I removed {t23} detections flagged as factories or other static sources, {st} near-real-time points in known static cells and {out} points outside Albania. {low} low-confidence detections are hidden unless you switch them on in ⚙ Options.",
+  "sq": "Hoqa {t23} zbulime të shënuara si fabrika ose burime të tjera statike, {st} pika në kohë reale në qeliza statike të njohura dhe {out} pika jashtë Shqipërisë. {low} zbulime me besueshmëri të ulët fshihen, përveç nëse i ndez te ⚙ Opsione."
+ },
+ "g_effis": {
+  "en": "Yes: years with more hotspots also have more EFFIS burnt area (Pearson r {r}, Spearman ρ {rho}). {share}% of fire cell-days fall inside EFFIS perimeters, and {ev}% of the 50 biggest events match an EFFIS fire. EFFIS maps mainly fires of 30 ha or more.",
+  "sq": "Po: vitet me më shumë pika të nxehta kanë edhe më shumë sipërfaqe të djegur EFFIS (Pearson r {r}, Spearman ρ {rho}). {share}% e qelizave-ditë bien brenda perimetrave EFFIS, dhe {ev}% e 50 ngjarjeve më të mëdha përputhen me një zjarr EFFIS. EFFIS hartografon kryesisht zjarre 30 ha e më shumë."
+ },
+ "g_colours": {
+  "en": "In the calendar, darker = more fire (light cream to deep red-black). In 'vs normal', blue = below normal, cream = normal, red = above normal. The colours are tested for colour-blind readers.",
+  "sq": "Në kalendar, më e errët = më shumë zjarr (nga krem i çelët te e kuqe-e zezë). Te 'kundrejt normales', blu = nën normalen, krem = normale, e kuqe = mbi normalen. Ngjyrat janë testuar për lexues me daltonizëm."
+ },
+ "g_kids": {
+  "en": "Sky Twins is a game for kids aged 8–12: five short levels about satellites and fire, and a certificate at the end.",
+  "sq": "Binjakët e Qiellit është lojë për fëmijë 8–12 vjeç: pesë nivele të shkurtra për satelitët dhe zjarrin, dhe një certifikatë në fund."
+ },
+ "g_open_corner": {
+  "en": "Open Albania corner →",
+  "sq": "Hap Këndin e Shqipërisë →"
+ },
+ "tour_filters_t": {
+  "en": "Filters",
+  "sq": "Filtrat"
+ },
+ "tour_filters": {
+  "en": "Pick an area and dates once; every page follows.",
+  "sq": "Zgjidh një zonë dhe data një herë; çdo faqe i ndjek."
+ },
+ "tour_calendar_t": {
+  "en": "Calendar",
+  "sq": "Kalendari"
+ },
+ "tour_calendar": {
+  "en": "The heart: 26 years of fire, month by month.",
+  "sq": "Zemra: 26 vjet zjarre, muaj pas muaji."
+ },
+ "tour_map_t": {
+  "en": "Map",
+  "sq": "Harta"
+ },
+ "tour_map": {
+  "en": "See each fire and draw your own area.",
+  "sq": "Shiko çdo zjarr dhe vizato zonën tënde."
+ },
+ "tour_compare_t": {
+  "en": "Compare",
+  "sq": "Krahaso"
+ },
+ "tour_compare": {
+  "en": "This month vs normal, two years, the trend.",
+  "sq": "Ky muaj kundrejt normales, dy vite, tendenca."
+ },
+ "tour_regions_t": {
+  "en": "Regions",
+  "sq": "Qarqet"
+ },
+ "tour_regions": {
+  "en": "Your county: history, nature, fire profile.",
+  "sq": "Qarku yt: histori, natyrë, profili i zjarreve."
+ },
+ "tour_downloads_t": {
+  "en": "Downloads",
+  "sq": "Shkarkime"
+ },
+ "tour_downloads": {
+  "en": "CSV, PDF reports, poster.",
+  "sq": "CSV, raporte PDF, poster."
+ },
+ "r_title": {
+  "en": "Fire report: {area}",
+  "sq": "Raport zjarresh: {area}"
+ },
+ "r_made": {
+  "en": "made {d} with VATRA",
+  "sq": "krijuar më {d} me VATRA"
+ },
+ "r_season": {
+  "en": "Fire season: {start} – {end}, peak in {peak}.",
+  "sq": "Sezoni i zjarreve: {start} – {end}, kulmi në {peak}."
+ },
+ "r_rawcounts": {
+  "en": "Raw hotspots in these dates: MODIS {m}, VIIRS {v}.",
+  "sq": "Pika të nxehta bruto në këto data: MODIS {m}, VIIRS {v}."
+ },
+ "r_calendar": {
+  "en": "Burning activity calendar",
+  "sq": "Kalendari i aktivitetit të zjarreve"
+ },
+ "r_calendar_note": {
+  "en": "Harmonized fire cell-days (MODIS scale) per month. Darker = more fire.",
+  "sq": "Qeliza-ditë zjarri të harmonizuara (shkalla MODIS) për muaj. Më e errët = më shumë zjarr."
+ },
+ "r_embroidery": {
+  "en": "The same calendar, stitched",
+  "sq": "I njëjti kalendar, i qëndisur"
+ },
+ "r_profile": {
+  "en": "Seasonal profile: normal range and the worst year",
+  "sq": "Profili sezonal: gama normale dhe viti më i keq"
+ },
+ "r_yearly": {
+  "en": "Year by year: raw counts vs harmonized record",
+  "sq": "Vit pas viti: numërime bruto kundrejt regjistrit të harmonizuar"
+ },
+ "r_unusual": {
+  "en": "Unusual months",
+  "sq": "Muajt e pazakontë"
+ },
+ "r_status": {
+  "en": "Status",
+  "sq": "Statusi"
+ },
+ "r_none": {
+  "en": "No unusual months in these dates.",
+  "sq": "Nuk ka muaj të pazakontë në këto data."
+ },
+ "r_ranking": {
+  "en": "Where it burned most",
+  "sq": "Ku u dogj më shumë"
+ },
+ "r_dates": {
+  "en": "Dates",
+  "sq": "Datat"
+ },
+ "r_sheet_title": {
+  "en": "My fire calendar",
+  "sq": "Kalendari im i zjarreve"
+ },
+ "r_sheet_sub": {
+  "en": "VATRA Kids activity sheet · ages 8–12",
+  "sq": "Fletë aktiviteti VATRA Kids · mosha 8–12"
+ },
+ "r_sheet_intro": {
+  "en": "Satellites see fires from space. Write five years on the left. Colour each month: how much fire do you think there was? Then check the real calendar in the VATRA app!",
+  "sq": "Satelitët i shohin zjarret nga hapësira. Shkruaj pesë vite në të majtë. Ngjyros çdo muaj: sa zjarr mendon se pati? Pastaj kontrollo kalendarin e vërtetë në aplikacionin VATRA!"
+ },
+ "r_sheet_key": {
+  "en": "Colour key:",
+  "sq": "Ngjyrat:"
+ },
+ "r_none_fire": {
+  "en": "no fire",
+  "sq": "pa zjarr"
+ },
+ "r_little": {
+  "en": "a little",
+  "sq": "pak"
+ },
+ "r_some": {
+  "en": "some",
+  "sq": "mesatarisht"
+ },
+ "r_lots": {
+  "en": "a lot",
+  "sq": "shumë"
+ },
+ "r_tips": {
+  "en": "3 fire-safety tips",
+  "sq": "3 këshilla sigurie nga zjarri"
+ },
+ "r_tip3": {
+  "en": "Never play with matches or lighters, and never leave a fire alone.",
+  "sq": "Mos luaj kurrë me shkrepëse ose çakmakë, dhe mos e lër kurrë zjarrin vetëm."
+ },
+ "r_sheet_data": {
+  "en": "Real data: NASA FIRMS satellites, in the VATRA app.",
+  "sq": "Të dhëna të vërteta: satelitët NASA FIRMS, në aplikacionin VATRA."
+ },
+ "r_poster_title": {
+  "en": "Vatra: 26 years of Albanian fire, stitched",
+  "sq": "Vatra: 26 vjet zjarre shqiptare, të qëndisura"
+ },
+ "r_poster_key": {
+  "en": "Stitch size:",
+  "sq": "Madhësia e pikës:"
+ },
+ "r_poster_note": {
+  "en": "Each cross is one month. Bigger, darker stitches = more fire (5 classes from quantiles). Data: NASA FIRMS (MODIS + VIIRS), harmonized by VATRA.",
+  "sq": "Çdo kryq është një muaj. Pika më të mëdha e më të errëta = më shumë zjarr (5 klasa nga kuantilet). Të dhëna: NASA FIRMS (MODIS + VIIRS), të harmonizuara nga VATRA."
+ },
+ "card_tag": {
+  "en": "Your area's fire calendar",
+  "sq": "Kalendari i zjarreve për bashkinë tënde"
+ },
+ "card_season": {
+  "en": "Season: {start} – {end} · peak: {peak}",
+  "sq": "Sezoni: {start} – {end} · kulmi: {peak}"
+ },
+ "card_little": {
+  "en": "Little fire activity recorded here.",
+  "sq": "Pak aktivitet zjarri i regjistruar këtu."
+ },
+ "card_note": {
+  "en": "Typical month 2003–2025 (median fire cell-days) · ● = fire season",
+  "sq": "Muaji tipik 2003–2025 (mediana e qelizave-ditë) · ● = sezoni i zjarreve"
+ },
+ "g_hello": {
+  "en": "Hi! I'm Viola. Ask me about fires in your area, or tap one of the questions below.",
+  "sq": "Përshëndetje! Unë jam Viola. Më pyet për zjarret në zonën tënde, ose zgjidh një nga pyetjet më poshtë."
+ },
+ "g_thanks": {
+  "en": "You're welcome! Stay safe, and keep an eye on the forests.",
+  "sq": "S'ka përse! Ki kujdes dhe ruaji pyjet."
+ },
+ "g_who": {
+  "en": "I'm Viola Zeneli, the person who built VATRA for NASA Space Apps 2026. This guide gives prepared answers from the app's data; it is not a chatbot.",
+  "sq": "Jam Viola Zeneli, ajo që ndërtoi VATRA-n për NASA Space Apps 2026. Ky udhëzues jep përgjigje të përgatitura nga të dhënat e aplikacionit; nuk është chatbot."
+ },
+ "g_help": {
+  "en": "I can tell you about the dangerous months, how this month compares with normal, trends, the biggest fires, the satellites, and I can make a PDF or CSV for your area. Pick a question below.",
+  "sq": "Mund të të tregoj për muajt e rrezikshëm, si krahasohet ky muaj me normalen, tendencat, zjarret më të mëdha, satelitët, dhe mund të bëj një PDF ose CSV për zonën tënde. Zgjidh një pyetje më poshtë."
+ },
+ "g_bye": {
+  "en": "Goodbye! Come back before the summer to check your area.",
+  "sq": "Mirupafshim! Kthehu para verës për të parë zonën tënde."
+ },
+ "g_fallback": {
+  "en": "Hi! I'm a guide with prepared answers, so I can't answer everything. These are closest to your question:",
+  "sq": "Përshëndetje! Jam një udhëzues me përgjigje të përgatitura, ndaj nuk i di të gjitha. Këto janë më afër pyetjes sate:"
+ },
+ "g_fallback_more": {
+  "en": "…or pick any question from the list below.",
+  "sq": "…ose zgjidh çdo pyetje nga lista më poshtë."
+ },
+ "why_text2": {
+  "en": "NASA satellites have watched these fires since 2000, but the old MODIS sensor is retiring and the new VIIRS sensor sees so much more that the numbers no longer match. I built VATRA so that 26 years of fire history stay in one honest record that anyone can read: firefighters, municipalities, scientists and school children. If we can see when and where Albania burns, we can be ready before the summer comes.",
+  "sq": "Satelitët e NASA-s i vëzhgojnë këto zjarre që nga viti 2000, por sensori i vjetër MODIS po del në pension dhe sensori i ri VIIRS sheh aq më shumë sa numrat nuk përputhen më. E ndërtova VATRA-n që 26 vite histori zjarresh të mbeten në një regjistër të vetëm e të ndershëm, që ta lexojë kushdo: zjarrfikësit, bashkitë, shkencëtarët dhe nxënësit. Nëse shohim kur dhe ku digjet Shqipëria, mund të jemi gati para se të vijë vera."
+ },
+ "heritage_text": {
+  "en": "VATRA is also about who we are. Its colours, the zigzag and diamond patterns and the cross-stitch calendar come from Albanian folk embroidery, and the Albania corner tells the history and heritage behind the data. The photo is me in a traditional Albanian costume (the clothing was added with AI). Even the name has a meaning: vatra is the hearth, the place of fire at the heart of the Albanian home. Fire as something we care for, not something we fear.",
+  "sq": "VATRA flet edhe për atë që jemi. Ngjyrat, motivet zigzag dhe rombet, si dhe kalendari me qëndisje, vijnë nga qëndisjet popullore shqiptare, ndërsa Këndi i Shqipërisë tregon historinë dhe trashëgiminë pas të dhënave. Në foto jam unë me kostum tradicional shqiptar (veshja u shtua me AI). Edhe emri ka kuptim: vatra është vendi i zjarrit në zemër të shtëpisë shqiptare. Zjarri si diçka që e ruajmë, jo diçka nga e cila trembemi."
+ },
+ "why_sources": {
+  "en": "Sources",
+  "sq": "Burimet"
+ },
+ "full_citations": {
+  "en": "Full data citations (DOIs)",
+  "sq": "Citimet e plota të të dhënave (DOI)"
+ },
+ "credit_firms_short": {
+  "en": "<b>NASA FIRMS</b> active fire data (LANCE FIRMS, NASA ESDIS): MODIS Collection 6.1 (Terra, Aqua) and VIIRS 375 m (S-NPP, NOAA-20, NOAA-21). <a href='https://firms.modaps.eosdis.nasa.gov/' target='_blank'>firms.modaps.eosdis.nasa.gov</a>. NASA does not endorse VATRA.",
+  "sq": "<b>NASA FIRMS</b> të dhëna zjarresh aktive (LANCE FIRMS, NASA ESDIS): MODIS Collection 6.1 (Terra, Aqua) dhe VIIRS 375 m (S-NPP, NOAA-20, NOAA-21). <a href='https://firms.modaps.eosdis.nasa.gov/' target='_blank'>firms.modaps.eosdis.nasa.gov</a>. NASA nuk e mbështet zyrtarisht VATRA-n."
+ },
+ "fact_detections": {
+  "en": "satellite fire detections",
+  "sq": "zbulime zjarri nga satelitët"
+ },
+ "fact_satellites": {
+  "en": "NASA satellites in one record",
+  "sq": "satelitë të NASA-s në një regjistër"
+ },
+ "fact_events": {
+  "en": "fire events in the catalogue",
+  "sq": "ngjarje zjarri në katalog"
+ },
+ "traditions_title": {
+  "en": "Our traditions",
+  "sq": "Traditat tona"
+ }
+}

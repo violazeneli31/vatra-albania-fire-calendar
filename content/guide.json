@@ -1,0 +1,557 @@
+{
+ "questions": [
+  {
+   "id": "report",
+   "en": "Make a PDF report for this area",
+   "sq": "Krijo një raport PDF për këtë zonë",
+   "keywords_en": [
+    "report",
+    "pdf",
+    "print",
+    "summary",
+    "document",
+    "sheet"
+   ],
+   "keywords_sq": [
+    "raport",
+    "pdf",
+    "printo",
+    "permbledhje",
+    "dokument",
+    "eksport",
+    "skedar"
+   ]
+  },
+  {
+   "id": "months",
+   "en": "Which months are most dangerous here?",
+   "sq": "Cilët muaj janë më të rrezikshëm këtu?",
+   "keywords_en": [
+    "dangerous",
+    "month",
+    "months",
+    "season",
+    "when",
+    "worst",
+    "peak",
+    "risky",
+    "risk",
+    "summer",
+    "august",
+    "july",
+    "danger",
+    "time",
+    "period",
+    "critical"
+   ],
+   "keywords_sq": [
+    "rrezik",
+    "rrezikshem",
+    "muaj",
+    "muaji",
+    "sezon",
+    "kur",
+    "keq",
+    "kulm",
+    "vere",
+    "gusht",
+    "korrik",
+    "rrezikshme",
+    "periudh",
+    "kritik"
+   ]
+  },
+  {
+   "id": "now",
+   "en": "How does this month compare with normal?",
+   "sq": "Si krahasohet ky muaj me normalen?",
+   "keywords_en": [
+    "normal",
+    "now",
+    "today",
+    "this",
+    "warning",
+    "current",
+    "currently",
+    "unusual",
+    "anomaly",
+    "alert",
+    "above",
+    "below",
+    "status",
+    "situation"
+   ],
+   "keywords_sq": [
+    "normal",
+    "tani",
+    "sot",
+    "paralajmerim",
+    "aktual",
+    "tanishme",
+    "pazakonte",
+    "anomali",
+    "alarm",
+    "gjendja",
+    "situata",
+    "muaji"
+   ]
+  },
+  {
+   "id": "two_years",
+   "en": "Compare two years",
+   "sq": "Krahaso dy vite",
+   "keywords_en": [
+    "compare",
+    "years",
+    "versus",
+    "difference",
+    "vs",
+    "between",
+    "year",
+    "2007",
+    "2012",
+    "2017",
+    "2021",
+    "2024"
+   ],
+   "keywords_sq": [
+    "krahaso",
+    "vite",
+    "vitet",
+    "ndryshim",
+    "dallim",
+    "midis",
+    "vit",
+    "kundrejt"
+   ]
+  },
+  {
+   "id": "trend",
+   "en": "Is fire activity rising or falling here?",
+   "sq": "A po rritet apo po bie aktiviteti i zjarreve këtu?",
+   "keywords_en": [
+    "trend",
+    "rising",
+    "falling",
+    "increase",
+    "decrease",
+    "more",
+    "growing",
+    "worse",
+    "getting",
+    "change",
+    "climate",
+    "over",
+    "decades",
+    "long"
+   ],
+   "keywords_sq": [
+    "tendenc",
+    "rritet",
+    "bie",
+    "rritje",
+    "renie",
+    "shtohen",
+    "perkeqes",
+    "ndryshim",
+    "klima",
+    "dekada",
+    "afat"
+   ]
+  },
+  {
+   "id": "sensors",
+   "en": "What are MODIS and VIIRS?",
+   "sq": "Çfarë janë MODIS dhe VIIRS?",
+   "keywords_en": [
+    "modis",
+    "viirs",
+    "satellite",
+    "satellites",
+    "sensor",
+    "nasa",
+    "terra",
+    "aqua",
+    "noaa",
+    "snpp",
+    "npp",
+    "orbit",
+    "resolution",
+    "pixel",
+    "camera",
+    "instrument"
+   ],
+   "keywords_sq": [
+    "satelit",
+    "satelitet",
+    "sensor",
+    "nasa",
+    "orbit",
+    "rezolucion",
+    "piksel",
+    "kamera",
+    "instrument"
+   ]
+  },
+  {
+   "id": "harmonization",
+   "en": "How does harmonization work?",
+   "sq": "Si funksionon harmonizimi?",
+   "keywords_en": [
+    "harmonization",
+    "harmonize",
+    "method",
+    "calibration",
+    "how",
+    "work",
+    "works",
+    "calculate",
+    "computed",
+    "validation",
+    "accuracy",
+    "accurate",
+    "science",
+    "jump",
+    "2012"
+   ],
+   "keywords_sq": [
+    "harmoniz",
+    "metoda",
+    "kalibrim",
+    "si",
+    "punon",
+    "llogarit",
+    "vlefshmeri",
+    "saktesi",
+    "sakte",
+    "shkence",
+    "kercim"
+   ]
+  },
+  {
+   "id": "csv",
+   "en": "Download the hotspots as CSV",
+   "sq": "Shkarko pikat e nxehta si CSV",
+   "keywords_en": [
+    "csv",
+    "download",
+    "data",
+    "excel",
+    "dataset",
+    "file",
+    "export",
+    "table",
+    "spreadsheet",
+    "get"
+   ],
+   "keywords_sq": [
+    "shkarko",
+    "csv",
+    "te dhena",
+    "dataset",
+    "skedar",
+    "tabel",
+    "merr",
+    "eksport"
+   ]
+  },
+  {
+   "id": "where",
+   "en": "Where is it burning most?",
+   "sq": "Ku digjet më shumë?",
+   "keywords_en": [
+    "where",
+    "most",
+    "ranking",
+    "burning",
+    "county",
+    "municipality",
+    "region",
+    "place",
+    "places",
+    "city",
+    "hotspot",
+    "hotspots",
+    "vlore",
+    "shkoder"
+   ],
+   "keywords_sq": [
+    "ku",
+    "digjet",
+    "renditje",
+    "qark",
+    "bashki",
+    "rajon",
+    "vend",
+    "vende",
+    "zone",
+    "qytet",
+    "vlore",
+    "shkoder"
+   ]
+  },
+  {
+   "id": "heritage",
+   "en": "Fires near heritage sites or parks?",
+   "sq": "Zjarre pranë siteve të trashëgimisë ose parqeve?",
+   "keywords_en": [
+    "heritage",
+    "park",
+    "parks",
+    "castle",
+    "unesco",
+    "butrint",
+    "site",
+    "sites",
+    "monument",
+    "museum",
+    "history",
+    "historic",
+    "ancient",
+    "berat",
+    "gjirokaster",
+    "kruje"
+   ],
+   "keywords_sq": [
+    "trashegimi",
+    "park",
+    "parqe",
+    "kala",
+    "monument",
+    "muze",
+    "histori",
+    "lashte",
+    "berat",
+    "gjirokaster",
+    "kruje"
+   ]
+  },
+  {
+   "id": "events",
+   "en": "Biggest fire events",
+   "sq": "Ngjarjet më të mëdha të zjarrit",
+   "keywords_en": [
+    "biggest",
+    "largest",
+    "event",
+    "events",
+    "big",
+    "huge",
+    "major",
+    "catalogue",
+    "catalog",
+    "list"
+   ],
+   "keywords_sq": [
+    "madh",
+    "medha",
+    "ngjarje",
+    "ngjarjet",
+    "katalog",
+    "liste",
+    "madhe"
+   ]
+  },
+  {
+   "id": "latest",
+   "en": "Latest fires",
+   "sq": "Zjarret e fundit",
+   "keywords_en": [
+    "latest",
+    "recent",
+    "last",
+    "week",
+    "new",
+    "yesterday",
+    "days",
+    "currently",
+    "live",
+    "active"
+   ],
+   "keywords_sq": [
+    "fundit",
+    "javen",
+    "tani",
+    "sot",
+    "dje",
+    "dite",
+    "aktiv",
+    "rinj",
+    "reja"
+   ]
+  },
+  {
+   "id": "daynight",
+   "en": "Day or night?",
+   "sq": "Ditë apo natë?",
+   "keywords_en": [
+    "day",
+    "night",
+    "time",
+    "hour",
+    "morning",
+    "evening",
+    "daytime",
+    "nighttime"
+   ],
+   "keywords_sq": [
+    "dite",
+    "nate",
+    "ore",
+    "mengjes",
+    "mbremje",
+    "diten",
+    "naten"
+   ]
+  },
+  {
+   "id": "confidence",
+   "en": "How sure are these detections?",
+   "sq": "Sa të sigurta janë këto zbulime?",
+   "keywords_en": [
+    "sure",
+    "confidence",
+    "false",
+    "alarm",
+    "factory",
+    "accurate",
+    "reliable",
+    "trust",
+    "wrong",
+    "error",
+    "noise",
+    "static"
+   ],
+   "keywords_sq": [
+    "sigurt",
+    "besueshmeri",
+    "rreme",
+    "fabrike",
+    "besoj",
+    "gabim",
+    "gabuar",
+    "zhurm",
+    "statik"
+   ]
+  },
+  {
+   "id": "effis",
+   "en": "Check against EFFIS",
+   "sq": "Kontrollo me EFFIS",
+   "keywords_en": [
+    "effis",
+    "burnt",
+    "burned",
+    "area",
+    "check",
+    "europe",
+    "european",
+    "copernicus",
+    "hectares",
+    "ha",
+    "validate",
+    "official"
+   ],
+   "keywords_sq": [
+    "effis",
+    "djegur",
+    "siperfaqe",
+    "kontrollo",
+    "evrope",
+    "europian",
+    "copernicus",
+    "hektar",
+    "zyrtar"
+   ]
+  },
+  {
+   "id": "colours",
+   "en": "What do the colours mean?",
+   "sq": "Çfarë tregojnë ngjyrat?",
+   "keywords_en": [
+    "colour",
+    "color",
+    "colours",
+    "colors",
+    "legend",
+    "mean",
+    "meaning",
+    "scale",
+    "dark",
+    "light",
+    "red",
+    "blue",
+    "palette"
+   ],
+   "keywords_sq": [
+    "ngjyra",
+    "ngjyrat",
+    "legjenda",
+    "kuptim",
+    "shkalla",
+    "erret",
+    "celet",
+    "kuq",
+    "blu"
+   ]
+  },
+  {
+   "id": "tour",
+   "en": "Give me a tour",
+   "sq": "Më trego një tur",
+   "keywords_en": [
+    "tour",
+    "help",
+    "start",
+    "guide",
+    "explain",
+    "show",
+    "around",
+    "navigate",
+    "use",
+    "pages",
+    "menu"
+   ],
+   "keywords_sq": [
+    "tur",
+    "ndihme",
+    "fillo",
+    "udhezo",
+    "shpjego",
+    "trego",
+    "perdor",
+    "faqe",
+    "menu"
+   ]
+  },
+  {
+   "id": "kids",
+   "en": "For kids",
+   "sq": "Për fëmijë",
+   "keywords_en": [
+    "kids",
+    "game",
+    "children",
+    "play",
+    "child",
+    "school",
+    "student",
+    "students",
+    "fun",
+    "learn",
+    "certificate"
+   ],
+   "keywords_sq": [
+    "femije",
+    "loje",
+    "luaj",
+    "nxenes",
+    "shkolle",
+    "argetim",
+    "meso",
+    "certifikate",
+    "lojra"
+   ]
+  }
+ ]
+}

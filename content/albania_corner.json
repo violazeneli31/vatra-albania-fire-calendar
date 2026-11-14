@@ -1,0 +1,177 @@
+{
+ "cards": [
+  {
+   "icon": "🌲",
+   "title_en": "Forests and parks",
+   "title_sq": "Pyjet dhe parqet",
+   "text_en": "Albania has more than a dozen national parks, from the Albanian Alps to the Ionian coast. Llogara and Divjakë–Karavasta have pine forests that are sensitive to summer fire.",
+   "text_sq": "Shqipëria ka mbi një duzinë parqesh kombëtare, nga Alpet Shqiptare deri te bregu i Jonit. Llogaraja dhe Divjakë–Karavasta kanë pyje pishe të ndjeshme ndaj zjarrit të verës.",
+   "source": "https://en.wikipedia.org/wiki/List_of_national_parks_of_Albania"
+  },
+  {
+   "icon": "🏛",
+   "title_en": "Heritage near fire-prone areas",
+   "title_sq": "Trashëgimia pranë zonave me zjarre",
+   "text_en": "Butrint, Apollonia, Byllis, Antigonea and Amantia stand in hills and forests of the south-west, where most of Albania's summer fires happen. The Heritage page counts the fires near each.",
+   "text_sq": "Butrinti, Apolonia, Bylisi, Antigonea dhe Amantia ndodhen në kodrat dhe pyjet e jugperëndimit, ku ndodhin shumica e zjarreve verore. Faqja Trashëgimia numëron zjarret pranë secilit.",
+   "source": "https://whc.unesco.org/en/list/570"
+  },
+  {
+   "icon": "👑",
+   "title_en": "King Genti and the gentian",
+   "title_sq": "Mbreti Genti dhe sanëza",
+   "text_en": "The Roman writer Pliny says the gentian plant was first used as medicine by Gentius (Genti), the last king of Illyria, and the plant is named after him.",
+   "text_sq": "Shkrimtari romak Plini thotë se bima sanëz (gentiana) u përdor për herë të parë si ilaç nga Genti, mbreti i fundit i Ilirisë, dhe bima mban emrin e tij.",
+   "source": "https://gentian.rutgers.edu/genera/genGentiana.htm"
+  },
+  {
+   "icon": "🧚",
+   "title_en": "Zana of the mountains",
+   "title_sq": "Zanat e maleve",
+   "text_en": "In Albanian folk belief, the Zana are mountain fairies who live near springs and forests and protect heroes.",
+   "text_sq": "Në besimet popullore shqiptare, Zanat janë zana malesh që jetojnë pranë burimeve dhe pyjeve dhe mbrojnë heronjtë.",
+   "source": "https://en.wikipedia.org/wiki/Zana_(mythology)"
+  },
+  {
+   "icon": "🔥",
+   "title_en": "Vatra and Dita e Verës",
+   "title_sq": "Vatra dhe Dita e Verës",
+   "text_en": "Vatra is the hearth at the heart of the Albanian home. Dita e Verës, on 14 March, welcomes the end of winter, especially in Elbasan.",
+   "text_sq": "Vatra është zjarri në zemër të shtëpisë shqiptare. Dita e Verës, më 14 mars, përshëndet fundin e dimrit, sidomos në Elbasan.",
+   "source": "https://en.wikipedia.org/wiki/Dita_e_Ver%C3%ABs"
+  },
+  {
+   "icon": "🧯",
+   "title_en": "Fire safety in simple words",
+   "title_sq": "Siguria nga zjarri me fjalë të thjeshta",
+   "text_en": "Never light fires outdoors in dry summer weather, never leave a fire alone, and if you see smoke in a forest, tell an adult or call the emergency number right away.",
+   "text_sq": "Mos ndiz kurrë zjarr jashtë në motin e thatë të verës, mos e lër kurrë zjarrin vetëm, dhe nëse sheh tym në pyll, tregoji një të rrituri ose telefono menjëherë numrin e emergjencës.",
+   "source": "https://forest-fire.emergency.copernicus.eu/"
+  }
+ ],
+ "timeline": [
+  {
+   "when_en": "3rd–2nd century BC",
+   "when_sq": "Shek. III–II p.e.s.",
+   "title_en": "Illyrian kingdoms",
+   "title_sq": "Mbretëritë ilire",
+   "text_en": "King Agron and Queen Teuta rule an Illyrian kingdom on the Adriatic; its last king, Genti, rules from Scodra (Shkodër) until Rome defeats him in 168 BC.",
+   "text_sq": "Mbreti Agron dhe mbretëresha Teuta sundojnë një mbretëri ilire në Adriatik; mbreti i saj i fundit, Genti, sundon nga Scodra (Shkodra) derisa Roma e mund më 168 p.e.s.",
+   "source": "https://www.britannica.com/place/Illyria"
+  },
+  {
+   "when_en": "2nd century BC – 4th century AD",
+   "when_sq": "Shek. II p.e.s. – IV",
+   "title_en": "Roman times",
+   "title_sq": "Koha romake",
+   "text_en": "The Via Egnatia starts at Dyrrachium (Durrës) and crosses the Balkans towards Byzantium.",
+   "text_sq": "Via Egnatia nis nga Dyrrachiumi (Durrësi) dhe përshkon Ballkanin drejt Bizantit.",
+   "source": "https://www.britannica.com/topic/Via-Egnatia"
+  },
+  {
+   "when_en": "1444–1468",
+   "when_sq": "1444–1468",
+   "title_en": "Skanderbeg",
+   "title_sq": "Skënderbeu",
+   "text_en": "Skanderbeg unites Albanian princes in the League of Lezhë (1444) and resists the Ottoman Empire until his death in 1468.",
+   "text_sq": "Skënderbeu bashkon princërit shqiptarë në Lidhjen e Lezhës (1444) dhe i reziston Perandorisë Osmane deri në vdekjen e tij më 1468.",
+   "source": "https://www.britannica.com/biography/Skanderbeg"
+  },
+  {
+   "when_en": "28 November 1912",
+   "when_sq": "28 nëntor 1912",
+   "title_en": "Independence",
+   "title_sq": "Pavarësia",
+   "text_en": "Albania's independence is declared in Vlorë.",
+   "text_sq": "Pavarësia e Shqipërisë shpallet në Vlorë.",
+   "source": "https://www.britannica.com/place/Albania/Independent-Albania"
+  },
+  {
+   "when_en": "Today",
+   "when_sq": "Sot",
+   "title_en": "Forests to protect",
+   "title_sq": "Pyje për t'u mbrojtur",
+   "text_en": "Summer wildfires are one of the biggest threats to Albania's forests; VATRA shows 26 years of them in one calendar.",
+   "text_sq": "Zjarret verore janë një nga kërcënimet më të mëdha për pyjet e Shqipërisë; VATRA i tregon 26 vite të tyre në një kalendar.",
+   "source": "https://forest-fire.emergency.copernicus.eu/"
+  }
+ ],
+ "unesco": [
+  {
+   "name_en": "Butrint (1992)",
+   "name_sq": "Butrinti (1992)",
+   "kind_en": "World Heritage, cultural",
+   "kind_sq": "Trashëgimi Botërore, kulturore",
+   "source": "https://whc.unesco.org/en/list/570"
+  },
+  {
+   "name_en": "Historic centres of Berat and Gjirokastra (2005, extended 2008)",
+   "name_sq": "Qendrat historike të Beratit dhe Gjirokastrës (2005, zgjeruar 2008)",
+   "kind_en": "World Heritage, cultural",
+   "kind_sq": "Trashëgimi Botërore, kulturore",
+   "source": "https://whc.unesco.org/en/list/569"
+  },
+  {
+   "name_en": "Natural and cultural heritage of the Ohrid region (Albanian part added 2019)",
+   "name_sq": "Trashëgimia natyrore dhe kulturore e rajonit të Ohrit (pjesa shqiptare u shtua 2019)",
+   "kind_en": "World Heritage, mixed",
+   "kind_sq": "Trashëgimi Botërore, e përzier",
+   "source": "https://whc.unesco.org/en/list/99"
+  },
+  {
+   "name_en": "Ancient and primeval beech forests of Europe: Rrajca and Gashi River (2017)",
+   "name_sq": "Pyjet e lashta të ahut të Evropës: Rrajca dhe Lumi i Gashit (2017)",
+   "kind_en": "World Heritage, natural: a forest link",
+   "kind_sq": "Trashëgimi Botërore, natyrore: një lidhje me pyjet",
+   "source": "https://whc.unesco.org/en/list/1133"
+  },
+  {
+   "name_en": "Albanian folk iso-polyphony (2008)",
+   "name_sq": "Iso-polifonia popullore shqiptare (2008)",
+   "kind_en": "Intangible heritage",
+   "kind_sq": "Trashëgimi jomateriale",
+   "source": "https://ich.unesco.org/en/RL/albanian-folk-iso-polyphony-00155"
+  },
+  {
+   "name_en": "Xhubleta, skills, craftsmanship and forms of usage (2022)",
+   "name_sq": "Xhubleta, mjeshtëria dhe format e përdorimit (2022)",
+   "kind_en": "Intangible heritage, urgent safeguarding",
+   "kind_sq": "Trashëgimi jomateriale, në nevojë për mbrojtje urgjente",
+   "source": "https://ich.unesco.org/en/USL/xhubleta-skills-craftsmanship-and-forms-of-usage-01880"
+  }
+ ],
+ "myths": [
+  {
+   "icon": "🧚",
+   "title_en": "Zana",
+   "title_sq": "Zanat",
+   "text_en": "Mountain fairies of Albanian folk belief, linked with springs, forests and heroes.",
+   "text_sq": "Zanat e maleve në besimet popullore shqiptare, të lidhura me burimet, pyjet dhe heronjtë.",
+   "source": "https://en.wikipedia.org/wiki/Zana_(mythology)"
+  },
+  {
+   "icon": "🌼",
+   "title_en": "Genti and the gentian",
+   "title_sq": "Genti dhe sanëza",
+   "text_en": "Pliny wrote that King Gentius of Illyria discovered the medicinal gentian, which is named after him.",
+   "text_sq": "Plini shkroi se mbreti Genti i Ilirisë zbuloi sanëzën mjekësore, e cila mban emrin e tij.",
+   "source": "https://gentian.rutgers.edu/genera/genGentiana.htm"
+  },
+  {
+   "icon": "🔥",
+   "title_en": "Vatra",
+   "title_sq": "Vatra",
+   "text_en": "The hearth: the fire at the heart of the home, and the name of this app: fire as something to care for.",
+   "text_sq": "Zjarri në zemër të shtëpisë dhe emri i këtij aplikacioni: zjarri si diçka për t'u ruajtur.",
+   "source": "https://en.wiktionary.org/wiki/vatr%C3%AB"
+  },
+  {
+   "icon": "🌸",
+   "title_en": "Dita e Verës",
+   "title_sq": "Dita e Verës",
+   "text_en": "Summer Day, 14 March: a spring festival, especially in Elbasan.",
+   "text_sq": "Dita e Verës, 14 mars: festë pranverore, sidomos në Elbasan.",
+   "source": "https://en.wikipedia.org/wiki/Dita_e_Ver%C3%ABs"
+  }
+ ]
+}

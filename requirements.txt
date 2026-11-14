@@ -1,0 +1,16 @@
+# Used by Streamlit Community Cloud (the online app). Tested on 14 Nov 2026 with these versions.
+streamlit==1.67.0
+pandas==3.0.5
+numpy==2.5.3
+pyarrow==26.0.1
+shapely==2.2.0
+plotly==7.1.0
+folium==0.20.0
+streamlit-folium==0.27.4
+pymannkendall==1.4.3
+scipy==1.18.1
+fpdf2==2.9.0
+matplotlib==3.11.2
+Pillow==12.3.0
+requests==2.34.2
+python-dotenv==1.2.3

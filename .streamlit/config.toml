@@ -1,0 +1,18 @@
+[client]
+toolbarMode = "viewer"
+showSidebarNavigation = false
+
+[theme]
+base = "light"
+primaryColor = "#A61E26"
+backgroundColor = "#FAF7F2"
+secondaryBackgroundColor = "#F3ECE0"
+textColor = "#1E1816"
+
+[server]
+headless = true
+runOnSave = false
+maxUploadSize = 5
+
+[browser]
+gatherUsageStats = false

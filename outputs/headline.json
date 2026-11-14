@@ -1,0 +1,50 @@
+{
+ "raw_window": [
+  2012,
+  2016
+ ],
+ "before_window": [
+  2007,
+  2011
+ ],
+ "raw_mean_before": 1517.0,
+ "raw_mean_after": 4458.0,
+ "raw_change_pct": 193.8694792353329,
+ "harm_mean_before": 1391.0,
+ "harm_mean_after": 992.6440857317126,
+ "harm_change_pct": -28.638095921515983,
+ "raw_viirs_2012": 14031.0,
+ "raw_modis_2011": 1387.0,
+ "trend": {
+  "years": "2003-2025",
+  "slope": 8.110433362530927,
+  "p": 0.42817779030963843,
+  "direction": "none",
+  "pct_per_year": 1.9051741158458884,
+  "intercept": 336.49085724220197,
+  "n": 23,
+  "median_year": 425.7056242300422
+ },
+ "worst_year": 2007,
+ "worst_year_value": 4476.0,
+ "worst_month": {
+  "year": 2012,
+  "month": 8,
+  "value": 2564.0358818478276
+ },
+ "most_dangerous_month": 8,
+ "most_dangerous_month_median": 129.0,
+ "top_county": "Vlorë",
+ "top_county_value": 4326.842889201385,
+ "top_county_share_pct": 21.45187215605723,
+ "text_en": "Raw satellite counts suggest fires rose +194% after 2012. That jump is the new satellite, not new fires: in VATRA's harmonized record the change is −29%. Over 2003–2025 there is no clear trend (Mann–Kendall p = 0.43). The worst year was 2007, the worst month August 2012, and the county with the most fire activity is Vlorë.",
+ "short_en": "Raw satellite counts suggest fires rose +194% after 2012. That jump is the new satellite, not new fires: in VATRA's harmonized record the change is −29%.",
+ "text_sq": "Numërimet e papërpunuara tregojnë +194% zjarre pas vitit 2012. Ky kërcim vjen nga sateliti i ri, jo nga zjarre të reja: në regjistrin e harmonizuar të VATRA-s ndryshimi është −29%. Për 2003–2025 nuk ka një tendencë të qartë (Mann–Kendall p = 0,43). Viti më i keq ishte 2007, muaji më i keq gusht 2012, dhe qarku me më shumë zjarre është Vlorë.",
+ "short_sq": "Numërimet e papërpunuara tregojnë +194% zjarre pas vitit 2012. Ky kërcim vjen nga sateliti i ri, jo nga zjarre të reja: në regjistrin e harmonizuar të VATRA-s ndryshimi është −29%.",
+ "validation": {
+  "test_pearson": 0.986240065048173,
+  "test_spearman": 0.9604779366487362,
+  "test_bias_pct": -10.638723474921996,
+  "test_mae": 9.838709893626028
+ }
+}

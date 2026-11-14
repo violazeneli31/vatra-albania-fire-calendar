@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="__LANG__">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VATRA Kids: Sky Twins</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;padding:0;height:100%;font-family:Inter,Arial,sans-serif;color:#1E1816;background:transparent;overflow:hidden;user-select:none;-webkit-user-select:none}
+#frame{height:100%;padding:6px;border-radius:22px;background:linear-gradient(135deg,#FFD166,#F4A259,#EF476F,#7BD389,#4CC9F0)}
+#game{position:relative;height:100%;max-width:640px;margin:0 auto;border-radius:16px;overflow:hidden;
+  background:linear-gradient(#BDE7FF,#E8F7FF 55%,#CFEFC2);display:flex;flex-direction:column}
+#game:fullscreen{max-width:none}
+.top{display:flex;align-items:center;gap:8px;padding:8px 10px;background:rgba(255,255,255,.65);border-bottom:3px solid #C9A24A}
+.top .t{font-weight:800;font-size:15px;flex:1;line-height:1.2}
+.top .t small{display:block;font-weight:600;font-size:12px;color:#6E6560}
+.pill{background:#fff;border-radius:999px;padding:4px 10px;font-weight:800;font-size:15px;white-space:nowrap}
+.ib{border:0;background:#fff;border-radius:12px;min-width:44px;height:44px;font-size:20px;cursor:pointer;box-shadow:0 2px 0 #c9b98f}
+#stage{position:relative;flex:1;overflow:hidden;touch-action:none}
+.tip{display:flex;gap:8px;align-items:center;padding:8px 10px;background:rgba(255,255,255,.75);border-top:3px solid #C9A24A;min-height:58px}
+.tip img,.tip .av{width:42px;height:42px;border-radius:50%;border:2px solid #C9A24A;flex-shrink:0;object-fit:cover;background:#FFE7EE}
+.tip .b{background:#fff;border-radius:12px;padding:6px 10px;font-size:14px;line-height:1.3}
+.big{font-size:20px;font-weight:800;border:0;border-radius:16px;padding:14px 26px;min-height:52px;cursor:pointer;background:#EF476F;color:#fff;box-shadow:0 5px 0 #a8203f}
+.big:active{transform:translateY(3px);box-shadow:0 2px 0 #a8203f}
+.big.blue{background:#2E5A87;box-shadow:0 5px 0 #1b3a5c}.big.green{background:#3E9B57;box-shadow:0 5px 0 #276b3a}
+.big:disabled{opacity:.45;cursor:not-allowed}
+.center{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:16px;gap:10px;overflow:auto}
+.card{background:#fff;border-radius:18px;padding:14px 16px;box-shadow:0 4px 14px rgba(0,0,0,.12);max-width:460px;width:100%;position:relative}
+.card:before{content:"";position:absolute;left:14px;right:14px;top:5px;height:8px;
+ background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='8'%3E%3Cpath d='M8 0 L16 4 L8 8 L0 4 Z' fill='%23A61E26'/%3E%3Cpath d='M8 2 L12 4 L8 6 L4 4 Z' fill='%23161212'/%3E%3C/svg%3E") repeat-x;background-size:16px 8px}
+h1,h2{font-family:Cinzel,Georgia,serif;color:#A61E26;margin:.2em 0}
+h1{font-size:30px}h2{font-size:22px}
+.lv{display:flex;flex-wrap:wrap;gap:6px;justify-content:center}
+.lv button{border:0;border-radius:999px;background:#fff;padding:8px 12px;font-weight:700;cursor:pointer;min-height:40px;font-size:13px}
+.lv button.done{background:#FFE08A}
+svg{display:block}
+.dot{cursor:pointer}
+.shake{animation:sh .35s}@keyframes sh{25%{transform:translateX(-6px)}75%{transform:translateX(6px)}}
+.pop{animation:pp .4s}@keyframes pp{50%{transform:scale(1.25)}}
+.cal{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;width:100%;max-width:440px}
+.mbox{border-radius:12px;height:62px;border:3px solid #fff;display:flex;flex-direction:column;align-items:center;justify-content:center;font-weight:800;background:#FBF1DC;cursor:pointer;transition:background .4s}
+.mbox small{font-weight:700;font-size:12px}
+.tray{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;max-width:460px}
+.tok{border:0;border-radius:14px;padding:8px 10px;min-width:56px;min-height:48px;font-weight:800;background:#fff;box-shadow:0 3px 0 #d7c7a2;cursor:pointer;font-size:14px}
+.tok.sel{outline:4px solid #C9A24A;transform:scale(1.08)}
+.tok.used{visibility:hidden}
+.choice{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.stars{font-size:44px;letter-spacing:4px}
+input.name{font-size:20px;padding:12px 14px;border-radius:14px;border:3px solid #C9A24A;width:100%;max-width:360px;text-align:center;font-family:Inter,Arial,sans-serif}
+.dl{display:inline-block;margin:6px;padding:12px 18px;border-radius:14px;background:#A61E26;color:#fff;text-decoration:none;font-weight:800}
+.dl.alt{background:#2E5A87}
+#certImg{width:100%;max-width:520px;border-radius:10px;box-shadow:0 4px 14px rgba(0,0,0,.2)}
+.note{font-size:12px;color:#6E6560}
+#ghost{position:fixed;pointer-events:none;z-index:50;display:none}
+</style>
+</head>
+<body>
+<div id="frame"><div id="game">
+  <div class="top">
+    <div class="t" id="title">VATRA Kids: Sky Twins<small id="sub"></small></div>
+    <span class="pill" id="score">⭐ 0</span>
+    <button class="ib" id="mute" aria-label="sound">🔊</button>
+    <button class="ib" id="fs" aria-label="fullscreen" style="display:none">⛶</button>
+  </div>
+  <div id="stage"></div>
+  <div class="tip"><img id="vimg" alt="Viola"><div class="b" id="tipText"></div></div>
+</div></div>
+<div id="ghost"></div>
+<script>
+const LANG = "__LANG__" === "sq" ? "sq" : "en";
+const VIOLA = "__VIOLA__";
+const T = {
+ en:{start:"START", intro:"Two friendly satellites circle the Earth looking for fires. They don't always agree. Can you be their Fire Detective?",
+  mo:"Mo (MODIS)", moD:"older · big glasses · sees big squares", vee:"Vee (VIIRS)", veeD:"younger · star eyes · sees small squares",
+  level:"Level", next:"Next level ▶", again:"↺ Play again", time:"⏱",
+  L:[["Fly with the twins","Tap the fires as Mo and Vee fly over Albania!"],["Same fire?","Join each small Vee square to Mo's big square of the same fire."],
+     ["Real fire or trick?","Look at the clues. Is it a real fire or a trick?"],["Final map","Put the real fires on the clean map. Then the fire truck goes!"],
+     ["Paint the calendar","Drop each fire into its month. Watch summer turn red!"]],
+  tips:["Big dots come from Mo, small ones from Vee. Tap them all!","Vee sees one fire as many small squares. VATRA counts each square once a day, so the twins agree.",
+        "Did both twins see it? Does it come back every day in the same place? Then think!","Only real fires go on the final map. The truck puts every one out.",
+        "Look: summer months fill up fastest. That is Albania's fire season!"],
+  found:"You found {n} fires!", real:"🔥 Real fire", trick:"🪞 Trick", right:"Yes!", wrong:"Not this time.",
+  mDone:"All matched! Vee saw {v} small squares, Mo saw {m} big ones, but there were only {m} fires.",
+  place:"Tap a fire, then tap a ? on the map.", truck:"Here comes the fire truck! 🚒", out:"All fires are out!",
+  pick:"Tap a fire, then tap its month.", calDone:"Summer is red, winter stays calm. That's a fire calendar!",
+  win:"Fire Detective!", winText:"You helped Mo and Vee find every fire, and the fire truck put them all out.",
+  rem:"Remember:", s1:"🔥 Never light fires outdoors in dry summer weather.", s2:"👀 If you see smoke, tell an adult right away.",
+  s3:"🧯 Never play with matches or lighters.", seeApp:"Now see the real app! Close the game and open the Calendar.",
+  nameL:"Write your name", get:"Get my certificate", privacy:"Your name is not saved or sent anywhere.",
+  nameRule:"Letters, spaces and hyphens only (max 30).", png:"⬇ PNG", pdf:"⬇ PDF (A4)", ios:"On iPhone: the file opens; tap Share → Save to Photos or Files.",
+  certTitle:"Fire Detective", certThis:"This certifies that",
+  certBody:["completed VATRA Kids: Sky Twins and learned how satellites","help protect Albania's forests."], date:"Date",
+  cards:[["🌲🔥","Smoke over a pine forest in August. Mo saw it AND Vee saw it.",1,"Both twins saw it in the fire season: a real fire."],
+         ["🏭","A factory chimney. The twins see it hot every single day, all year.",0,"Always hot, always in the same place: a factory, not a wildfire. VATRA removes these."],
+         ["🏠☀️","A shiny metal roof on a sunny day. Only Vee saw it, just once, with low confidence.",0,"Sunlight on metal can trick a satellite. Low confidence, seen once: a trick."],
+         ["🌾🔥","A farm field burning in March. Mo and Vee both saw it.",1,"Farm burning is real fire too. It makes Albania's small spring peak."],
+         ["🌊","A hot spot far out at sea, on a gas platform.",0,"Not a forest fire! VATRA keeps only fires inside Albania."],
+         ["⛰️🔥","Fire on a mountain slope, seen three days in a row by both twins.",1,"Seen again and again by both: a real fire that lasted three days."]]},
+ sq:{start:"NIS", intro:"Dy satelitë miqësorë sillen rreth Tokës duke kërkuar zjarre. Nuk bien gjithmonë dakord. A mund të jesh Detektivi i tyre i Zjarreve?",
+  mo:"Mo (MODIS)", moD:"më i madhi · syze të mëdha · sheh katrorë të mëdhenj", vee:"Vee (VIIRS)", veeD:"më e vogla · sy yje · sheh katrorë të vegjël",
+  level:"Niveli", next:"Niveli tjetër ▶", again:"↺ Luaj përsëri", time:"⏱",
+  L:[["Fluturo me binjakët","Prek zjarret ndërsa Mo dhe Vee fluturojnë mbi Shqipëri!"],["I njëjti zjarr?","Lidh çdo katror të vogël të Vee-s me katrorin e madh të Mo-s të të njëjtit zjarr."],
+     ["Zjarr i vërtetë apo mashtrim?","Shiko të dhënat. Është zjarr i vërtetë apo mashtrim?"],["Harta përfundimtare","Vendos zjarret e vërteta në hartë. Pastaj niset zjarrfikësja!"],
+     ["Ngjyros kalendarin","Vendos çdo zjarr në muajin e tij. Shiko verën të skuqet!"]],
+  tips:["Pikat e mëdha vijnë nga Mo, të voglat nga Vee. Preki të gjitha!","Vee e sheh një zjarr si shumë katrorë të vegjël. VATRA e numëron çdo katror një herë në ditë, ndaj binjakët bien dakord.",
+        "E panë të dy binjakët? Kthehet çdo ditë në të njëjtin vend? Mendohu!","Vetëm zjarret e vërteta shkojnë në hartë. Zjarrfikësja i shuan të gjitha.",
+        "Shiko: muajt e verës mbushen më shpejt. Ky është sezoni i zjarreve në Shqipëri!"],
+  found:"Gjete {n} zjarre!", real:"🔥 Zjarr i vërtetë", trick:"🪞 Mashtrim", right:"Po!", wrong:"Jo këtë herë.",
+  mDone:"Të gjitha u lidhën! Vee pa {v} katrorë të vegjël, Mo pa {m} të mëdhenj, por ishin vetëm {m} zjarre.",
+  place:"Prek një zjarr, pastaj prek një ? në hartë.", truck:"Po vjen zjarrfikësja! 🚒", out:"Të gjitha zjarret u shuan!",
+  pick:"Prek një zjarr, pastaj prek muajin e tij.", calDone:"Vera është e kuqe, dimri i qetë. Ky është një kalendar zjarresh!",
+  win:"Detektiv i Zjarreve!", winText:"Ndihmove Mo-n dhe Vee-n të gjejnë çdo zjarr, dhe zjarrfikësja i shoi të gjitha.",
+  rem:"Mos harro:", s1:"🔥 Mos ndiz kurrë zjarr jashtë në motin e thatë të verës.", s2:"👀 Nëse sheh tym, tregoji menjëherë një të rrituri.",
+  s3:"🧯 Mos luaj kurrë me shkrepëse ose çakmakë.", seeApp:"Tani shiko aplikacionin e vërtetë! Mbyll lojën dhe hap Kalendarin.",
+  nameL:"Shkruaj emrin tënd", get:"Merr certifikatën", privacy:"Emri yt nuk ruhet dhe nuk dërgohet askund.",
+  nameRule:"Vetëm shkronja, hapësira dhe viza (deri në 30).", png:"⬇ PNG", pdf:"⬇ PDF (A4)", ios:"Në iPhone: skedari hapet; prek Shpërndaj → Ruaj te Fotot ose Skedarët.",
+  certTitle:"Detektiv i Zjarreve", certThis:"Vërtetohet që",
+  certBody:["përfundoi VATRA Kids: Sky Twins dhe mësoi si satelitët","ndihmojnë në mbrojtjen e pyjeve të Shqipërisë."], date:"Data",
+  cards:[["🌲🔥","Tym mbi një pyll pishe në gusht. E pa Mo DHE e pa Vee.",1,"E panë të dy binjakët në sezonin e zjarreve: zjarr i vërtetë."],
+         ["🏭","Një oxhak fabrike. Binjakët e shohin të nxehtë çdo ditë, gjithë vitin.",0,"Gjithmonë i nxehtë, gjithmonë në të njëjtin vend: fabrikë, jo zjarr pylli. VATRA i heq këto."],
+         ["🏠☀️","Një çati metalike që shkëlqen në diell. E pa vetëm Vee, një herë, me besueshmëri të ulët.",0,"Dielli mbi metal mund ta mashtrojë satelitin. Besueshmëri e ulët, një herë: mashtrim."],
+         ["🌾🔥","Një fushë që digjet në mars. E panë edhe Mo edhe Vee.",1,"Djegia e fushave është gjithashtu zjarr i vërtetë. Bën kulmin e vogël pranveror të Shqipërisë."],
+         ["🌊","Një pikë e nxehtë larg në det, mbi një platformë gazi.",0,"Nuk është zjarr pylli! VATRA mban vetëm zjarret brenda Shqipërisë."],
+         ["⛰️🔥","Zjarr në shpatin e malit, parë tri ditë rresht nga të dy binjakët.",1,"Parë përsëri e përsëri nga të dy: zjarr i vërtetë që zgjati tri ditë."]]}
+}[LANG];
+const MONTHS = LANG === "sq" ? ["Jan","Shk","Mar","Pri","Maj","Qer","Kor","Gus","Sht","Tet","Nën","Dhj"] : ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+const RAMP = ["#FBF1DC","#F1CC7A","#E08A3C","#B83A2A","#7A1420","#2A0B0E"];
+const ALB = "123,633 148,641 168,638 177,625 173,608 188,612 192,602 176,570 189,567 196,552 216,553 232,546 233,529 240,520 238,508 251,489 250,478 259,466 276,468 279,458 291,448 293,429 278,406 279,377 261,371 255,379 242,376 232,340 220,338 220,329 208,309 204,287 215,273 198,247 199,241 214,235 208,205 217,191 218,164 225,155 208,102 179,78 165,79 161,56 139,30 129,33 127,40 95,46 87,33 91,22 82,8 13,109 32,126 27,139 29,155 23,157 27,164 22,167 28,172 27,180 48,180 62,188 64,197 59,201 58,223 64,229 51,238 39,234 50,252 37,274 30,271 36,293 45,293 50,305 38,330 37,357 43,365 26,393 26,418 18,432 31,461 46,474 45,495 36,501 25,480 14,479 38,520 106,564 116,581 112,590 129,598 123,633";
+const PTS = ALB.split(" ").map(p => p.split(",").map(Number));
+const $ = id => document.getElementById(id);
+const stage = $("stage");
+let G = {lvl:-1, score:0, timers:[], done:[false,false,false,false,false], muted:false, sel:null};
+
+// ---------------------------------------------------------------- sound (starts after the first tap)
+let AC = null;
+function beep(f = 660, d = .12, type = "sine", v = .15) {
+  if (G.muted) return;
+  try { AC = AC || new (window.AudioContext || window.webkitAudioContext)(); const o = AC.createOscillator(), g = AC.createGain();
+    o.type = type; o.frequency.value = f; g.gain.value = v; o.connect(g); g.connect(AC.destination);
+    g.gain.exponentialRampToValueAtTime(.0001, AC.currentTime + d); o.start(); o.stop(AC.currentTime + d); } catch (e) {}
+}
+const yay = () => { beep(660, .1); setTimeout(() => beep(880, .14), 90); };
+const nope = () => beep(180, .2, "triangle", .12);
+$("mute").onclick = () => { G.muted = !G.muted; $("mute").textContent = G.muted ? "🔇" : "🔊"; };
+if (document.fullscreenEnabled && !/iPhone|iPad|iPod/.test(navigator.userAgent)) {
+  $("fs").style.display = ""; $("fs").onclick = () => document.fullscreenElement ? document.exitFullscreen() : $("game").requestFullscreen().catch(() => {});
+}
+// Viola avatar (the app passes her photo; otherwise a simple drawn avatar)
+$("vimg").src = VIOLA.startsWith("data:") ? VIOLA : "data:image/svg+xml," + encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><rect width="40" height="40" fill="#FFE7EE"/><text x="20" y="27" text-anchor="middle" font-size="18" font-family="Cinzel,serif" fill="#A61E26">V</text></svg>');
+
+// ---------------------------------------------------------------- helpers
+function inPoly(x, y) { let c = false; for (let i = 0, j = PTS.length - 1; i < PTS.length; j = i++) { const [xi, yi] = PTS[i], [xj, yj] = PTS[j];
+  if (((yi > y) !== (yj > y)) && (x < (xj - xi) * (y - yi) / (yj - yi) + xi)) c = !c; } return c; }
+function randIn() { let x, y; do { x = 15 + Math.random() * 270; y = 15 + Math.random() * 620; } while (!inPoly(x, y)); return [x, y]; }
+function clear() { G.timers.forEach(t => { clearInterval(t); clearTimeout(t); }); G.timers = []; G.sel = null; stage.innerHTML = ""; }
+function tip(i) { $("tipText").textContent = "💬 Viola: " + (typeof i === "number" ? T.tips[i] : i); }
+function setScore(n) { G.score = n; $("score").textContent = "⭐ " + n; }
+function head(sub) { $("sub").textContent = sub || ""; }
+function rosette(r, c1 = "#C9A24A", c2 = "#A61E26") { let s = `<circle r="${r}" fill="none" stroke="${c1}" stroke-width="${r*.08}"/>`;
+  for (let i = 0; i < 12; i++) { const a = i * Math.PI / 6, p = (rr, aa) => `${(rr*Math.cos(aa)).toFixed(1)} ${(rr*Math.sin(aa)).toFixed(1)}`;
+    s += `<path d="M0 0 L${p(r*.85,a-.22)} Q${p(r*.98,a)} ${p(r*.85,a+.22)} Z" fill="${i%2?c1:c2}"/>`; }
+  return s + `<circle r="${r*.32}" fill="${c2}" stroke="${c1}" stroke-width="${r*.06}"/>`; }
+function sat(kind, w) { const mo = kind === "mo";
+  const panels = [-1, 1].map(s => `<g transform="translate(${s*38},0)"><rect x="-18" y="-14" width="36" height="28" rx="4" fill="#E8C66A" stroke="#7a5a12"/><g transform="scale(.26)">${rosette(44,"#7a5a12","#C9A24A")}</g></g>`).join("");
+  const eyes = mo ? `<circle cx="-8" cy="-3" r="7" fill="#fff" stroke="#1E1816" stroke-width="2.5"/><circle cx="8" cy="-3" r="7" fill="#fff" stroke="#1E1816" stroke-width="2.5"/><line x1="-1" y1="-3" x2="1" y2="-3" stroke="#1E1816" stroke-width="2.5"/><circle cx="-8" cy="-3" r="2.5" fill="#1E1816"/><circle cx="8" cy="-3" r="2.5" fill="#1E1816"/>`
+    : `<path d="M-8 -9 l2 4 4 .5 -3 3 1 4 -4 -2 -4 2 1 -4 -3 -3 4 -.5z" fill="#F4A259"/><path d="M8 -9 l2 4 4 .5 -3 3 1 4 -4 -2 -4 2 1 -4 -3 -3 4 -.5z" fill="#F4A259"/>`;
+  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="-60 -40 120 80" width="${w}">${panels}<circle r="22" fill="${mo ? "#E9EDF2" : "#FFE7EE"}" stroke="#1E1816" stroke-width="2"/>${eyes}<path d="M-7 9 Q0 15 7 9" fill="none" stroke="#1E1816" stroke-width="2.2" stroke-linecap="round"/><line x1="0" y1="-22" x2="0" y2="-32" stroke="#1E1816" stroke-width="2"/><circle cx="0" cy="-34" r="3" fill="#EF476F"/></svg>`; }
+function flame(x, y, s = 1) { return `<g transform="translate(${x},${y}) scale(${s})"><path d="M0 -16 C8 -6 10 0 6 8 C3 13 -3 13 -6 8 C-10 0 -6 -8 0 -16Z" fill="#F4A259" stroke="#A61E26" stroke-width="2"/><path d="M0 -4 C4 1 4 5 2 8 C0 10 -2 10 -3 8 C-4 5 -3 1 0 -4Z" fill="#FFD166"/></g>`; }
+function mapSVG(inner = "", id = "map") { return `<svg id="${id}" viewBox="-10 -10 320 673" style="height:100%;max-width:100%;margin:auto"><polygon points="${ALB}" fill="#9FD68A" stroke="#3c7a3a" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M120 120 l12 -18 12 18z M170 300 l14 -22 14 22z M200 420 l12 -18 12 18z" fill="#6aa85a"/>${inner}</svg>`; }
+function endCard(msg, stars, nextFn) {
+  const c = document.createElement("div"); c.className = "center";
+  c.innerHTML = `<div class="card pop"><div class="stars">${"⭐".repeat(stars)}</div><h2>${msg}</h2><button class="big" id="nx">${G.lvl < 4 ? T.next : "🏆"}</button></div>`;
+  stage.appendChild(c); $("nx").onclick = () => { beep(520); nextFn(); };
+}
+function finishLevel(stars, msg) { G.done[G.lvl] = true; yay(); endCard(msg, stars, () => G.lvl < 4 ? level(G.lvl + 1) : winScreen()); }
+function svgPoint(svg, e) { const p = svg.createSVGPoint(); p.x = e.clientX; p.y = e.clientY; return p.matrixTransform(svg.getScreenCTM().inverse()); }
+
+// ---------------------------------------------------------------- start
+function startScreen() {
+  clear(); G.lvl = -1; head(""); tip(LANG === "sq" ? "Përshëndetje! Jam Viola. Gati për aventurë?" : "Hi! I'm Viola. Ready for an adventure?");
+  stage.innerHTML = `<div class="center"><div style="display:flex;gap:18px;justify-content:center;flex-wrap:wrap">
+    <div>${sat("mo", 130)}<b>${T.mo}</b><div class="note">${T.moD}</div></div><div>${sat("vee", 130)}<b>${T.vee}</b><div class="note">${T.veeD}</div></div></div>
+    <p style="font-size:17px;max-width:460px;margin:6px">${T.intro}</p><button class="big" id="go">▶ ${T.start}</button>
+    <div class="lv">${T.L.map((l, i) => `<button class="${G.done[i] ? "done" : ""}" data-i="${i}">${i + 1}. ${l[0]}</button>`).join("")}</div></div>`;
+  $("go").onclick = () => { beep(520); setScore(0); level(0); };
+  stage.querySelectorAll(".lv button").forEach(b => b.onclick = () => { beep(520); level(+b.dataset.i); });
+}
+function level(i) { clear(); G.lvl = i; head(`${T.level} ${i + 1}/5 · ${T.L[i][0]}`); tip(i); [L1, L2, L3, L4, L5][i](); }
+
+// ---------------------------------------------------------------- level 1: fly and tap
+function L1() {
+  let time = 20, found = 0;
+  stage.innerHTML = `<div style="position:absolute;inset:8px 8px 8px 8px;display:flex;justify-content:center">${mapSVG('<g id="dots"></g>')}</div>
+    <div id="satel" style="position:absolute;left:-140px;top:12px;transition:left 3.6s linear,top 3.6s linear">${sat(Math.random() < .5 ? "mo" : "vee", 110)}</div>
+    <div class="pill" id="tm" style="position:absolute;right:10px;top:10px">${T.time} 20</div>
+    <div class="center" style="pointer-events:none;justify-content:flex-start;padding-top:56px"><div class="card" style="max-width:300px;font-weight:700">${T.L[0][1]}</div></div>`;
+  const dots = $("dots"), satel = $("satel"); let dir = 1;
+  const fly = () => { satel.innerHTML = sat(Math.random() < .5 ? "mo" : "vee", 110); satel.style.left = dir > 0 ? "calc(100% + 20px)" : "-140px"; satel.style.top = (12 + Math.random() * 220) + "px"; dir = -dir; };
+  G.timers.push(setTimeout(fly, 60));
+  setTimeout(() => { const c = stage.querySelector(".center"); if (c) c.remove(); }, 2600);
+  const spawn = () => { const [x, y] = randIn(); const big = Math.random() < .45; const c = document.createElementNS("http://www.w3.org/2000/svg", "g");
+    c.setAttribute("class", "dot"); c.innerHTML = big ? `<rect x="${x-20}" y="${y-20}" width="40" height="40" rx="6" fill="#F4A259" stroke="#fff" stroke-width="3"/>${flame(x, y, .9)}`
+      : `<rect x="${x-10}" y="${y-10}" width="20" height="20" rx="4" fill="#EF476F" stroke="#fff" stroke-width="2.5"/>`;
+    const hit = e => { e.preventDefault(); found++; setScore(G.score + 1); beep(big ? 520 : 880, .08); c.innerHTML = `<circle cx="${x}" cy="${y}" r="${big ? 24 : 14}" fill="#C9A24A"/>`; c.onpointerdown = null; setTimeout(() => c.remove(), 200); };
+    c.onpointerdown = hit; dots.appendChild(c); setTimeout(() => c.remove(), 2600); };
+  G.timers.push(setInterval(() => { time--; $("tm").textContent = `${T.time} ${time}`; if (time % 4 === 0) fly(); spawn(); if (Math.random() < .6) spawn();
+    if (time <= 0) { clear(); stage.innerHTML = ""; finishLevel(found >= 14 ? 3 : found >= 7 ? 2 : 1, T.found.replace("{n}", found)); } }, 1000));
+}
+
+// ---------------------------------------------------------------- level 2: same fire? (tap-tap or drag)
+function L2() {
+  const fires = [[90, 150], [210, 200], [140, 380]], vee = [];
+  fires.forEach((f, k) => { const n = 3 + (k % 2); for (let i = 0; i < n; i++) { const a = i / n * 6.28 + k; vee.push({x: f[0] + Math.cos(a) * 40 + (k === 2 ? 70 : 0) * (i % 2 ? 1 : -1) * .3, y: f[1] + Math.sin(a) * 34 + 80, f: k, ok: false}); } });
+  stage.innerHTML = `<svg id="s2" viewBox="0 0 300 560" style="width:100%;height:100%"><rect width="300" height="560" fill="#B8E3A6"/>
+    <path d="M0 470 Q80 430 160 470 T300 460 V560 H0Z" fill="#9FD68A"/><path d="M20 90 l30 -40 30 40z M230 330 l26 -34 26 34z" fill="#7cbf6a"/>
+    <g id="lines"></g>${fires.map((f, k) => `<g class="mo" data-k="${k}"><rect x="${f[0]-34}" y="${f[1]+46}" width="68" height="68" rx="8" fill="rgba(244,162,89,.35)" stroke="#E08A3C" stroke-width="4" stroke-dasharray="7 4"/>${flame(f[0], f[1] + 80, 1.3)}</g>`).join("")}
+    ${vee.map((v, i) => `<g class="vee dot" data-i="${i}"><rect x="${v.x-11}" y="${v.y-11}" width="22" height="22" rx="4" fill="#EF476F" stroke="#fff" stroke-width="3"/></g>`).join("")}</svg>
+    <div class="center" style="pointer-events:none;justify-content:flex-start;padding-top:8px"><div class="card" style="max-width:360px;font-weight:700;font-size:14px">${T.L[1][1]}</div></div>`;
+  const svg = $("s2"); let sel = null, left = vee.length;
+  const select = g => { svg.querySelectorAll(".vee rect").forEach(r => r.setAttribute("stroke", "#fff")); sel = g; if (g) { g.querySelector("rect").setAttribute("stroke", "#C9A24A"); beep(700, .05); } };
+  const tryMatch = (vi, k) => { const v = vee[vi]; if (v.ok) return; const g = svg.querySelector(`.vee[data-i="${vi}"]`);
+    if (v.f === k) { v.ok = true; left--; const f = fires[k]; $("lines").insertAdjacentHTML("beforeend", `<line x1="${v.x}" y1="${v.y}" x2="${f[0]}" y2="${f[1]+80}" stroke="#C9A24A" stroke-width="4" stroke-linecap="round"/>`);
+      g.querySelector("rect").setAttribute("fill", "#C9A24A"); g.style.pointerEvents = "none"; setScore(G.score + 1); yay();
+      if (!left) setTimeout(() => finishLevel(3, T.mDone.replace("{v}", vee.length).replace(/\{m\}/g, fires.length)), 500);
+    } else { nope(); g.classList.add("shake"); setTimeout(() => g.classList.remove("shake"), 400); }
+    select(null); };
+  svg.querySelectorAll(".vee").forEach(g => g.onpointerdown = e => { e.preventDefault(); select(g); });
+  svg.querySelectorAll(".mo").forEach(g => g.onpointerdown = e => { e.preventDefault(); if (sel) tryMatch(+sel.dataset.i, +g.dataset.k); });
+  svg.onpointerup = e => { if (!sel) return; const el = document.elementFromPoint(e.clientX, e.clientY); const mo = el && el.closest && el.closest(".mo"); if (mo) tryMatch(+sel.dataset.i, +mo.dataset.k); };
+}
+
+// ---------------------------------------------------------------- level 3: real fire or trick?
+function L3() {
+  let i = 0, ok = 0;
+  const show = () => { const c = T.cards[i];
+    stage.innerHTML = `<div class="center"><div class="card pop"><div style="font-size:54px">${c[0]}</div><p style="font-size:17px;font-weight:600">${c[1]}</p>
+      <div class="choice"><button class="big" id="r">${T.real}</button><button class="big blue" id="t">${T.trick}</button></div><p id="fb" style="min-height:44px"></p>
+      <div class="note">${i + 1} / ${T.cards.length}</div></div></div>`;
+    const ans = v => { $("r").disabled = $("t").disabled = true; const good = v === c[2]; if (good) { ok++; setScore(G.score + 1); yay(); } else nope();
+      $("fb").innerHTML = `<b>${good ? T.right : T.wrong}</b> ${c[3]}`;
+      G.timers.push(setTimeout(() => { i++; if (i < T.cards.length) show(); else { stage.innerHTML = ""; finishLevel(ok >= 5 ? 3 : ok >= 3 ? 2 : 1, `${ok} / ${T.cards.length}`); } }, 2600)); };
+    $("r").onclick = () => ans(1); $("t").onclick = () => ans(0); };
+  show();
+}
+
+// ---------------------------------------------------------------- level 4: final map + fire truck
+function L4() {
+  const spots = [[60, 470], [80, 330], [150, 120], [235, 470], [205, 250]];
+  stage.innerHTML = `<div style="position:absolute;inset:6px 6px 88px 6px;display:flex;justify-content:center">${mapSVG(`<g id="tg">${spots.map((s, k) =>
+      `<g class="spot" data-k="${k}"><circle cx="${s[0]}" cy="${s[1]}" r="24" fill="rgba(255,255,255,.75)" stroke="#A61E26" stroke-width="3" stroke-dasharray="6 4"/><text x="${s[0]}" y="${s[1]+9}" text-anchor="middle" font-size="26" font-weight="800" fill="#A61E26">?</text></g>`).join("")}</g><g id="truck" style="display:none"></g>`, "m4")}</div>
+    <div style="position:absolute;left:0;right:0;bottom:8px;display:flex;flex-direction:column;align-items:center;gap:4px"><div class="note" style="font-weight:700">${T.place}</div>
+    <div class="tray">${spots.map((s, k) => `<button class="tok" data-k="${k}">🔥</button>`).join("")}</div></div>`;
+  const svg = $("m4"); let sel = null, placed = 0;
+  stage.querySelectorAll(".tok").forEach(b => b.onpointerdown = e => { e.preventDefault(); stage.querySelectorAll(".tok").forEach(x => x.classList.remove("sel")); sel = b; b.classList.add("sel"); beep(700, .05); });
+  const place = g => { if (!sel || g.dataset.done) return; g.dataset.done = 1; sel.classList.add("used"); sel.classList.remove("sel"); sel = null; placed++; setScore(G.score + 1); beep(600);
+    const s = spots[+g.dataset.k]; g.innerHTML = flame(s[0], s[1], 1.6); if (placed === spots.length) setTimeout(truckRun, 500); };
+  svg.querySelectorAll(".spot").forEach(g => g.onpointerdown = e => { e.preventDefault(); place(g); });
+  stage.onpointerup = e => { if (!sel) return; const el = document.elementFromPoint(e.clientX, e.clientY); const g = el && el.closest && el.closest(".spot"); if (g) place(g); };
+  function truckRun() { tip(T.truck); const tr = $("truck"); tr.style.display = "";
+    const order = [2, 4, 1, 0, 3]; let p = [150, 640], step = 0;
+    const draw = (x, y) => tr.innerHTML = `<g transform="translate(${x},${y})"><rect x="-26" y="-14" width="52" height="24" rx="5" fill="#E63946" stroke="#fff" stroke-width="2"/><rect x="8" y="-22" width="18" height="12" rx="3" fill="#BDE7FF" stroke="#fff"/><rect x="-22" y="-20" width="26" height="5" fill="#C9A24A"/><circle cx="-14" cy="12" r="7" fill="#1E1816"/><circle cx="14" cy="12" r="7" fill="#1E1816"/><circle cx="-2" cy="-24" r="4" fill="#4CC9F0"/></g>`;
+    const go = () => { if (step >= order.length) { G.timers.push(setTimeout(() => finishLevel(3, T.out), 700)); return; }
+      const k = order[step], s = spots[k], from = p.slice(); let t = 0;
+      const anim = setInterval(() => { t += .06; const x = from[0] + (s[0] - from[0]) * Math.min(t, 1), y = from[1] + (s[1] + 30 - from[1]) * Math.min(t, 1); draw(x, y);
+        if (t >= 1) { clearInterval(anim); p = [s[0], s[1] + 30]; beep(300, .25, "sawtooth", .06);
+          const g = svg.querySelector(`.spot[data-k="${k}"]`); g.innerHTML = `<circle cx="${s[0]}" cy="${s[1]}" r="20" fill="#BDE7FF" opacity=".9"/><text x="${s[0]}" y="${s[1]+8}" text-anchor="middle" font-size="22">✔</text>`;
+          step++; G.timers.push(setTimeout(go, 250)); } }, 40); G.timers.push(anim); };
+    go(); }
+}
+
+// ---------------------------------------------------------------- level 5: paint the calendar
+function L5() {
+  const toks = [7, 6, 7, 8, 7, 6, 2, 7, 8, 9, 6, 3, 7, 8];
+  const count = Array(12).fill(0);
+  stage.innerHTML = `<div class="center" style="justify-content:flex-start;gap:12px"><div class="note" style="font-weight:700;font-size:14px">${T.pick}</div>
+    <div class="cal">${MONTHS.map((m, i) => `<div class="mbox" data-m="${i}">${m}<small id="c${i}"></small></div>`).join("")}</div>
+    <div class="tray">${toks.map((m, k) => `<button class="tok" data-k="${k}" data-m="${m}">🔥 ${MONTHS[m]}</button>`).join("")}</div></div>`;
+  let sel = null, left = toks.length;
+  stage.querySelectorAll(".tok").forEach(b => b.onpointerdown = e => { e.preventDefault(); stage.querySelectorAll(".tok").forEach(x => x.classList.remove("sel")); sel = b; b.classList.add("sel"); beep(700, .05); });
+  const drop = box => { if (!sel) return; const m = +box.dataset.m;
+    if (+sel.dataset.m !== m) { nope(); box.classList.add("shake"); setTimeout(() => box.classList.remove("shake"), 400); return; }
+    count[m]++; sel.classList.add("used"); sel.classList.remove("sel"); sel = null; left--; setScore(G.score + 1); beep(500 + count[m] * 80, .1);
+    box.style.background = RAMP[Math.min(count[m] + 1, 5)]; box.style.color = count[m] >= 3 ? "#fff" : "#1E1816"; $("c" + m).textContent = "🔥".repeat(count[m]);
+    box.classList.add("pop"); setTimeout(() => box.classList.remove("pop"), 400);
+    if (!left) setTimeout(() => finishLevel(3, T.calDone), 600); };
+  stage.querySelectorAll(".mbox").forEach(b => b.onpointerdown = e => { e.preventDefault(); drop(b); });
+  stage.onpointerup = e => { if (!sel) return; const el = document.elementFromPoint(e.clientX, e.clientY); const b = el && el.closest && el.closest(".mbox"); if (b) drop(b); };
+}
+
+// ---------------------------------------------------------------- win + certificate
+const NAME_RE = /^[A-Za-zÀ-ÖØ-öø-ÿĀ-žËëÇç' \-]{1,30}$/;
+function winScreen() {
+  clear(); G.lvl = 5; head(""); tip(LANG === "sq" ? "Bravo! Tani je Detektiv i Zjarreve!" : "Well done! You are a Fire Detective now!");
+  stage.innerHTML = `<div class="center" style="justify-content:flex-start"><div class="stars">⭐⭐⭐⭐⭐</div><h1>${T.win}</h1><p style="margin:0">${T.winText} 🚒</p>
+   <div class="card" style="text-align:left;font-size:15px"><b>${T.rem}</b><br>${T.s1}<br>${T.s2}<br>${T.s3}</div>
+   <p style="font-weight:700;margin:4px">${T.seeApp}</p>
+   <div class="card"><label for="nm" style="font-weight:800">${T.nameL}</label><br><input class="name" id="nm" maxlength="30" autocomplete="off" placeholder="${T.nameL}">
+   <div class="note" id="rule">${T.privacy}</div><button class="big green" id="cb" disabled style="margin-top:8px">🏅 ${T.get}</button></div>
+   <div id="out"></div><button class="big blue" id="again" style="margin:8px 0 16px">${T.again}</button></div>`;
+  const nm = $("nm"), cb = $("cb");
+  nm.oninput = () => { const v = nm.value.trim(); const ok = NAME_RE.test(v); cb.disabled = !ok; $("rule").textContent = v && !ok ? T.nameRule : T.privacy; };
+  cb.onclick = () => { cb.disabled = true; makeCert(nm.value.trim()).finally(() => cb.disabled = false); };
+  $("again").onclick = () => { G.done = [false, false, false, false, false]; setScore(0); startScreen(); };
+}
+function svgImg(s) { return new Promise(r => { const im = new Image(); im.onload = () => r(im); im.onerror = () => r(null); im.src = "data:image/svg+xml;charset=utf-8," + encodeURIComponent(s); }); }
+async function makeCert(name) {
+  try { await Promise.race([Promise.all([document.fonts.load("700 120px Cinzel"), document.fonts.load("400 40px Inter")]), new Promise(r => setTimeout(r, 2500))]); } catch (e) {}
+  const W = 2480, H = 1754, cv = document.createElement("canvas"); cv.width = W; cv.height = H; const x = cv.getContext("2d");
+  x.fillStyle = "#FAF4E6"; x.fillRect(0, 0, W, H); x.fillStyle = "#EADCC0"; for (let i = 0; i < W; i += 14) for (let j = 0; j < H; j += 14) x.fillRect(i, j, 2, 2);
+  const dia = (cx, cy) => { x.fillStyle = "#A61E26"; x.beginPath(); x.moveTo(cx, cy - 26); x.lineTo(cx + 30, cy); x.lineTo(cx, cy + 26); x.lineTo(cx - 30, cy); x.fill();
+    x.fillStyle = "#161212"; x.beginPath(); x.moveTo(cx, cy - 12); x.lineTo(cx + 14, cy); x.lineTo(cx, cy + 12); x.lineTo(cx - 14, cy); x.fill(); };
+  for (let k = 0; k < Math.floor((W - 120) / 60); k++) { dia(90 + k * 60 + 30, 80); dia(90 + k * 60 + 30, H - 80); }
+  for (let k = 0; k < Math.floor((H - 120) / 60); k++) { dia(80, 90 + k * 60 + 30); dia(W - 80, 90 + k * 60 + 30); }
+  x.strokeStyle = "#C9A24A"; x.lineWidth = 6; x.strokeRect(140, 140, W - 280, H - 280);
+  const ros = (cx, cy, r) => { x.save(); x.translate(cx, cy); for (let i = 0; i < 12; i++) { x.rotate(Math.PI / 6); x.fillStyle = i % 2 ? "#C9A24A" : "#A61E26"; x.beginPath(); x.moveTo(0, 0);
+      x.quadraticCurveTo(r * .35, -r * .5, 0, -r); x.quadraticCurveTo(-r * .35, -r * .5, 0, 0); x.fill(); }
+    x.fillStyle = "#C9A24A"; x.beginPath(); x.arc(0, 0, r * .3, 0, 7); x.fill(); x.fillStyle = "#A61E26"; x.beginPath(); x.arc(0, 0, r * .14, 0, 7); x.fill(); x.restore(); };
+  [[80, 80], [W - 80, 80], [80, H - 80], [W - 80, H - 80]].forEach(p => ros(p[0], p[1], 56)); ros(W / 2, 320, 130);
+  x.textAlign = "center"; x.fillStyle = "#A61E26"; x.font = "700 150px Cinzel, Georgia, serif"; x.fillText(T.certTitle, W / 2, 610);
+  x.fillStyle = "#6E6560"; x.font = "400 50px Inter, Arial, sans-serif"; x.fillText(T.certThis, W / 2, 730);
+  let fs = 170; x.font = `700 ${fs}px Cinzel, Georgia, serif`; while (x.measureText(name).width > W - 900 && fs > 70) { fs -= 8; x.font = `700 ${fs}px Cinzel, Georgia, serif`; }
+  x.fillStyle = "#161212"; x.fillText(name, W / 2, 930); x.strokeStyle = "#C9A24A"; x.lineWidth = 5; x.beginPath(); x.moveTo(W / 2 - 700, 975); x.lineTo(W / 2 + 700, 975); x.stroke();
+  x.fillStyle = "#1E1816"; x.font = "400 54px Inter, Arial, sans-serif"; T.certBody.forEach((l, i) => x.fillText(l, W / 2, 1090 + i * 76));
+  x.fillStyle = "#C9A24A"; for (let i = 0; i < 5; i++) { const cx = W / 2 - 260 + i * 130, cy = 1300, r = 48; x.beginPath();
+    for (let k = 0; k < 10; k++) { const rr = k % 2 ? r * .42 : r, a = -Math.PI / 2 + k * Math.PI / 5; x.lineTo(cx + rr * Math.cos(a), cy + rr * Math.sin(a)); } x.fill(); }
+  const mo = await svgImg(sat("mo", 420)), ve = await svgImg(sat("vee", 420));
+  if (mo) x.drawImage(mo, 330, 1215, 360, 240); if (ve) x.drawImage(ve, W - 690, 1215, 360, 240);
+  const d = new Date(); x.fillStyle = "#6E6560"; x.font = "400 44px Inter, Arial, sans-serif";
+  x.fillText(`${T.date}: ${String(d.getDate()).padStart(2, "0")}.${String(d.getMonth() + 1).padStart(2, "0")}.${d.getFullYear()}`, W / 2, 1440);
+  x.fillStyle = "#C9A24A"; for (let i = 300; i < W - 300; i += 40) { x.beginPath(); x.moveTo(i, 1490); x.lineTo(i + 40, 1490); x.lineTo(i + 20, 1520); x.fill(); }
+  x.fillStyle = "#6E6560"; x.font = "400 36px Inter, Arial, sans-serif"; x.fillText("VATRA · Albania's Fire Calendar · made by Viola Zeneli · NASA Space Apps Challenge 2026 project", W / 2, 1585);
+  const fname = "VATRA_Certificate_" + name.normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[^A-Za-z0-9-]+/g, "_").replace(/^_+|_+$/g, "");
+  const png = await new Promise(r => cv.toBlob(r, "image/png"));
+  const pdf = jpegToPdf(cv.toDataURL("image/jpeg", .92), W, H);
+  const pu = URL.createObjectURL(png), du = URL.createObjectURL(pdf);
+  $("out").innerHTML = `<img id="certImg" src="${pu}" alt="certificate"><div><a class="dl" href="${pu}" download="${fname}.png" target="_blank">${T.png}</a><a class="dl alt" href="${du}" download="${fname}.pdf" target="_blank">${T.pdf}</a></div><div class="note">${T.ios}</div>`;
+  yay(); $("certImg").scrollIntoView({behavior: "smooth", block: "center"});
+}
+// minimal one-page PDF (A4 landscape) with the certificate as a JPEG, no library needed
+function jpegToPdf(dataUrl, w, h) {
+  const bin = atob(dataUrl.split(",")[1]); const img = new Uint8Array(bin.length); for (let i = 0; i < bin.length; i++) img[i] = bin.charCodeAt(i);
+  const enc = s => new TextEncoder().encode(s); const parts = []; const offs = []; let len = 0;
+  const add = p => { const b = typeof p === "string" ? enc(p) : p; parts.push(b); len += b.length; };
+  add("%PDF-1.4\n%\xE2\xE3\xCF\xD3\n");
+  const content = "q 842 0 0 595 0 0 cm /Im0 Do Q";
+  offs[1] = len; add("1 0 obj\n<< /Type /Catalog /Pages 2 0 R >>\nendobj\n");
+  offs[2] = len; add("2 0 obj\n<< /Type /Pages /Kids [3 0 R] /Count 1 >>\nendobj\n");
+  offs[3] = len; add("3 0 obj\n<< /Type /Page /Parent 2 0 R /MediaBox [0 0 842 595] /Resources << /XObject << /Im0 4 0 R >> >> /Contents 5 0 R >>\nendobj\n");
+  offs[4] = len; add(`4 0 obj\n<< /Type /XObject /Subtype /Image /Width ${w} /Height ${h} /ColorSpace /DeviceRGB /BitsPerComponent 8 /Filter /DCTDecode /Length ${img.length} >>\nstream\n`); add(img); add("\nendstream\nendobj\n");
+  offs[5] = len; add(`5 0 obj\n<< /Length ${content.length} >>\nstream\n${content}\nendstream\nendobj\n`);
+  const xref = len; let x = "xref\n0 6\n0000000000 65535 f \n"; for (let i = 1; i <= 5; i++) x += String(offs[i]).padStart(10, "0") + " 00000 n \n";
+  add(x + `trailer\n<< /Size 6 /Root 1 0 R >>\nstartxref\n${xref}\n%%EOF`);
+  return new Blob(parts, {type: "application/pdf"});
+}
+startScreen();
+</script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+OCHA Common Operational Dataset - Administrative Boundaries (COD-AB), Albania, 2019 (alb_adm_2019b)
+Source: Humanitarian Data Exchange (HDX), https://data.humdata.org/dataset/cod-ab-alb
+Licence: Creative Commons Attribution for Intergovernmental Organisations (CC BY-IGO)
+
+Files in this folder:
+- ocha-ALB-ADM1-2019.geojson : 12 counties (qarqe)
+- ocha-ALB-ADM2-2019.geojson : 61 municipalities (bashki, since the 2015 reform)
+
+Why: geoBoundaries ADM2 for Albania holds the 37 older districts (rrethe), not the 61 municipalities.
+VATRA uses geoBoundaries ADM0 for the country border and these OCHA files for counties and municipalities.
+Some municipality names in the source are in genitive form or swapped (for example AL1101 is labelled
+"Kavajë" but is Kamëz); config.py (MUNICIPALITY_NAMES) holds the corrected names by P-code.
+
+Downloaded 14 Nov 2026 (shapefile converted to GeoJSON, attributes kept: names EN/SQ and P-codes).

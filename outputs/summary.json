@@ -1,0 +1,109 @@
+{
+ "country": "Albania",
+ "bbox": [
+  19.282,
+  39.645,
+  21.058,
+  42.661
+ ],
+ "build_time_utc": "2026-11-14T12:43:20+00:00",
+ "build_seconds": 11.1,
+ "first_date_per_satellite": {
+  "Aqua": "2002-07-21",
+  "NOAA-20": "2018-04-03",
+  "NOAA-21": "2023-03-03",
+  "S-NPP": "2012-01-22",
+  "Terra": "2000-11-17"
+ },
+ "last_date_per_satellite": {
+  "Aqua": "2026-10-20",
+  "NOAA-20": "2026-11-07",
+  "NOAA-21": "2026-11-06",
+  "S-NPP": "2026-10-31",
+  "Terra": "2026-11-06"
+ },
+ "data_end": "2026-11-07",
+ "detections_clean": 105051,
+ "detections_by_sensor": {
+  "VIIRS": 83247,
+  "MODIS": 21804
+ },
+ "celldays": 65598,
+ "events": 2774,
+ "harmonized_total": 20845.317379145403,
+ "base_years": [
+  2003,
+  2025
+ ],
+ "cleaning": {
+  "rows_loaded": 109382,
+  "last_standard_date": {
+   "Aqua": "2026-07-30",
+   "NOAA-20": "2026-06-30",
+   "NOAA-21": "2026-06-30",
+   "S-NPP": "2026-06-30",
+   "Terra": "2026-07-08"
+  },
+  "exact_duplicates_dropped": 32,
+  "type_2_or_3_dropped": 3344,
+  "static_mask_cells": 8,
+  "nrt_in_static_cells_dropped": 236,
+  "outside_country_dropped": 719,
+  "nearest_municipality_used": 119,
+  "rows_clean": 105051,
+  "low_confidence_rows": 6399
+ },
+ "packages": {
+  "python": "3.12.10",
+  "streamlit": "1.67.0",
+  "pandas": "3.0.5",
+  "numpy": "2.5.3",
+  "geopandas": "1.2.0",
+  "shapely": "2.2.0",
+  "plotly": "7.1.0",
+  "folium": "0.20.0",
+  "pymannkendall": "1.4.3",
+  "scipy": "1.18.1",
+  "fpdf2": "2.9.0",
+  "matplotlib": "3.11.2",
+  "pyarrow": "26.0.1",
+  "pyproj": "3.8.0"
+ },
+ "first_month": "2000-11",
+ "last_month": "2026-11",
+ "colour_ramp_check": {
+  "normal": {
+   "L": [
+    95.4,
+    83.6,
+    65.2,
+    43.3,
+    26.0,
+    6.9
+   ],
+   "monotonic": true
+  },
+  "deuteranopia": {
+   "L": [
+    95.8,
+    84.9,
+    67.9,
+    47.3,
+    29.3,
+    8.0
+   ],
+   "monotonic": true
+  },
+  "protanopia": {
+   "L": [
+    94.8,
+    81.5,
+    60.7,
+    36.0,
+    19.7,
+    5.2
+   ],
+   "monotonic": true
+  }
+ }
+}

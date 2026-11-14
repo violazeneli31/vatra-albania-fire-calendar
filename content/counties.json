@@ -1,0 +1,334 @@
+{
+ "counties": [
+  {
+   "id": "shkoder",
+   "name": "Shkodër",
+   "roots": [
+    {
+     "text_en": "Scodra (Shkodër) was the capital of King Gentius, the last Illyrian king, who was defeated by Rome in 168 BC.",
+     "text_sq": "Scodra (Shkodra) ishte kryeqyteti i mbretit Genti, mbretit të fundit ilir, i mundur nga Roma më 168 p.e.s.",
+     "source": "https://www.britannica.com/place/Shkoder"
+    },
+    {
+     "text_en": "Rozafa Castle stands on a rocky hill above the city, where the Buna and Drin rivers meet.",
+     "text_sq": "Kalaja e Rozafës ngrihet mbi një kodër shkëmbore mbi qytet, ku takohen Buna dhe Drini.",
+     "source": "https://www.britannica.com/place/Shkoder"
+    }
+   ],
+   "nature": [
+    {
+     "text_en": "Lake Shkodër (Scutari), shared with Montenegro, is the largest lake in the Balkan Peninsula.",
+     "text_sq": "Liqeni i Shkodrës, i ndarë me Malin e Zi, është liqeni më i madh i Gadishullit Ballkanik.",
+     "source": "https://www.britannica.com/place/Lake-Scutari"
+    },
+    {
+     "text_en": "Theth National Park protects a high valley in the Albanian Alps.",
+     "text_sq": "Parku Kombëtar i Thethit mbron një luginë të lartë në Alpet Shqiptare.",
+     "source": "https://en.wikipedia.org/wiki/Theth_National_Park"
+    }
+   ],
+   "did_you_know": [
+    {
+     "text_en": "A famous legend says Rozafa was walled into the castle, asking that one hand stay free to hold her baby.",
+     "text_sq": "Një legjendë e njohur thotë se Rozafa u muros në kala, duke kërkuar që një dorë t'i mbetej e lirë për të mbajtur foshnjën.",
+     "source": "https://en.wikipedia.org/wiki/Rozafa_Castle"
+    }
+   ]
+  },
+  {
+   "id": "kukes",
+   "name": "Kukës",
+   "roots": [
+    {
+     "text_en": "The county lies in the high north-east, along old routes between the Adriatic coast and Kosovo.",
+     "text_sq": "Qarku shtrihet në verilindjen e lartë, përgjatë rrugëve të vjetra mes bregdetit të Adriatikut dhe Kosovës.",
+     "source": "https://www.britannica.com/place/Kukes"
+    }
+   ],
+   "nature": [
+    {
+     "text_en": "Valbonë Valley National Park, in Tropojë, is a valley of high peaks and forests in the Albanian Alps.",
+     "text_sq": "Parku Kombëtar Lugina e Valbonës, në Tropojë, është luginë me maja të larta dhe pyje në Alpet Shqiptare.",
+     "source": "https://en.wikipedia.org/wiki/Valbon%C3%AB_Valley_National_Park"
+    },
+    {
+     "text_en": "Mount Gjallica rises above the town of Kukës.",
+     "text_sq": "Mali i Gjallicës ngrihet mbi qytetin e Kukësit.",
+     "source": "https://en.wikipedia.org/wiki/Gjallica"
+    }
+   ],
+   "did_you_know": [
+    {
+     "text_en": "The town of Kukës was moved to a new site in the 1970s when the Fierza reservoir flooded the old one.",
+     "text_sq": "Qyteti i Kukësit u zhvendos në vend të ri në vitet 1970, kur liqeni i Fierzës përmbyti qytetin e vjetër.",
+     "source": "https://www.britannica.com/place/Kukes"
+    }
+   ]
+  },
+  {
+   "id": "lezhe",
+   "name": "Lezhë",
+   "roots": [
+    {
+     "text_en": "Lezhë is the ancient Lissus. In 1444 Skanderbeg gathered Albanian princes here in the League of Lezhë.",
+     "text_sq": "Lezha është Lissusi i lashtë. Më 1444 Skënderbeu mblodhi këtu princërit shqiptarë në Lidhjen e Lezhës.",
+     "source": "https://www.britannica.com/biography/Skanderbeg"
+    }
+   ],
+   "nature": [
+    {
+     "text_en": "The Kune–Vain lagoon near the Drin mouth is an important wetland for birds.",
+     "text_sq": "Laguna Kune–Vain pranë grykëderdhjes së Drinit është ligatinë e rëndësishme për zogjtë.",
+     "source": "https://en.wikipedia.org/wiki/Kune-Vain-Tale_Protected_Landscape"
+    }
+   ],
+   "did_you_know": [
+    {
+     "text_en": "Skanderbeg is believed to be buried in Lezhë, where a memorial now stands.",
+     "text_sq": "Besohet se Skënderbeu është varrosur në Lezhë, ku sot ndodhet një memorial.",
+     "source": "https://www.britannica.com/biography/Skanderbeg"
+    }
+   ]
+  },
+  {
+   "id": "diber",
+   "name": "Dibër",
+   "roots": [
+    {
+     "text_en": "Dibër is a mountain county in the east, on the old routes of the Black Drin valley.",
+     "text_sq": "Dibra është qark malor në lindje, në rrugët e vjetra të luginës së Drinit të Zi.",
+     "source": "https://en.wikipedia.org/wiki/Dib%C3%ABr_County"
+    }
+   ],
+   "nature": [
+    {
+     "text_en": "Mount Korab, on the border with North Macedonia, is Albania's highest mountain (2,764 m).",
+     "text_sq": "Mali i Korabit, në kufi me Maqedoninë e Veriut, është mali më i lartë i Shqipërisë (2.764 m).",
+     "source": "https://www.britannica.com/place/Mount-Korab"
+    },
+    {
+     "text_en": "The Lura lakes are glacial lakes surrounded by forest.",
+     "text_sq": "Liqenet e Lurës janë liqene akullnajore të rrethuara nga pyje.",
+     "source": "https://en.wikipedia.org/wiki/Lura_National_Park"
+    }
+   ],
+   "did_you_know": [
+    {
+     "text_en": "Albania's highest peak, Korab, is in Dibër county.",
+     "text_sq": "Maja më e lartë e Shqipërisë, Korabi, është në qarkun e Dibrës.",
+     "source": "https://www.britannica.com/place/Mount-Korab"
+    }
+   ]
+  },
+  {
+   "id": "durres",
+   "name": "Durrës",
+   "roots": [
+    {
+     "text_en": "Durrës was founded as Epidamnos by Greek colonists (later Roman Dyrrachium) and was the starting point of the Via Egnatia.",
+     "text_sq": "Durrësi u themelua si Epidamnos nga kolonët grekë (më vonë Dyrrachium romak) dhe ishte pika e nisjes së Via Egnatia-s.",
+     "source": "https://www.britannica.com/place/Durres"
+    }
+   ],
+   "nature": [
+    {
+     "text_en": "The county has a long sandy coast and coastal wetlands.",
+     "text_sq": "Qarku ka një bregdet të gjatë ranor dhe ligatina bregdetare.",
+     "source": "https://www.britannica.com/place/Durres"
+    }
+   ],
+   "did_you_know": [
+    {
+     "text_en": "Durrës has a large Roman amphitheatre from the 2nd century AD in the middle of the city.",
+     "text_sq": "Durrësi ka një amfiteatër të madh romak të shekullit II në mes të qytetit.",
+     "source": "https://en.wikipedia.org/wiki/Durr%C3%ABs_Amphitheatre"
+    }
+   ]
+  },
+  {
+   "id": "tirane",
+   "name": "Tiranë",
+   "roots": [
+    {
+     "text_en": "Tirana has been Albania's capital since 1920.",
+     "text_sq": "Tirana është kryeqyteti i Shqipërisë që nga viti 1920.",
+     "source": "https://www.britannica.com/place/Tirana"
+    }
+   ],
+   "nature": [
+    {
+     "text_en": "Dajti Mountain National Park rises just east of the city.",
+     "text_sq": "Parku Kombëtar Mali i Dajtit ngrihet në lindje të qytetit.",
+     "source": "https://en.wikipedia.org/wiki/Dajti_National_Park"
+    }
+   ],
+   "did_you_know": [
+    {
+     "text_en": "A cable car (Dajti Ekspres) goes from Tirana up the slopes of Mount Dajti.",
+     "text_sq": "Një teleferik (Dajti Ekspres) ngjitet nga Tirana në shpatet e malit të Dajtit.",
+     "source": "https://en.wikipedia.org/wiki/Dajti_Ekspres"
+    }
+   ]
+  },
+  {
+   "id": "elbasan",
+   "name": "Elbasan",
+   "roots": [
+    {
+     "text_en": "Elbasan grew around the Roman fort of Scampa on the Via Egnatia.",
+     "text_sq": "Elbasani u rrit rreth kështjellës romake Scampa në Via Egnatia.",
+     "source": "https://en.wikipedia.org/wiki/Elbasan_Castle"
+    }
+   ],
+   "nature": [
+    {
+     "text_en": "Shebenik National Park protects mountain forests near the border with North Macedonia.",
+     "text_sq": "Parku Kombëtar i Shebenikut mbron pyje malore pranë kufirit me Maqedoninë e Veriut.",
+     "source": "https://en.wikipedia.org/wiki/Shebenik_National_Park"
+    }
+   ],
+   "did_you_know": [
+    {
+     "text_en": "Dita e Verës (Summer Day), on 14 March, is a spring festival celebrated especially in Elbasan.",
+     "text_sq": "Dita e Verës, më 14 mars, është festë pranverore që festohet sidomos në Elbasan.",
+     "source": "https://en.wikipedia.org/wiki/Dita_e_Ver%C3%ABs"
+    }
+   ]
+  },
+  {
+   "id": "fier",
+   "name": "Fier",
+   "roots": [
+    {
+     "text_en": "Apollonia, near Fier, was an ancient city founded by Greek colonists; Byllis stands on a hill above the Vjosa.",
+     "text_sq": "Apolonia, pranë Fierit, ishte qytet antik i themeluar nga kolonët grekë; Bylisi ngrihet mbi një kodër mbi Vjosën.",
+     "source": "https://www.britannica.com/place/Apollonia-ancient-city-Albania"
+    }
+   ],
+   "nature": [
+    {
+     "text_en": "Divjakë–Karavasta National Park protects the largest lagoon in Albania and pine forest by the sea.",
+     "text_sq": "Parku Kombëtar Divjakë–Karavasta mbron lagunën më të madhe të Shqipërisë dhe pyllin e pishave buzë detit.",
+     "source": "https://en.wikipedia.org/wiki/Divjak%C3%AB-Karavasta_National_Park"
+    },
+    {
+     "text_en": "The Myzeqe plain is one of Albania's main farming areas.",
+     "text_sq": "Fusha e Myzeqesë është një nga zonat kryesore bujqësore të Shqipërisë.",
+     "source": "https://en.wikipedia.org/wiki/Myzeqe"
+    }
+   ],
+   "did_you_know": [
+    {
+     "text_en": "Karavasta lagoon is home to the Dalmatian pelican.",
+     "text_sq": "Laguna e Karavastasë është shtëpia e pelikanit kaçurrel.",
+     "source": "https://en.wikipedia.org/wiki/Divjak%C3%AB-Karavasta_National_Park"
+    }
+   ]
+  },
+  {
+   "id": "berat",
+   "name": "Berat",
+   "roots": [
+    {
+     "text_en": "Berat's historic centre is a UNESCO World Heritage site, together with Gjirokastër.",
+     "text_sq": "Qendra historike e Beratit është sit i Trashëgimisë Botërore UNESCO, së bashku me Gjirokastrën.",
+     "source": "https://whc.unesco.org/en/list/569"
+    }
+   ],
+   "nature": [
+    {
+     "text_en": "Mount Tomorr and the Osum canyon are in Berat county.",
+     "text_sq": "Mali i Tomorrit dhe kanioni i Osumit janë në qarkun e Beratit.",
+     "source": "https://en.wikipedia.org/wiki/Osum_Canyon"
+    }
+   ],
+   "did_you_know": [
+    {
+     "text_en": "Berat is often called 'the city of a thousand windows'.",
+     "text_sq": "Berati shpesh quhet 'qyteti i një mbi një dritareve'.",
+     "source": "https://www.britannica.com/place/Berat"
+    }
+   ]
+  },
+  {
+   "id": "korce",
+   "name": "Korçë",
+   "roots": [
+    {
+     "text_en": "The Albanian shore of Lake Ohrid, with the prehistoric lakeside site of Lin, is part of the UNESCO Ohrid region since 2019.",
+     "text_sq": "Bregu shqiptar i liqenit të Ohrit, me vendbanimin parahistorik të Linit, është pjesë e rajonit UNESCO të Ohrit që nga 2019.",
+     "source": "https://whc.unesco.org/en/list/99"
+    }
+   ],
+   "nature": [
+    {
+     "text_en": "Prespa National Park protects the Albanian part of the Prespa lakes.",
+     "text_sq": "Parku Kombëtar i Prespës mbron pjesën shqiptare të liqeneve të Prespës.",
+     "source": "https://en.wikipedia.org/wiki/Prespa_National_Park_(Albania)"
+    }
+   ],
+   "did_you_know": [
+    {
+     "text_en": "Lake Ohrid is one of the oldest lakes in Europe.",
+     "text_sq": "Liqeni i Ohrit është një nga liqenet më të vjetër në Evropë.",
+     "source": "https://whc.unesco.org/en/list/99"
+    }
+   ]
+  },
+  {
+   "id": "gjirokaster",
+   "name": "Gjirokastër",
+   "roots": [
+    {
+     "text_en": "Antigonea was founded in the 3rd century BC; Gjirokastër's stone old town is a UNESCO World Heritage site.",
+     "text_sq": "Antigonea u themelua në shekullin III p.e.s.; qyteti i vjetër i gurtë i Gjirokastrës është sit i Trashëgimisë Botërore UNESCO.",
+     "source": "https://whc.unesco.org/en/list/569"
+    }
+   ],
+   "nature": [
+    {
+     "text_en": "The Vjosa, one of Europe's last big wild rivers, flows through the county; the Hotova fir forest is near Përmet.",
+     "text_sq": "Vjosa, një nga lumenjtë e fundit të egër të mëdhenj të Evropës, rrjedh nëpër qark; pylli i bredhit të Hotovës është pranë Përmetit.",
+     "source": "https://en.wikipedia.org/wiki/Vjos%C3%AB-Narta_Protected_Landscape"
+    }
+   ],
+   "did_you_know": [
+    {
+     "text_en": "Gjirokastër is known as 'the city of stone' for its stone-roofed houses.",
+     "text_sq": "Gjirokastra njihet si 'qyteti i gurtë' për shtëpitë me çati prej guri.",
+     "source": "https://whc.unesco.org/en/list/569"
+    }
+   ]
+  },
+  {
+   "id": "vlore",
+   "name": "Vlorë",
+   "roots": [
+    {
+     "text_en": "Albania's independence was declared in Vlorë on 28 November 1912.",
+     "text_sq": "Pavarësia e Shqipërisë u shpall në Vlorë më 28 nëntor 1912.",
+     "source": "https://www.britannica.com/place/Albania/Independent-Albania"
+    },
+    {
+     "text_en": "Butrint, in the Sarandë area, is a UNESCO World Heritage site; Amantia and Oricum are also in the county.",
+     "text_sq": "Butrinti, në zonën e Sarandës, është sit i Trashëgimisë Botërore UNESCO; Amantia dhe Orikumi janë gjithashtu në qark.",
+     "source": "https://whc.unesco.org/en/list/570"
+    }
+   ],
+   "nature": [
+    {
+     "text_en": "The Llogara pass has pine forests above the Ionian coast; Karaburun–Sazan is Albania's first marine park.",
+     "text_sq": "Qafa e Llogarasë ka pyje pishe mbi bregun e Jonit; Karaburun–Sazani është parku i parë detar i Shqipërisë.",
+     "source": "https://en.wikipedia.org/wiki/Karaburun-Sazan_Marine_Park"
+    }
+   ],
+   "did_you_know": [
+    {
+     "text_en": "Butrint has been lived in for about 2,500 years, from Greek times to the Venetians.",
+     "text_sq": "Butrinti është banuar për rreth 2.500 vjet, nga koha greke deri te venedikasit.",
+     "source": "https://whc.unesco.org/en/list/570"
+    }
+   ]
+  }
+ ]
+}

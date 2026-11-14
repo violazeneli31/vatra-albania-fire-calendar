@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use VATRA or its harmonized data, please cite it as below."
+title: "VATRA: Albania's Fire Calendar"
+abstract: >-
+  A web app and dataset that harmonize NASA FIRMS MODIS (Collection 6.1) and VIIRS 375 m (S-NPP, NOAA-20, NOAA-21)
+  active fire hotspots for Albania, 2000-2026, into one MODIS-equivalent record of fire cell-days, shown as a
+  burning activity calendar with normals, anomalies, trends, a fire events catalogue and validation against EFFIS.
+  Built for the NASA Space Apps Challenge 2026 (Harmonization of MODIS and VIIRS Hot Spots).
+type: software
+authors:
+  - family-names: Zeneli
+    given-names: Viola
+    affiliation: "Independent Researcher"
+    orcid: "https://orcid.org/0009-0000-2815-6398"
+version: 1.0.0
+date-released: 2026-11-15
+license: MIT
+repository-code: "https://github.com/violazeneli31/vatra-albania-fire-calendar"
+url: "https://vatra-albania.streamlit.app"
+keywords:
+  - wildfire
+  - MODIS
+  - VIIRS
+  - FIRMS
+  - harmonization
+  - Albania
+  - fire calendar
