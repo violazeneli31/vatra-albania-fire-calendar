@@ -5,7 +5,7 @@
 A web app for the **NASA Space Apps Challenge 2026**, challenge **"Harmonization of MODIS and VIIRS Hot Spots"**.
 Team **Viola Fusion** (Viola Zeneli, solo, Universal Event) · ORCID [0009-0000-2815-6398](https://orcid.org/0009-0000-2815-6398).
 
-**Open the app:** https://vatra-albania.streamlit.app  ·  If the app is asleep, click "Yes, get this app back up" and wait a few seconds.
+**Open the app:** https://vatra-albania.streamlit.app  ·  If the app is asleep, click "Yes, get this app back up" and wait about 30–60 seconds.
 
 *Vatra* means "the hearth" in Albanian: fire as something to care for.
 
@@ -151,7 +151,7 @@ All three parts are on Zenodo (community [VATRA – Albania's Fire Calendar](htt
 
 - **Software:** Zeneli, V. (2026). *VATRA: Albania's Fire Calendar* (v1.0). Zenodo. https://doi.org/10.5281/zenodo.24231571
 - **Dataset:** Zeneli, V. (2026). *VATRA: harmonized MODIS–VIIRS active fire record for Albania, 2000–2026* (1.0). Zenodo. https://doi.org/10.5281/zenodo.24231762
-- **Report:** Zeneli, V. (2026). *VATRA: harmonizing MODIS and VIIRS hotspots for Albania, 2000–2026 – Technical report v1*. Zenodo. https://doi.org/10.5281/zenodo.24232403
+- **Report:** Zeneli, V. (2026). *VATRA: harmonizing MODIS and VIIRS hotspots for Albania, 2000–2026 – Technical report*. Zenodo. https://doi.org/10.5281/zenodo.24232403
 
 GitHub's "Cite this repository" button gives the software citation (from `CITATION.cff`). Please also cite the NASA FIRMS datasets listed below.
 
