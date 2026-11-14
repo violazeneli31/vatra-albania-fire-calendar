@@ -240,6 +240,7 @@ iframe[title="streamlit_folium.st_folium"]{{border-radius:12px}}
   [data-testid="stMain"] .st-key-fb_row2 [data-testid="stHorizontalBlock"] > [data-testid="stColumn"]{{min-width:0!important;width:auto!important;flex:0 0 auto!important}}
   [data-testid="stMain"] .st-key-fb_row2 [data-testid="stHorizontalBlock"] > [data-testid="stColumn"]:first-child{{flex:1 1 100%!important}}
   .st-key-fb_row2 [data-testid="stColumn"]:last-child{{display:none}}
+  .v-askhint{{text-align:left!important;margin-top:-.6rem}}
   .st-key-viola_fab{{right:10px;bottom:10px}}
   .st-key-viola_fab [data-testid="stPopover"] button{{width:60px!important;height:60px!important}}
 }}

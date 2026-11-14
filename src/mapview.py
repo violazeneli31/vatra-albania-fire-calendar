@@ -46,6 +46,47 @@ def _nearest(lat, lon):
     return name, d[np.arange(len(k)), k]
 
 
+def _fire_rows(points: pd.DataFrame):
+    """Compact rows for the fire layer. The popup text (same content as before) is built in the browser when a point
+    is clicked, so the page does not carry thousands of ready-made popups."""
+    import json as _json
+    p = points.copy()
+    span = max((p["date"].max() - p["date"].min()).days, 1)
+    rec = ((p["date"] - p["date"].min()).dt.days / span).to_numpy()
+    lvl = np.clip(np.round((1 - rec) * 20), 0, 20).astype(int)  # recent = brighter (lighter)
+    pal = [ramp_color(.25 + .6 * (k / 20)) for k in range(21)]
+    rad = np.clip(3 + np.sqrt(p["frp"].fillna(4).to_numpy()) * .55, 3, 11).round(1)
+    site, km = _nearest(p["lat"], p["lon"])
+    site = np.where(km > 10, "", site)
+    sats = sorted(p["satellite"].astype(str).unique())
+    confs = sorted(p["confidence"].astype(str).unique())
+    munis = sorted({f"{a} ({b})" for a, b in zip(p["adm2"].astype(str), p["adm1"].astype(str))})
+    sites = sorted({x for x in site if x})
+    si = {v: i for i, v in enumerate(sats)}
+    ci = {v: i for i, v in enumerate(confs)}
+    mi = {v: i for i, v in enumerate(munis)}
+    ti = {v: i for i, v in enumerate(sites)}
+    dates = [fdate(d) for d in p["date"]]
+    frp = [None if pd.isna(v) else num(v, digits=1) for v in p["frp"]]
+    rows = [[round(la, 4), round(lo, 4), int(lv), float(r), d, str(tm), si[str(sa)], ci[str(cf)], fv,
+             mi[f"{a2} ({a1})"], ti.get(st, -1), num(float(k), digits=1)]
+            for la, lo, lv, r, d, tm, sa, cf, fv, a2, a1, st, k in
+            zip(p["lat"], p["lon"], lvl, rad, dates, p["time"], p["satellite"], p["confidence"], frp, p["adm2"], p["adm1"], site, km)]
+    E = lambda xs: _json.dumps([escape(x) for x in xs], ensure_ascii=False)
+    lab = {k: escape(t(k)) for k in ("fire_detection", "satellite", "confidence", "intensity", "municipality", "nearest_site")}
+    conf_lab = E([t("conf_" + c) for c in confs])
+    callback = (
+        "(function(){var PAL=" + _json.dumps(pal) + ",SAT=" + E(sats) + ",CONF=" + conf_lab + ",MUN=" + E(munis)
+        + ",SITE=" + E(sites) + ",LB=" + _json.dumps(lab, ensure_ascii=False) + ";"
+        "return function(row){var m=L.circleMarker(new L.LatLng(row[0],row[1]),{radius:row[3],color:'#2A0B0E',weight:0.6,"
+        "fillColor:PAL[row[2]],fillOpacity:0.88});"
+        "m.bindPopup(function(){var s='<b>🔥 '+LB.fire_detection+'</b><br>'+row[4]+' · '+row[5]+' UTC<br>'+LB.satellite+': '+SAT[row[6]]"
+        "+' · '+LB.confidence+': '+CONF[row[7]]+'<br>'+LB.intensity+': '+(row[8]===null?'–':row[8])+' MW<br>'+LB.municipality+': '+MUN[row[9]];"
+        "if(row[10]>=0){s+='<br>'+LB.nearest_site+': '+SITE[row[10]]+' ('+row[11]+' km)';}return s;},{maxWidth:260});"
+        "return m;};})()")
+    return rows, callback
+
+
 def st_lang():
     import streamlit as st
     return st.session_state.get("lang", "en")
@@ -63,29 +104,25 @@ def build(points: pd.DataFrame, theme: str, layers: list[str], area: dict, bound
     n = len(points)
     if "fires" in layers and n:
         if n <= C.MAP_POINT_CAP:
-            p = points.copy()
-            span = max((p["date"].max() - p["date"].min()).days, 1)
-            rec = ((p["date"] - p["date"].min()).dt.days / span).to_numpy()
-            p["color"] = [ramp_color(.25 + .6 * (1 - r)) for r in rec]  # recent = brighter (lighter)
-            p["radius"] = np.clip(3 + np.sqrt(p["frp"].fillna(4).to_numpy()) * .55, 3, 11).round(1)
-            p["site"], p["site_km"] = _nearest(p["lat"], p["lon"])
-            p.loc[p["site_km"] > 10, "site"] = ""
-            p["popup"] = [_fire_popup(r) for r in p.itertuples()]
-            rows = p[["lat", "lon", "color", "radius", "popup"]].values.tolist()
+            rows, callback = _fire_rows(points)
             fg = folium.FeatureGroup(name=t("layer_fires"), show=True)
-            plugins.FastMarkerCluster(rows, callback=FIRE_JS, options={"maxClusterRadius": 38, "disableClusteringAtZoom": 11}).add_to(fg)
+            plugins.FastMarkerCluster(rows, callback=callback, options={"maxClusterRadius": 38, "disableClusteringAtZoom": 11}).add_to(fg)
             fg.add_to(m)
-        else:  # aggregated grid (0.05 degree) when there are too many points
-            g = points.assign(gi=(points["lat"] / .05).astype(int), gj=(points["lon"] / .05).astype(int))
+        else:  # aggregated grid (0.05 degree) when there are too many points: one layer, not one shape per cell
+            g = points.assign(gi=np.floor(points["lat"] / .05).astype(int), gj=np.floor(points["lon"] / .05).astype(int))
             agg = g.groupby(["gi", "gj"]).size().reset_index(name="n")
             mx = agg["n"].max()
-            fg = folium.FeatureGroup(name=t("layer_fires_grid"), show=True)
-            for r in agg.itertuples():
-                lat0, lon0 = r.gi * .05, r.gj * .05
-                folium.Rectangle([[lat0, lon0], [lat0 + .05, lon0 + .05]], weight=0, fill=True,
-                                 fill_color=ramp_color(.15 + .8 * np.sqrt(r.n / mx)), fill_opacity=.75,
-                                 tooltip=f"{num(r.n)} {t('unit_hotspots')}").add_to(fg)
-            fg.add_to(m)
+            unit = t("unit_hotspots")
+            feats = [{"type": "Feature",
+                      "properties": {"c": ramp_color(.15 + .8 * np.sqrt(r.n / mx)), "tip": f"{num(r.n)} {unit}"},
+                      "geometry": {"type": "Polygon", "coordinates": [[
+                          [round(r.gj * .05, 3), round(r.gi * .05, 3)], [round(r.gj * .05 + .05, 3), round(r.gi * .05, 3)],
+                          [round(r.gj * .05 + .05, 3), round(r.gi * .05 + .05, 3)], [round(r.gj * .05, 3), round(r.gi * .05 + .05, 3)],
+                          [round(r.gj * .05, 3), round(r.gi * .05, 3)]]]}}
+                     for r in agg.itertuples()]
+            folium.GeoJson({"type": "FeatureCollection", "features": feats}, name=t("layer_fires_grid"),
+                           style_function=lambda f: {"weight": 0, "fillColor": f["properties"]["c"], "fillOpacity": .75},
+                           tooltip=folium.GeoJsonTooltip(["tip"], labels=False)).add_to(m)
 
     # borders
     if "counties" in layers:

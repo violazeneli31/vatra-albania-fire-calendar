@@ -39,7 +39,7 @@ with left:
         with st.container(key="cal_btn"):
             st.page_link(st.session_state["_pages"]["calendar"], label=t("see_full_calendar"), icon="📅")
     with b2:
-        ui.html(f'<div class="v-small v-muted" style="margin-bottom:1rem;text-align:right">💬 {escape(t("ask_viola_hint"))}</div>')
+        ui.html(f'<div class="v-small v-muted v-askhint" style="margin-bottom:1rem;text-align:right">💬 {escape(t("ask_viola_hint"))}</div>')
 with right:
     cd_all = data.celldays()
     since = pd.Timestamp(end - timedelta(days=365))
