@@ -12,7 +12,7 @@ authors:
     given-names: Viola
     affiliation: "Independent Researcher"
     orcid: "https://orcid.org/0009-0000-2815-6398"
-version: 1.0.0
+version: "1.0"
 date-released: 2026-11-15
 license: MIT
 repository-code: "https://github.com/violazeneli31/vatra-albania-fire-calendar"
