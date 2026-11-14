@@ -4,6 +4,8 @@ Made by `python build.py` from the files in `data/`. Area: Albania. Records: 15 
 CSV files are UTF-8 with BOM (Excel shows ë and ç correctly); `.parquet` files hold the same tables for the app.
 Dates are `YYYY-MM-DD`; times are UTC.
 
+**Dataset DOI:** https://doi.org/10.5281/zenodo.24231762 · code: https://doi.org/10.5281/zenodo.24231571 · report: https://doi.org/10.5281/zenodo.24232403
+
 **Licence:** derived data CC BY 4.0 (credit "VATRA, Viola Zeneli, 2026" and the sources below). Source data keep their
 own terms: NASA FIRMS (open, please cite), EFFIS (© European Union, reuse with acknowledgement), geoBoundaries (CC BY 4.0),
 OCHA COD-AB (CC BY-IGO).

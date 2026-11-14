@@ -42,10 +42,13 @@ with c1:
         st.download_button(t("dl_csv"), guide.csv_bytes(ev.sort_values("start")), file_name=guide.fname("events", f), mime="text/csv",
                            icon="⬇️", key="dl4")
         row("📦 " + escape(t("dl_full")), t("dl_full_d"))
+        z1, z2 = st.columns(2, gap="small")
         if C.DOI_URL:
-            st.link_button(t("open_doi"), C.DOI_URL, icon="📦")
-        else:
-            st.link_button(t("open_github"), C.REPO_URL + "/tree/main/outputs", icon="💻")
+            z1.link_button(t("open_doi"), C.DOI_URL, icon="📦", use_container_width=True)
+        z2.link_button(t("open_github"), C.REPO_URL + "/tree/main/outputs", icon="💻", use_container_width=True)
+        if C.DOI_URL:
+            ui.html(f'<div class="v-src">{escape(t("cite_this_dataset"))}: <a href="{C.DOI_URL}" target="_blank" rel="noopener">'
+                    f'{escape(C.DOI_URL.replace("https://", ""))}</a></div>')
 with c2:
     with st.container(key="dcard_reports"):
         from src import report

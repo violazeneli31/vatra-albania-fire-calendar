@@ -16,9 +16,10 @@ COUNTRY_ISO3 = "ALB"
 APP_URL = "https://vatra-albania.streamlit.app"
 REPO_URL = "https://github.com/violazeneli31/vatra-albania-fire-calendar"
 ORCID_URL = "https://orcid.org/0009-0000-2815-6398"
-DOI_URL = ""          # fill in after the Zenodo release, e.g. "https://doi.org/10.5281/zenodo.XXXXXXX"
+DOI_URL = "https://doi.org/10.5281/zenodo.24231762"       # dataset (Zenodo)
+CODE_DOI_URL = "https://doi.org/10.5281/zenodo.24231571"  # software release v1.0 (Zenodo)
 VIDEO_URL = ""        # fill in after the YouTube upload
-REPORT_URL = "https://github.com/violazeneli31/vatra-albania-fire-calendar/blob/main/docs/VATRA_technical_report_v1.pdf"  # works once the repo is public
+REPORT_URL = "https://doi.org/10.5281/zenodo.24232403"    # technical report (Zenodo)
 
 # ---------------------------------------------------------------- paths
 DATA = ROOT / "data"

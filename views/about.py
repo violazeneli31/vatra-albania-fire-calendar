@@ -47,17 +47,18 @@ with b:
         ui.html('<ul class="v-small" style="margin:0">' + "".join(
             f'<li>{escape(n)}: <a href="https://doi.org/{d}" target="_blank" rel="noopener">doi.org/{d}</a></li>' for n, d in cites)
             + f'<li>NASA FIRMS: <a href="https://firms.modaps.eosdis.nasa.gov/" target="_blank" rel="noopener">firms.modaps.eosdis.nasa.gov</a> · LANCE, NASA ESDIS</li></ul>')
+    cites_own = [(t("cite_software"), "Zeneli, V. (2026). VATRA: Albania's Fire Calendar (v1.0). Zenodo.", getattr(C, "CODE_DOI_URL", "")),
+                 (t("cite_dataset"), "Zeneli, V. (2026). VATRA: harmonized MODIS–VIIRS active fire record for Albania, 2000–2026 (1.0). Zenodo.", C.DOI_URL),
+                 (t("cite_report"), "Zeneli, V. (2026). VATRA: harmonizing MODIS and VIIRS hotspots for Albania, 2000–2026 – Technical report. Zenodo.", C.REPORT_URL)]
+    cites_own = [c for c in cites_own if c[2]]
+    if cites_own:
+        ui.html(ui.card(f'<h3>📚 {escape(t("cite_title"))}</h3><p class="v-small v-muted">{escape(t("cite_intro"))}</p><ul class="v-small" style="margin:0">'
+                        + "".join(f'<li><b>{escape(k)}:</b> {escape(txt)} <a href="{u}" target="_blank" rel="noopener">{escape(u.replace("https://", ""))}</a></li>'
+                                  for k, txt, u in cites_own) + "</ul>"))
     tail = [
         ("ai_title", f'<p class="v-small">{escape(t("ai_text"))}</p>'),
         ("disclaimer_title", f'<p class="v-small">{escape(t("disclaimer"))}</p>'),
         ("data_status", f'<p class="v-small">{escape(t("data_status_text", end=fdate(s["data_end"]), built=s["build_time_utc"][:10]))}</p>'),
     ]
     ui.html(ui.card("".join(f"<h3>{escape(t(k))}</h3>{v}" for k, v in tail)))
-    links = [("GitHub", C.REPO_URL, "💻")]
-    if C.DOI_URL:
-        links.append(("DOI", C.DOI_URL, "📦"))
-    if C.VIDEO_URL:
-        links.append((t("video"), C.VIDEO_URL, "🎬"))
-    links.append(("NASA FIRMS", "https://firms.modaps.eosdis.nasa.gov/", "🛰️"))
-    for col, (lab, url, ic) in zip(st.columns(len(links) + (4 - len(links)), gap="small"), links):
-        col.link_button(lab, url, icon=ic, use_container_width=True)
+    ui.link_buttons(video=True)

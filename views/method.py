@@ -66,11 +66,4 @@ with st.container(key="card_calib"):
 lims = [t(f"lim{i}") for i in range(1, 7)]
 ui.html(ui.card(f'<h3>{escape(t("limitations"))}</h3><ul class="v-small">' + "".join(f"<li>{escape(x)}</li>" for x in lims) + "</ul>",
                 style="margin-top:14px"))
-l1, l2, l3 = st.columns(3)
-if C.REPORT_URL:
-    l1.link_button(t("tech_report"), C.REPORT_URL, icon="📄")
-else:
-    l1.caption(t("tech_report_soon"))
-if C.DOI_URL:
-    l2.link_button(t("dataset_doi"), C.DOI_URL, icon="📦")
-l3.link_button("GitHub", C.REPO_URL, icon="💻")
+ui.link_buttons()

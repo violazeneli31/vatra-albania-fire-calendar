@@ -13,6 +13,17 @@ authors:
     affiliation: "Independent Researcher"
     orcid: "https://orcid.org/0009-0000-2815-6398"
 version: "1.0"
+doi: "10.5281/zenodo.24231571"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.24231571"
+    description: "Software (this repository, release v1.0)"
+  - type: doi
+    value: "10.5281/zenodo.24231762"
+    description: "Harmonized dataset"
+  - type: doi
+    value: "10.5281/zenodo.24232403"
+    description: "Technical report"
 date-released: 2026-11-15
 license: MIT
 repository-code: "https://github.com/violazeneli31/vatra-albania-fire-calendar"

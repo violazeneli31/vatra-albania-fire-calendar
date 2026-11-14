@@ -1,5 +1,7 @@
 # VATRA: Albania's Fire Calendar · Kalendari i Zjarreve
 
+[![Software DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24231571.svg)](https://doi.org/10.5281/zenodo.24231571) [![Dataset DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24231762.svg)](https://doi.org/10.5281/zenodo.24231762) [![Report DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24232403.svg)](https://doi.org/10.5281/zenodo.24232403)
+
 A web app for the **NASA Space Apps Challenge 2026**, challenge **"Harmonization of MODIS and VIIRS Hot Spots"**.
 Team **Viola Fusion** (Viola Zeneli, solo, Universal Event) · ORCID [0009-0000-2815-6398](https://orcid.org/0009-0000-2815-6398).
 
@@ -145,8 +147,13 @@ The `.parquet` and `.geojson` files are faster copies used by the app. Every col
 
 ## How to cite
 
-Use the "Cite this repository" button on GitHub (it reads `CITATION.cff`): Viola Zeneli (2026), *VATRA: Albania's Fire Calendar*.
-Please also cite the NASA FIRMS datasets listed below.
+All three parts are on Zenodo (community [VATRA – Albania's Fire Calendar](https://zenodo.org/communities/vatra)):
+
+- **Software:** Zeneli, V. (2026). *VATRA: Albania's Fire Calendar* (v1.0). Zenodo. https://doi.org/10.5281/zenodo.24231571
+- **Dataset:** Zeneli, V. (2026). *VATRA: harmonized MODIS–VIIRS active fire record for Albania, 2000–2026* (1.0). Zenodo. https://doi.org/10.5281/zenodo.24231762
+- **Report:** Zeneli, V. (2026). *VATRA: harmonizing MODIS and VIIRS hotspots for Albania, 2000–2026 – Technical report v1*. Zenodo. https://doi.org/10.5281/zenodo.24232403
+
+GitHub's "Cite this repository" button gives the software citation (from `CITATION.cff`). Please also cite the NASA FIRMS datasets listed below.
 
 ## Known limits
 

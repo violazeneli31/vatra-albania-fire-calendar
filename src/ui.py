@@ -267,11 +267,36 @@ def header():
                 st.page_link(st.session_state["_pages"]["kids"], label=t("for_kids"), icon="🎮")
 
 
+FIRMS_URL = "https://firms.modaps.eosdis.nasa.gov/"
+
+
+def project_links(video: bool = False) -> list[tuple[str, str, str]]:
+    """(label, url, icon) for the project's public places: code, Zenodo DOIs, NASA FIRMS."""
+    links = [("GitHub", C.REPO_URL, "💻")]
+    if getattr(C, "CODE_DOI_URL", ""):
+        links.append((t("software_doi"), C.CODE_DOI_URL, "🧩"))
+    if C.DOI_URL:
+        links.append((t("dataset_doi"), C.DOI_URL, "📦"))
+    if C.REPORT_URL:
+        links.append((t("tech_report"), C.REPORT_URL, "📄"))
+    if video and C.VIDEO_URL:
+        links.append((t("video"), C.VIDEO_URL, "🎬"))
+    links.append(("NASA FIRMS", FIRMS_URL, "🛰️"))
+    return links
+
+
+def link_buttons(video: bool = False):
+    links = project_links(video)
+    for col, (lab, url, ic) in zip(st.columns(len(links), gap="small"), links):
+        col.link_button(lab, url, icon=ic, use_container_width=True)
+
+
 def footer():
     html('<div class="v-band" style="margin-top:22px"></div>')
     with st.container(key="vfooter"):
         html(f'<div class="v-footer"><b>Viola Zeneli</b> · Team Viola Fusion · NASA Space Apps Challenge 2026 · '
-             f'{escape(t("footer_data"))}</div>')
+             f'{escape(t("footer_data"))}<br>' + " · ".join(
+                 f'<a href="{escape(u)}" target="_blank" rel="noopener">{escape(lab)}</a>' for lab, u, _ in project_links()) + '</div>')
         if st.session_state.get("_page_id") != "about":
             st.page_link(st.session_state["_pages"]["about"], label=t("credits"), icon="ℹ️")
 

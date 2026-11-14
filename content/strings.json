@@ -1866,5 +1866,33 @@
  "traditions_title": {
   "en": "Our traditions",
   "sq": "Traditat tona"
+ },
+ "software_doi": {
+  "en": "Software (DOI)",
+  "sq": "Softueri (DOI)"
+ },
+ "cite_title": {
+  "en": "How to cite VATRA",
+  "sq": "Si ta citoni VATRA-n"
+ },
+ "cite_intro": {
+  "en": "All three parts are archived on Zenodo with a permanent DOI. Please also cite the NASA FIRMS data.",
+  "sq": "Të tria pjesët janë arkivuar në Zenodo me DOI të përhershëm. Ju lutemi citoni edhe të dhënat e NASA FIRMS."
+ },
+ "cite_software": {
+  "en": "Software",
+  "sq": "Softueri"
+ },
+ "cite_dataset": {
+  "en": "Dataset",
+  "sq": "Të dhënat"
+ },
+ "cite_report": {
+  "en": "Technical report",
+  "sq": "Raporti teknik"
+ },
+ "cite_this_dataset": {
+  "en": "Cite the dataset",
+  "sq": "Citoni të dhënat"
  }
 }
