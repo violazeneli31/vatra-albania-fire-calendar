@@ -1,17 +1,30 @@
-# VATRA: Albania's Fire Calendar · Kalendari i Zjarreve
+<p align="center">
+  <img src="docs/banner.jpg" alt="VATRA – Albania's Fire Calendar" width="100%">
+</p>
 
-[![Software DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24231571.svg)](https://doi.org/10.5281/zenodo.24231571) [![Dataset DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24231762.svg)](https://doi.org/10.5281/zenodo.24231762) [![Report DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24232403.svg)](https://doi.org/10.5281/zenodo.24232403)
+<p align="center">
+  <a href="https://doi.org/10.5281/zenodo.24231571"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.24231571.svg" alt="Software DOI"></a>
+  <a href="https://doi.org/10.5281/zenodo.24231762"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.24231762.svg" alt="Dataset DOI"></a>
+  <a href="https://doi.org/10.5281/zenodo.24232403"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.24232403.svg" alt="Report DOI"></a>
+</p>
+
+<h3 align="center">
+  <a href="https://vatra-albania.streamlit.app">🔥 Open the app</a> &nbsp;·&nbsp;
+  <a href="https://youtu.be/OU0LoOLec1c">🎬 Watch the 30-second demo</a> &nbsp;·&nbsp;
+  <a href="https://doi.org/10.5281/zenodo.24232403">📄 Technical report</a>
+</h3>
+
+# VATRA: Albania's Fire Calendar · Kalendari i Zjarreve
 
 A web app for the **NASA Space Apps Challenge 2026**, challenge **"Harmonization of MODIS and VIIRS Hot Spots"**.
 Team **Viola Fusion** (Viola Zeneli, solo, Universal Event) · ORCID [0009-0000-2815-6398](https://orcid.org/0009-0000-2815-6398).
 
-**Open the app:** https://vatra-albania.streamlit.app  ·  If the app is asleep, click "Yes, get this app back up" and wait about 30–60 seconds.
-
 *Vatra* means "the hearth" in Albanian: fire as something to care for.
 
-**How to run it on your computer:** see [Run it on your computer](#run-it-on-your-computer) (first time, and every next time).
+> **App asleep?** The free Streamlit app sleeps after some time without visitors. Click "Yes, get this app back up" and wait about 30–60 seconds.
+> To run it on your own computer, see [Run it on your computer](#-run-it-on-your-computer).
 
-## What it does
+## 🔥 What it does
 
 NASA satellites have watched fires in Albania since 2000. The old sensor, **MODIS** (on Terra and Aqua, 1 km pixels),
 is near the end of its life. The new one, **VIIRS** (on S-NPP, NOAA-20 and NOAA-21, 375 m pixels), sees much more
@@ -26,7 +39,11 @@ and the county with the most fire activity is Vlorë.
 **Validation:** fit on 2012–2019, tested on 2020–2025 (72 months never used for fitting): Pearson r = 0.99,
 Spearman ρ = 0.96, bias −11%. Against EFFIS burnt areas (yearly): Pearson r = 0.86, Spearman ρ = 0.94.
 
-## Pages
+| Raw counts after 2012 | Harmonized change | Clean detections | Satellites | Fire events | Years |
+|:---:|:---:|:---:|:---:|:---:|:---:|
+| **+194%** | **−29%** | 105,051 | 5 | 2,774 | 2000–2026 |
+
+## 🗺️ Pages
 
 - **Home** – headline finding, "Albania now" (last 7 and 30 days vs normal), key numbers, a mini calendar, county shortcuts.
 - **Calendar** – months × years heatmap (harmonized, raw MODIS or raw VIIRS); "vs normal" and intensity views;
@@ -45,7 +62,7 @@ Filters (area, dates, data type, options) stay the same when you change pages. T
 changes the calendars (Home, Calendar, Regions), the Map dots and the two-year chart on Compare; normals, trends and "Albania now"
 always use the harmonized record.
 
-## Method in short
+## ⚙️ Method in short
 
 1. **Load** all FIRMS files (archive + near real time), keep archive data where it exists, remove duplicates,
    static sources (factories) and points outside Albania.
@@ -60,7 +77,7 @@ always use the harmonized record.
 Normals use 2003–2025 (median, P10, P90). Trend: Mann–Kendall + Sen's slope.
 Full details: the **How it works** page and [`outputs/README.md`](outputs/README.md).
 
-## Run it on your computer
+## 💻 Run it on your computer
 
 You need **Python 3.12** (on a Mac: python.org → Downloads → macOS → "Python 3.12.10", macOS 64-bit universal2 installer).
 Check it with `python3.12 --version`. Newer versions (3.13+) may not have all the packages yet.
@@ -112,7 +129,7 @@ Never upload the key: `.env` is in `.gitignore`. Without a key the app still wor
 - `outputs/ is missing` → run `python build.py` once.
 - The page looks old after a change → stop with Ctrl + C, run `streamlit run app.py` again, refresh with Cmd + Shift + R.
 
-## Folders
+## 📁 Folders
 
 | Folder / file | What |
 |---|---|
@@ -125,9 +142,9 @@ Never upload the key: `.env` is in `.gitignore`. Without a key the app still wor
 | `data/` | the downloaded source data (see `data/README.md`) |
 | `outputs/` | harmonized results (see `outputs/README.md`) |
 | `assets/` | guide photos, fonts (Inter, Cinzel), icon |
-| `docs/` | short technical report (PDF) |
+| `docs/` | short technical report (PDF) and the README banner |
 
-## Data produced by VATRA
+## 📦 Data produced by VATRA
 
 `build.py` writes everything into `outputs/` (about 24 MB). These are the files to share and reuse (CC BY 4.0):
 
@@ -145,7 +162,7 @@ For uploading, `build.py` also copies exactly these files into `outputs/dataset_
 The `.parquet` and `.geojson` files are faster copies used by the app. Every column is explained in
 [`outputs/README.md`](outputs/README.md). A short technical report is in [`docs/`](docs/VATRA_technical_report_v1.pdf).
 
-## How to cite
+## 📚 How to cite
 
 All three parts are on Zenodo (community [VATRA – Albania's Fire Calendar](https://zenodo.org/communities/vatra)):
 
@@ -155,14 +172,13 @@ All three parts are on Zenodo (community [VATRA – Albania's Fire Calendar](htt
 
 GitHub's "Cite this repository" button gives the software citation (from `CITATION.cff`). Please also cite the NASA FIRMS datasets listed below.
 
-## Known limits
+## ⚠️ Known limits
 
 - Hotspots show heat seen by a satellite at pass time, not burnt area; small, short or cloud-covered fires can be missed.
 - Harmonized values are MODIS-equivalent estimates with an uncertainty band. The last years fit a little lower (bias −11%), likely because the MODIS orbits are drifting.
 - Latest days from the FIRMS API use an approximate weight. VATRA is not an official warning service.
-- The free Streamlit app sleeps after some time without visitors; the first visit then takes about 30–60 seconds.
 
-## Credits and licences
+## 🙏 Credits and licences
 
 - **NASA FIRMS** active fire data: MODIS C6.1 and VIIRS 375 m (S-NPP, NOAA-20, NOAA-21), LANCE FIRMS, NASA ESDIS.
   Dataset DOIs: MODIS C6.1 NRT doi:10.5067/FIRMS/MODIS/MCD14DL.NRT.0061, MODIS archive MCD14ML doi:10.5067/FIRMS/MODIS/MCD14ML,
