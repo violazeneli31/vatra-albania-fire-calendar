@@ -30,12 +30,23 @@ def questions() -> list[dict]:
 
 
 TALK = {  # small talk, matched before the fire questions
-    "hello": ["hi", "hello", "hey", "hej", "pershendetje", "tung", "ckemi", "mirdita", "miremengjes", "good morning", "good evening"],
-    "thanks": ["thanks", "thank", "thx", "faleminderit", "flm", "rrofsh", "merci"],
-    "who": ["who are you", "what are you", "your name", "who is viola", "kush je", "cfare je", "si te quajne", "emri yt", "are you ai", "are you a bot", "chatbot"],
+    "hello": ["hi", "hello", "hey", "hej", "pershendetje", "tung", "ckemi", "mirdita", "miremengjes", "good morning", "good evening",
+              "how are you", "how are u", "how r u", "how is it going", "hows it going", "how do you do", "whats up", "what is up", "sup",
+              "si je", "si jeni", "si ja kalon", "si po ja kalon", "si kalove", "si jemi"],
+    "thanks": ["thanks", "thank", "thx", "faleminderit", "flm", "rrofsh", "merci",
+               "great", "nice", "cool", "awesome", "perfect", "bravo", "super", "love it", "good job", "well done", "shume mire", "bukur"],
+    "who": ["who are you", "what are you", "your name", "who is viola", "kush je", "cfare je", "si te quajne", "emri yt", "are you ai", "are you a bot", "chatbot",
+            "who made", "who built", "who created", "are you real", "real person", "kush e beri", "kush e ndertoi", "kush te beri"],
     "help": ["help", "what can you do", "what do you know", "ndihme", "cfare di", "cfare mund", "me ndihmo"],
-    "bye": ["bye", "goodbye", "see you", "mirupafshim", "ciao", "naten e mire"],
+    "bye": ["bye", "goodbye", "see you", "see ya", "mirupafshim", "ciao", "naten e mire", "good night"],
 }
+SHORT_ONLY = {"great", "nice", "cool", "awesome", "perfect", "bravo", "super", "bukur"}  # praise words count as small talk only in short messages
+
+# question words: weak ones only break ties, strong ones point to the time/place questions
+WEIGHT = {"how": .4, "what": .4, "this": .4, "get": .4, "over": .4, "long": .4, "use": .4, "show": .4, "most": .4,
+          "when": 1.5, "kur": 1.5, "where": 1.5}
+STOP = {"are", "you", "the", "and", "for", "does", "did", "can", "with", "from", "your", "was", "were", "has", "have",
+        "there", "about", "any", "please", "pls", "doing"}
 
 
 def talk(text: str) -> str | None:
@@ -45,7 +56,7 @@ def talk(text: str) -> str | None:
         for k in keys:
             if (" " in k and f" {k} " in n) or (" " not in k and k in words):
                 # a greeting followed by a real question goes to the question
-                if kind == "hello" and len(words) > 3:
+                if (kind == "hello" or k in SHORT_ONLY) and " " not in k and len(words) > 3:
                     continue
                 return kind
     return None
@@ -59,15 +70,18 @@ def scores(text: str) -> list[tuple[str, float]]:
         kws = [_norm(k) for k in q.get("keywords_en", []) + q.get("keywords_sq", [])]
         score = 0.0
         for w in words:
-            if len(w) < 3:
+            if len(w) < 3 or w in STOP:
                 continue
+            wt = WEIGHT.get(w, 1.0)
+            best = 0.0  # each word counts once per question (its best keyword)
             for k in kws:
                 if w == k or (len(k) >= 4 and (w.startswith(k) or k.startswith(w))):
-                    score += 1.0
-                else:
+                    best = max(best, 1.0)
+                elif len(w) >= 4 and len(k) >= 4:
                     r = difflib.SequenceMatcher(None, w, k).ratio()
                     if r >= .8:
-                        score += r * .8
+                        best = max(best, r * .8)
+            score += best * wt
         out.append((q["id"], score))
     return sorted(out, key=lambda x: -x[1])
 
