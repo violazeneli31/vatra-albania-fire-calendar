@@ -18,7 +18,7 @@ REPO_URL = "https://github.com/violazeneli31/vatra-albania-fire-calendar"
 ORCID_URL = "https://orcid.org/0009-0000-2815-6398"
 DOI_URL = "https://doi.org/10.5281/zenodo.24231762"       # dataset (Zenodo)
 CODE_DOI_URL = "https://doi.org/10.5281/zenodo.24231571"  # software release v1.0 (Zenodo)
-VIDEO_URL = ""        # fill in after the YouTube upload
+VIDEO_URL = "https://youtu.be/OU0LoOLec1c"  # demo video (YouTube, unlisted)
 REPORT_URL = "https://doi.org/10.5281/zenodo.24232403"    # technical report (Zenodo)
 
 # ---------------------------------------------------------------- paths

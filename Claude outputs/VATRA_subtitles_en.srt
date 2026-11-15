@@ -1,0 +1,41 @@
+1
+00:00:00,150 --> 00:00:02,490
+Hi, I'm Viola Zeneli, from team Viola Fusion.
+
+2
+00:00:02,550 --> 00:00:06,770
+Every summer, Albania burns,
+so for NASA's hot spots challenge, I built VATRA.
+
+3
+00:00:06,830 --> 00:00:11,880
+Switch between NASA's MODIS, VIIRS and harmonized data,
+for any county and dates.
+
+4
+00:00:11,940 --> 00:00:15,200
+In 2012, VIIRS made counts jump 194 percent.
+
+5
+00:00:15,200 --> 00:00:18,420
+In VATRA, fires fell 29 percent.
+
+6
+00:00:18,480 --> 00:00:19,970
+Or draw your own area on the map.
+
+7
+00:00:20,030 --> 00:00:21,400
+There's even a game for kids.
+
+8
+00:00:21,460 --> 00:00:22,950
+Ask Viola, the guide, anything.
+
+9
+00:00:23,010 --> 00:00:25,000
+It's open on Zenodo, so firefighters can plan ahead,
+
+10
+00:00:25,000 --> 00:00:27,240
+and any country can reuse it.
